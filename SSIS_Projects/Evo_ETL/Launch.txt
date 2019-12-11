@@ -1,0 +1,24 @@
+### Maunual to launch Evo_SSIS project ###
+##################################################
+
+1. Open the folder "SSIS_Deployed_Solution"
+
+2. Verify that "Input_Files" folder contains "input.csv" file
+
+3. Right-click to "EvoTrialJob_Run.bat" file and select "Edit"
+
+4. Update MANDATORY variables (Line 5-6) as following:
+	4.1 DtexecPath - Absolute path leading to SSIS execution file called "DTEXEC.exe" (Default path for SQL Server 2017 is "C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\DTEXEC.exe")
+	4.2 PackagePath - Absolute path leading to location where "EvoTrialJob_SSIS" folder has been unzipped
+
+5. Update OPTIONAL variables (Line 10-13) as following:
+	5.1 InputFileName - Name of the input file saved in "Input_Files" folder (Default: "input.csv")
+	5.2 OutputFileName_Category - Name of the category output file loaded to "Output_Files" folder (Default: "category.csv")
+	5.3 OutputFileName_Item - Name of the itemCategory output file loaded to "Output_Files" folder (Default: "itemCategory.csv")
+	5.4 Password - SSIS package password (Currently set to "EvoTrial123")
+
+6. Save all changes that have been done to "EvoTrialJob_Run.bat" file
+
+7. Execute the "EvoTrialJob_Run.bat" file
+
+8. Check newly created files in "Output_Files" folder

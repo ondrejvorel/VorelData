@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="VORELDATA\ondrejvorel" GeneratedFromPackageName="EvoTrialJob_ETL" GeneratedFromPackageID="{8E3609DF-0FB2-449E-802E-F3ACA7A8F181}" GeneratedDate="11/4/2019 4:06:10 PM"/>
+	</DTSConfigurationHeading>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::InputFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>\Input_Files\input.csv</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OutputFilePath_Category].Properties[Value]" ValueType="String">
+		<ConfiguredValue>\Output_Files\category.csv</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OutputFilePath_Item].Properties[Value]" ValueType="String">
+		<ConfiguredValue>\Output_Files\itemCategory.csv</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PackagePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>C:\Users\ondrejvorel\source\repos\EvoTrialJob_ETL</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

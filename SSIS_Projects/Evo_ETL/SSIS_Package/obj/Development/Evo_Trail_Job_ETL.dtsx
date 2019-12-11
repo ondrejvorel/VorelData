@@ -1,0 +1,3389 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/1/2019 4:03:52 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="myVM"
+  DTS:CreatorName="VORELDATA\ondrejvorel"
+  DTS:DTSID="{8E3609DF-0FB2-449E-802E-F3ACA7A8F181}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1300.371"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Evo_Trail_Job_ETL"
+  DTS:PackageType="5"
+  DTS:VersionBuild="46"
+  DTS:VersionGUID="{14661739-8F34-4458-B600-72D7B800EC72}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Connection CSV - Category]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5B37AC7C-86E7-4793-8B68-03C091A8C130}"
+      DTS:ObjectName="Connection CSV - Category">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::PackagePath]+"\\Files_Output\\category.csv"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\ondrejvorel\source\repos\Evo_Trail_Job_ETL\Files_Output\category.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ID"
+              DTS:DTSID="{5897483E-97A2-4A31-8D15-9D7150F74BE0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CATEGORY_ID"
+              DTS:DTSID="{32AF10C8-4020-4DDD-BD91-FDB4FD22E712}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CATEGORY_VALUE"
+              DTS:DTSID="{DA55DA19-1C9D-48CF-86C7-10C36FDBE14B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Connection CSV - Input]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{D052C52F-4DF1-4587-9D9A-4DF8CA562415}"
+      DTS:ObjectName="Connection CSV - Input">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::PackagePath]+"\\Files_Input\\input.csv"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\ondrejvorel\source\repos\Evo_Trail_Job_ETL\Files_Input\input.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ITEM_CODE"
+              DTS:DTSID="{4B525EB3-7912-4E78-8C3A-952B7995A73A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PRODUCTION_COST"
+              DTS:DTSID="{9F522DA9-B55A-43FE-9D9C-B2056BB369E1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CATEGORY_MAIN"
+              DTS:DTSID="{500CB501-0543-42EE-9C1B-45717CA26DD1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CATEGORY_SECONDARY"
+              DTS:DTSID="{13C9E29F-04AB-44B0-9165-3FE06388CEE2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CATEGORY_COLOR"
+              DTS:DTSID="{ACE04A86-4BD8-4EB0-BDCA-AE8FC2A4ED5B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CATEGORY_GENDER"
+              DTS:DTSID="{E5CADF53-F197-4A8C-8500-9746FD73A7AC}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Connection CSV - ItemCategory]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BE8359C4-E666-4078-81EC-F8E1E480DAF6}"
+      DTS:ObjectName="Connection CSV - ItemCategory">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::PackagePath]+"\\Files_Output\\itemCategory.csv"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\ondrejvorel\source\repos\Evo_Trail_Job_ETL\Files_Output\itemCategory.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ITEM_CODE"
+              DTS:DTSID="{41759579-D9C8-49F9-99F8-6BEE2EE7CC10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CATEGORY_ID"
+              DTS:DTSID="{0E5A2155-30D8-4A42-AD73-A809ADBCAFD7}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1F09B085-FE0E-403E-8079-C56BC3E2E838}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackagePath">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\ondrejvorel\source\repos\Evo_Trail_Job_ETL</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{FA100717-D29B-49C4-AF15-DAEFE3ABCF08}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\DERIVED - Color_Category (ID 3)"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="DERIVED - Color_Category (ID 3)"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\DERIVED - Color_Category (ID 3).Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\DERIVED - Color_Category (ID 3).Inputs[Derived Column Input].Columns[CATEGORY_COLOR]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CATEGORY_COLOR"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_COLOR]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACENULL]([LOWER]([TRIM](#{Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_COLOR]})),"N/A")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACENULL(LOWER(TRIM(CATEGORY_COLOR)),"N/A")</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\DERIVED - Color_Category (ID 3).Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task\DERIVED - Color_Category (ID 3).Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\DERIVED - Color_Category (ID 3).Outputs[Derived Column Output].Columns[CATEGORY_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\DERIVED - Color_Category (ID 3).Outputs[Derived Column Output].Columns[CATEGORY_ID]"
+                      name="CATEGORY_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">3</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">3</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\DERIVED - Color_Category (ID 3).Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task\DERIVED - Color_Category (ID 3).Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\DERIVED - Color_Category (ID 3).Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\DERIVED - Color_Category (ID 3).Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\DERIVED - Color_Category (ID 3).Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\DERIVED - Color_Category (ID 3).Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4)"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="DERIVED - Gender_Category (ID 4)"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4).Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4).Inputs[Derived Column Input].Columns[CATEGORY_GENDER]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CATEGORY_GENDER"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_GENDER]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACENULL]([LOWER]([TRIM](#{Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_GENDER]})),"N/A")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACENULL(LOWER(TRIM(CATEGORY_GENDER)),"N/A")</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4).Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4).Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4).Outputs[Derived Column Output].Columns[CATEGORY_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4).Outputs[Derived Column Output].Columns[CATEGORY_ID]"
+                      name="CATEGORY_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">4</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">4</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4).Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4).Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4).Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4).Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4).Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4).Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\DERIVED - Main_Category (ID 1)"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="DERIVED - Main_Category (ID 1)"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\DERIVED - Main_Category (ID 1).Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\DERIVED - Main_Category (ID 1).Inputs[Derived Column Input].Columns[CATEGORY_MAIN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CATEGORY_MAIN"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_MAIN]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACENULL]([LOWER]([TRIM](#{Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_MAIN]})),"N/A")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACENULL(LOWER(TRIM(CATEGORY_MAIN)),"N/A")</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\DERIVED - Main_Category (ID 1).Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task\DERIVED - Main_Category (ID 1).Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\DERIVED - Main_Category (ID 1).Outputs[Derived Column Output].Columns[CATEGORY_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\DERIVED - Main_Category (ID 1).Outputs[Derived Column Output].Columns[CATEGORY_ID]"
+                      name="CATEGORY_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">1</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">1</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\DERIVED - Main_Category (ID 1).Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task\DERIVED - Main_Category (ID 1).Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\DERIVED - Main_Category (ID 1).Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\DERIVED - Main_Category (ID 1).Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\DERIVED - Main_Category (ID 1).Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\DERIVED - Main_Category (ID 1).Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2)"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="DERIVED - Secondary_Category (ID 2)"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2).Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2).Inputs[Derived Column Input].Columns[CATEGORY_SECONDARY]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CATEGORY_SECONDARY"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_SECONDARY]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACENULL]([LOWER]([TRIM](#{Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_SECONDARY]})),"N/A")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACENULL(LOWER(TRIM(CATEGORY_SECONDARY)),"N/A")</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2).Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2).Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2).Outputs[Derived Column Output].Columns[CATEGORY_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2).Outputs[Derived Column Output].Columns[CATEGORY_ID]"
+                      name="CATEGORY_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">2</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">2</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2).Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2).Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2).Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2).Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2).Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2).Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\DESTINATION CSV - Category"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="DESTINATION CSV - Category">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\DESTINATION CSV - Category.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Connection CSV - Category]"
+                  connectionManagerRefId="Package.ConnectionManagers[Connection CSV - Category]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\DESTINATION CSV - Category.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\DESTINATION CSV - Category.Inputs[Flat File Destination Input].Columns[CATEGORY_VALUE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CATEGORY_VALUE"
+                      cachedSortKeyPosition="2"
+                      externalMetadataColumnId="Package\Data Flow Task\DESTINATION CSV - Category.Inputs[Flat File Destination Input].ExternalColumns[CATEGORY_VALUE]"
+                      lineageId="Package\Data Flow Task\SORT - Remove Duplicates.Outputs[Sort Output].Columns[CATEGORY_VALUE]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\DESTINATION CSV - Category.Inputs[Flat File Destination Input].Columns[CATEGORY_ID]"
+                      cachedDataType="i4"
+                      cachedName="CATEGORY_ID"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Data Flow Task\DESTINATION CSV - Category.Inputs[Flat File Destination Input].ExternalColumns[CATEGORY_ID]"
+                      lineageId="Package\Data Flow Task\SORT - Remove Duplicates.Outputs[Sort Output].Columns[CATEGORY_ID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\DESTINATION CSV - Category.Inputs[Flat File Destination Input].Columns[ID]"
+                      cachedDataType="i4"
+                      cachedName="ID"
+                      externalMetadataColumnId="Package\Data Flow Task\DESTINATION CSV - Category.Inputs[Flat File Destination Input].ExternalColumns[ID]"
+                      lineageId="Package\Data Flow Task\SCRIPT - Insert ID Column.Outputs[Output 0].Columns[ID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\DESTINATION CSV - Category.Inputs[Flat File Destination Input].ExternalColumns[ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\DESTINATION CSV - Category.Inputs[Flat File Destination Input].ExternalColumns[CATEGORY_ID]"
+                      dataType="i4"
+                      name="CATEGORY_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\DESTINATION CSV - Category.Inputs[Flat File Destination Input].ExternalColumns[CATEGORY_VALUE]"
+                      dataType="i4"
+                      name="CATEGORY_VALUE" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\DESTINATION CSV - ItemCategory"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="DESTINATION CSV - ItemCategory">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\DESTINATION CSV - ItemCategory.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Connection CSV - ItemCategory]"
+                  connectionManagerRefId="Package.ConnectionManagers[Connection CSV - ItemCategory]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\DESTINATION CSV - ItemCategory.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\DESTINATION CSV - ItemCategory.Inputs[Flat File Destination Input].Columns[CATEGORY_ID]"
+                      cachedDataType="i4"
+                      cachedName="CATEGORY_ID"
+                      externalMetadataColumnId="Package\Data Flow Task\DESTINATION CSV - ItemCategory.Inputs[Flat File Destination Input].ExternalColumns[CATEGORY_ID]"
+                      lineageId="Package\Data Flow Task\MERGE JOIN - Category_Value.Outputs[Merge Join Output].Columns[CATEGORY_ID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\DESTINATION CSV - ItemCategory.Inputs[Flat File Destination Input].Columns[ITEM_CODE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ITEM_CODE"
+                      externalMetadataColumnId="Package\Data Flow Task\DESTINATION CSV - ItemCategory.Inputs[Flat File Destination Input].ExternalColumns[ITEM_CODE]"
+                      lineageId="Package\Data Flow Task\MERGE JOIN - Category_Value.Outputs[Merge Join Output].Columns[ITEM_CODE]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\DESTINATION CSV - ItemCategory.Inputs[Flat File Destination Input].ExternalColumns[CATEGORY_ID]"
+                      dataType="i4"
+                      name="CATEGORY_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\DESTINATION CSV - ItemCategory.Inputs[Flat File Destination Input].ExternalColumns[ITEM_CODE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ITEM_CODE" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\MERGE JOIN - Category_Value"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              name="MERGE JOIN - Category_Value"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of join to perform."
+                  name="JoinType"
+                  typeConverter="JoinType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of columns in the ordering key."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the null values are treated as equal values."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates the requested maximum buffers per input before blocking."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\MERGE JOIN - Category_Value.Inputs[Merge Join Left Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Left Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\MERGE JOIN - Category_Value.Inputs[Merge Join Left Input].Columns[ITEM_CODE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ITEM_CODE"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\Data Flow Task\SORT - Category_Value (FK).Outputs[Sort Output].Columns[ITEM_CODE]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\MERGE JOIN - Category_Value.Inputs[Merge Join Left Input].Columns[CATEGORY_VALUE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CATEGORY_VALUE"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\SORT - Category_Value (FK).Outputs[Sort Output].Columns[CATEGORY_VALUE]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\MERGE JOIN - Category_Value.Inputs[Merge Join Right Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Right Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\MERGE JOIN - Category_Value.Inputs[Merge Join Right Input].Columns[CATEGORY_VALUE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CATEGORY_VALUE"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\SORT - Category_Value (PK).Outputs[Sort Output].Columns[CATEGORY_VALUE]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\MERGE JOIN - Category_Value.Inputs[Merge Join Right Input].Columns[ID]"
+                      cachedDataType="i4"
+                      cachedName="ID"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\Data Flow Task\SORT - Category_Value (PK).Outputs[Sort Output].Columns[ID]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\MERGE JOIN - Category_Value.Outputs[Merge Join Output]"
+                  name="Merge Join Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\MERGE JOIN - Category_Value.Outputs[Merge Join Output].Columns[ITEM_CODE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\MERGE JOIN - Category_Value.Outputs[Merge Join Output].Columns[ITEM_CODE]"
+                      name="ITEM_CODE">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\MERGE JOIN - Category_Value.Inputs[Merge Join Left Input].Columns[ITEM_CODE]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\MERGE JOIN - Category_Value.Outputs[Merge Join Output].Columns[CATEGORY_ID]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\MERGE JOIN - Category_Value.Outputs[Merge Join Output].Columns[CATEGORY_ID]"
+                      name="CATEGORY_ID">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\MERGE JOIN - Category_Value.Inputs[Merge Join Right Input].Columns[ID]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\MULTICAST (1)"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="MULTICAST (1)">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\MULTICAST (1).Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\MULTICAST (1).Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\Data Flow Task\MULTICAST (1).Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\MULTICAST (1).Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\Data Flow Task\MULTICAST (1).Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\MULTICAST (1).Outputs[Multicast Output 3]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\Data Flow Task\MULTICAST (1).Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\MULTICAST (1).Outputs[Multicast Output 5]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 5"
+                  synchronousInputId="Package\Data Flow Task\MULTICAST (1).Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\MULTICAST (1).Outputs[Multicast Output 4]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 4"
+                  synchronousInputId="Package\Data Flow Task\MULTICAST (1).Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\MULTICAST (2)"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="MULTICAST (2)">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\MULTICAST (2).Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\MULTICAST (2).Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\Data Flow Task\MULTICAST (2).Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\MULTICAST (2).Outputs[Multicast Output 3]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\Data Flow Task\MULTICAST (2).Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\MULTICAST (2).Outputs[Multicast Output 5]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 5"
+                  synchronousInputId="Package\Data Flow Task\MULTICAST (2).Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\MULTICAST (3)"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="MULTICAST (3)">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\MULTICAST (3).Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\MULTICAST (3).Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\Data Flow Task\MULTICAST (3).Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\MULTICAST (3).Outputs[Multicast Output 3]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\Data Flow Task\MULTICAST (3).Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\MULTICAST (3).Outputs[Multicast Output 1]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\Data Flow Task\MULTICAST (3).Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\SCRIPT - Insert ID Column"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;11"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="SCRIPT - Insert ID Column"
+              version="11">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    private int m_rowNumber;
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        m_rowNumber = 0;
+    }
+
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+        m_rowNumber++;
+        Row.ID = m_rowNumber;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public Int32 ID
+    {
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool ID_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_514f42dfaa194c7c90c4dc905e7c8b68.Properties.Settings.get_Default():SC_514f42dfaa194c7c90c4dc905e7c8b68.Properties.Sett" +
+    "ings")]
+
+namespace SC_514f42dfaa194c7c90c4dc905e7c8b68.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_514f42dfaa194c7c90c4dc905e7c8b68</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_514f42dfaa194c7c90c4dc905e7c8b68</msb:DisplayName>
+    <msb:ProjectId>{219181DF-97A8-4D67-B47E-24296D46D6B5}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_514f42dfaa194c7c90c4dc905e7c8b68.csproj" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_514f42dfaa194c7c90c4dc905e7c8b68.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F053C2DD-64F0-424F-AD43-7F4942A794E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_514f42dfaa194c7c90c4dc905e7c8b68</RootNamespace>
+    <AssemblyName>SC_514f42dfaa194c7c90c4dc905e7c8b68</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
+        <Host Name="ScriptComponent" IconIndex="0" />
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC140</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_514f42dfaa194c7c90c4dc905e7c8b68")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_514f42dfaa194c7c90c4dc905e7c8b68")]
+[assembly: AssemblyCopyright("Copyright @  2019")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_514f42dfaa194c7c90c4dc905e7c8b68.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_514f42dfaa194c7c90c4dc905e7c8b68.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_514f42dfaa194c7c90c4dc905e7c8b68.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_514f42dfaa194c7c90c4dc905e7c8b68.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_514f42dfaa194c7c90c4dc905e7c8b68.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_514f42dfaa194c7c90c4dc905e7c8b68.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAAjzvV0AAAAAAAAAAOAAIiALATAAABIAAAAIAAAAAAAA7jAA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAJwwAABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAA9BAAAAAgAAAAEgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAUAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAGgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADQ
+MAAAAAAAAEgAAAACAAUAnCEAAEgOAAABAAAAAAAAAOQvAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAADoCKBAAAAoCFn0BAAAEKm4CAnsBAAAEF1h9AQAABAMCewEA
+AARvBQAABioeAigJAAAGKioCAwQFKBEAAAoqOgIWA4waAAABKBIAAAoqWgMsCAIWKBMAAAoqcgEA
+AHBzFAAACnoeAigVAAAKKh4CKBYAAAoqfgIoFwAACgICcw0AAAZ9AgAABAICcw4AAAZ9AwAABCqS
+BHKeAABwGm8YAAAKLBUCBQIDKBkAAAoOBHMEAAAGbwsAAAYqSisHAgNvDAAABgNvBwAABi3xKgYq
+OgIoGgAACgIDfQQAAAQqOgIoGgAACgIDfQUAAAQqHgIoGgAACiqufgYAAAQtHnKuAABw0AcAAAIo
+GwAACm8cAAAKcx0AAAqABgAABH4GAAAEKhp+BwAABCoeAoAHAAAEKhp+CAAABCoeAigeAAAKKi5z
+FAAABoAIAAAEKgAAQlNKQgEAAQAAAAAADAAAAHY0LjAuMzAzMTkAAAAABQBsAAAAEAUAACN+AAB8
+BQAADAYAACNTdHJpbmdzAAAAAIgLAAAgAQAAI1VTAKgMAAAQAAAAI0dVSUQAAAC4DAAAkAEAACNC
+bG9iAAAAAAAAAAIAAAFXFaABCQEAAAD6ATMAFgAAAQAAACAAAAAIAAAACAAAABUAAAAPAAAAHgAA
+ABAAAAADAAAABQAAAAYAAAABAAAABAAAAAEAAAAAAOsCAQAAAAAABgDxAUQEBgCFAkQEBgA9ATEE
+DwC4BAAABgBqAXoDBgDUAXoDBgC1AXoDBgBsAnoDBgARAnoDBgAqAnoDBgCBAXoDBgCcAbQCCgBF
+AooACgADBIoADgD0A4oACgDDA4oACgB+BYoABgBBBTIDBgAgATEEBgAUBGQEBgC3A2UDEgDwANUC
+EgBRAdUCEgDYAFADBgAFAUQEBgABADIDBgCMAzIDBgDOAjIDBgCmAzIDBgCrADIDBgBcADIDBgAD
+BnoDAAAAACsAAAAAAAEAAQABABAARQMAABAAAQABAAEAEADnAwAAOQACAAQAAQAQAGAFAABFAAIA
+CQABABAANQUAAEkABAANAAEAEAD2BAAASQAFAA4AAAAQAGsExwRJAAYADwAAARAAJQXHBGEACAAT
+AAEA2wNjAAYANQVmAAYA9gRqAAEAbgVuAAEAbgVuABEAOQNyABEAyAB2ABEATAB6AFAgAAAAAMYA
+owIGAAEAXyAAAAAAxgDgBX4AAQB7IAAAAACGGCQEBgACAIMgAAAAAIYYJAQbAAIAjiAAAAAAhgg0
+AAEABQCdIAAAAACGCBMDhAAGALQgAAAAAIYA9wUrAAcAvCAAAAAAhgBIBSsABwDEIAAAAACGGCQE
+BgAHAOQgAAAAAMYA0wWJAAcACSEAAAAAxgHMBX4ACwAcIQAAAADGAeAFfgAMAB4hAAAAAIYYJAST
+AA0ALSEAAAAAhhgkBJMADgA8IQAAAACDGCQEBgAPAEQhAAAAAJMIEASZAA8AcCEAAAAAkwiwAJ4A
+DwB3IQAAAACTCLwAowAPAH8hAAAAAJYIVAWpABAAhiEAAAAAhhgkBAYAEACOIQAAAACRGCoErgAQ
+AAAAAQD7BQAAAQAJBAAAAgAABQAAAwDRAwAAAQCuAgAAAQCuAgAAAQA7AAAAAgCAAAAAAwAJBAAA
+BADRAwAAAQAJBAAAAQD7BQAAAQCEBQAAAQCEBQAAAQCuAgkAJAQBABEAJAQGABkAJAQKACkAJAQQ
+ADEAJAQQADkAJAQQAEEAJAQQAEkAJAQQAFEAJAQQAFkAJAQQAGEAJAQQAGkAJAQGAJkAJAQGALkA
+JAQVAMkAJAQGAIkAowIGAHEAJAQbAHEAKQMlAHEAIQMBANkAJAQQAHEA9wUrAHEASAUrAIkAJAQG
+AOEALgUvAIkAFAU2AJEAJAQGAPEAbgA8APEA/wVDAKEAJARJAMEAJAQGAC4ACwDJAC4AEwDSAC4A
+GwDxAC4AIwD6AC4AKwAjAS4AMwAjAS4AOwAjAS4AQwD6AC4ASwApAS4AUwAjAS4AWwBAAUMAYwCK
+AWkAcwDxAIkAcwDxAOMAawCKAQEBewCKAQMAAQAHAAMACAAFAAAAQACyAAAAFwO2AAAAFAS6AAAA
+0AC/AAAAWAXEAAEABQADAAEABgAFAAIAEAAHAAIAEQAJAAEAEgAJAAIAEwALAASAAAABAAAAAAAA
+AAAAAAAAAAcAAAAEAAAAAAAAAAAAAABRAEMAAAAAAA4AAAAAAAAAAAAAAFoAjgUAAAAADgAAAAAA
+AAAAAAAAWgCrBQAAAAAEAAAAAAAAAAAAAABRADIDAAAAAAAAAAABAAAAdQQAAAAAAEludDMyAFND
+XzUxNGY0MmRmYWExOTRjN2M5MGM0ZGM5MDVlN2M4YjY4ADxNb2R1bGU+AHNldF9JRABJbnB1dElE
+AG1zY29ybGliAGRlZmF1bHRJbnN0YW5jZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhh
+bmRsZQBJbnB1dE5hbWUATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxpbmUAVHlwZQBnZXRf
+Q3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1cmUAQXBwbGljYXRpb25TZXR0aW5nc0Jh
+c2UARWRpdG9yQnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUARGVidWdn
+ZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRlAEVkaXRvckJyb3dzYWJs
+ZUF0dHJpYnV0ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmli
+dXRlAFRhcmdldEZyYW1ld29ya0F0dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1
+dGUAQXNzZW1ibHlEZXNjcmlwdGlvbkF0dHJpYnV0ZQBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0
+cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJpYnV0
+ZQBTU0lTU2NyaXB0Q29tcG9uZW50RW50cnlQb2ludEF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlB
+dHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAUHJlRXhlY3V0ZQB2YWx1ZQBT
+eXN0ZW0uUnVudGltZS5WZXJzaW9uaW5nAFN0cmluZwBTeXN0ZW0uQ29tcG9uZW50TW9kZWwAU0Nf
+NTE0ZjQyZGZhYTE5NGM3YzkwYzRkYzkwNWU3YzhiNjguZGxsAHNldF9JRF9Jc051bGwAU2V0TnVs
+bABzZXRfSXRlbQBTeXN0ZW0AcmVzb3VyY2VNYW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJh
+dGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBJbnZhbGlkT3BlcmF0
+aW9uRXhjZXB0aW9uAFN0cmluZ0NvbXBhcmlzb24AQ3VsdHVyZUluZm8AT3V0cHV0TmFtZU1hcABP
+dXRwdXRNYXAAbV9yb3dOdW1iZXIASW5wdXQwQnVmZmVyAFBpcGVsaW5lQnVmZmVyAFNjcmlwdEJ1
+ZmZlcgBnZXRfUmVzb3VyY2VNYW5hZ2VyAC5jdG9yAC5jY3RvcgBTeXN0ZW0uRGlhZ25vc3RpY3MA
+U3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2aWNlcwBTeXN0ZW0uUmVzb3VyY2VzAFNDXzUxNGY0
+MmRmYWExOTRjN2M5MGM0ZGM5MDVlN2M4YjY4LlByb3BlcnRpZXMuUmVzb3VyY2VzLnJlc291cmNl
+cwBEZWJ1Z2dpbmdNb2RlcwBTQ181MTRmNDJkZmFhMTk0YzdjOTBjNGRjOTA1ZTdjOGI2OC5Qcm9w
+ZXJ0aWVzAFZhcmlhYmxlcwBCdWZmZXJDb2x1bW5JbmRleGVzAEdldENvbHVtbkluZGV4ZXMAU2V0
+dGluZ3MARXF1YWxzAENvbm5lY3Rpb25zAE9iamVjdABFbmRPZlJvd3NldABnZXRfRGVmYXVsdABV
+c2VyQ29tcG9uZW50AFBhcmVudENvbXBvbmVudABTY3JpcHRDb21wb25lbnQATWljcm9zb2Z0LlNx
+bFNlcnZlci5UeFNjcmlwdABNaWNyb3NvZnQuU3FsU2VydmVyLlBpcGVsaW5lSG9zdABJbnB1dDBf
+UHJvY2Vzc0lucHV0AElucHV0MF9Qcm9jZXNzSW5wdXRSb3cATmV4dFJvdwBnZXRfQXNzZW1ibHkA
+AICbSQBzAE4AdQBsAGwAIABwAHIAbwBwAGUAcgB0AHkAIABjAGEAbgBuAG8AdAAgAGIAZQAgAHMA
+ZQB0ACAAdABvACAARgBhAGwAcwBlAC4AIABBAHMAcwBpAGcAbgAgAGEAIAB2AGEAbAB1AGUAIAB0
+AG8AIAB0AGgAZQAgAGMAbwBsAHUAbQBuACAAaQBuAHMAdABlAGEAZAAuAAAPSQBuAHAAdQB0ACAA
+MAAAcVMAQwBfADUAMQA0AGYANAAyAGQAZgBhAGEAMQA5ADQAYwA3AGMAOQAwAGMANABkAGMAOQAw
+ADUAZQA3AGMAOABiADYAOAAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUA
+cwAAF9wS8BUUz0mVVDJz5jewrAAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERWQkgAwESPR0IEkEF
+IAIBCBwDIAACBiACAg4RdQUgAR0ICAYAARJ5EX0FIAASgIEHIAIBDhKAgQi3elxWGTTgiQiJhF3N
+gIDMkQIGCAMGEhQDBhIYAwYSRQMGElEDBhJVAwYSIAUgAQESDAQgAQECCSAEAQgOEj0SQQUgAQES
+RQQAABJRBAAAElUFAAEBElUEAAASIAMAAAEDKAAIAygAAgQIABJRBAgAElUECAASIAgBAAgAAAAA
+AB4BAAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEIAQACAAAAAAAoAQAjU0NfNTE0ZjQyZGZh
+YTE5NGM3YzkwYzRkYzkwNWU3YzhiNjgAAAUBAAAAABYBABFDb3B5cmlnaHQgQCAgMjAxOQAASQEA
+Gi5ORVRGcmFtZXdvcmssVmVyc2lvbj12NC41AQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRIuTkVU
+IEZyYW1ld29yayA0LjUEAQAAAAC0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVz
+b3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwg
+UHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVS
+ZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAAxDAAAAAAAAAAAAAA3jAAAAAgAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAANAwAAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAA
+AP8lACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAA
+AEgAAABYQAAA7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8A
+AAAAAL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABE
+AAAAAQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8A
+bgAAAAAAAACwBEwDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAw
+ADAAMAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEA
+bgB5AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAA
+AAAAUwBDAF8ANQAxADQAZgA0ADIAZABmAGEAYQAxADkANABjADcAYwA5ADAAYwA0AGQAYwA5ADAA
+NQBlADcAYwA4AGIANgA4AAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAu
+ADAALgAwAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwA1ADEANABmADQA
+MgBkAGYAYQBhADEAOQA0AGMANwBjADkAMABjADQAZABjADkAMAA1AGUANwBjADgAYgA2ADgALgBk
+AGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcA
+aAB0ACAAQAAgACAAMgAwADEAOQAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBz
+AAAAAAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfADUA
+MQA0AGYANAAyAGQAZgBhAGEAMQA5ADQAYwA3AGMAOQAwAGMANABkAGMAOQAwADUAZQA3AGMAOABi
+ADYAOAAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAEMAXwA1ADEA
+NABmADQAMgBkAGYAYQBhADEAOQA0AGMANwBjADkAMABjADQAZABjADkAMAA1AGUANwBjADgAYgA2
+ADgAAAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAA
+OAAIAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAAPAwAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_514f42dfaa194c7c90c4dc905e7c8b68</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE">45</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\SCRIPT - Insert ID Column.Inputs[Input 0]"
+                  hasSideEffects="true"
+                  name="Input 0">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\SCRIPT - Insert ID Column.Outputs[Output 0]"
+                  name="Output 0"
+                  synchronousInputId="Package\Data Flow Task\SCRIPT - Insert ID Column.Inputs[Input 0]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SCRIPT - Insert ID Column.Outputs[Output 0].Columns[ID]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\SCRIPT - Insert ID Column.Outputs[Output 0].Columns[ID]"
+                      name="ID" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\SORT - Category_Value (FK)"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="SORT - Category_Value (FK)"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\SORT - Category_Value (FK).Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\SORT - Category_Value (FK).Inputs[Sort Input].Columns[ITEM_CODE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ITEM_CODE"
+                      lineageId="Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[ITEM_CODE]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\SORT - Category_Value (FK).Inputs[Sort Input].Columns[CATEGORY_VALUE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CATEGORY_VALUE"
+                      lineageId="Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_VALUE]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\SORT - Category_Value (FK).Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SORT - Category_Value (FK).Outputs[Sort Output].Columns[ITEM_CODE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\SORT - Category_Value (FK).Outputs[Sort Output].Columns[ITEM_CODE]"
+                      name="ITEM_CODE"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[ITEM_CODE]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SORT - Category_Value (FK).Outputs[Sort Output].Columns[CATEGORY_VALUE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\SORT - Category_Value (FK).Outputs[Sort Output].Columns[CATEGORY_VALUE]"
+                      name="CATEGORY_VALUE"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_VALUE]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\SORT - Category_Value (PK)"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="SORT - Category_Value (PK)"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\SORT - Category_Value (PK).Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\SORT - Category_Value (PK).Inputs[Sort Input].Columns[CATEGORY_VALUE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CATEGORY_VALUE"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\Data Flow Task\SORT - Remove Duplicates.Outputs[Sort Output].Columns[CATEGORY_VALUE]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\SORT - Category_Value (PK).Inputs[Sort Input].Columns[ID]"
+                      cachedDataType="i4"
+                      cachedName="ID"
+                      lineageId="Package\Data Flow Task\SCRIPT - Insert ID Column.Outputs[Output 0].Columns[ID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\SORT - Category_Value (PK).Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SORT - Category_Value (PK).Outputs[Sort Output].Columns[CATEGORY_VALUE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\SORT - Category_Value (PK).Outputs[Sort Output].Columns[CATEGORY_VALUE]"
+                      name="CATEGORY_VALUE"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\SORT - Remove Duplicates.Outputs[Sort Output].Columns[CATEGORY_VALUE]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SORT - Category_Value (PK).Outputs[Sort Output].Columns[ID]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\SORT - Category_Value (PK).Outputs[Sort Output].Columns[ID]"
+                      name="ID"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\SCRIPT - Insert ID Column.Outputs[Output 0].Columns[ID]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\SORT - Remove Duplicates"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="SORT - Remove Duplicates"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\SORT - Remove Duplicates.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\SORT - Remove Duplicates.Inputs[Sort Input].Columns[CATEGORY_VALUE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CATEGORY_VALUE"
+                      lineageId="Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_VALUE]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\SORT - Remove Duplicates.Inputs[Sort Input].Columns[CATEGORY_ID]"
+                      cachedDataType="i4"
+                      cachedName="CATEGORY_ID"
+                      lineageId="Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_ID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\SORT - Remove Duplicates.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SORT - Remove Duplicates.Outputs[Sort Output].Columns[CATEGORY_VALUE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\SORT - Remove Duplicates.Outputs[Sort Output].Columns[CATEGORY_VALUE]"
+                      name="CATEGORY_VALUE"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_VALUE]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SORT - Remove Duplicates.Outputs[Sort Output].Columns[CATEGORY_ID]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\SORT - Remove Duplicates.Outputs[Sort Output].Columns[CATEGORY_ID]"
+                      name="CATEGORY_ID"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_ID]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\SOURCE CSV - Input"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="SOURCE CSV - Input"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\SOURCE CSV - Input.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Connection CSV - Input]"
+                  connectionManagerRefId="Package.ConnectionManagers[Connection CSV - Input]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[ITEM_CODE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].ExternalColumns[ITEM_CODE]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[ITEM_CODE]"
+                      name="ITEM_CODE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_MAIN]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].ExternalColumns[CATEGORY_MAIN]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_MAIN]"
+                      name="CATEGORY_MAIN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_SECONDARY]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].ExternalColumns[CATEGORY_SECONDARY]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_SECONDARY]"
+                      name="CATEGORY_SECONDARY"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_COLOR]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].ExternalColumns[CATEGORY_COLOR]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_COLOR]"
+                      name="CATEGORY_COLOR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_GENDER]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].ExternalColumns[CATEGORY_GENDER]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_GENDER]"
+                      name="CATEGORY_GENDER"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].ExternalColumns[ITEM_CODE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ITEM_CODE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].ExternalColumns[PRODUCTION_COST]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PRODUCTION_COST" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].ExternalColumns[CATEGORY_MAIN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CATEGORY_MAIN" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].ExternalColumns[CATEGORY_SECONDARY]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CATEGORY_SECONDARY" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].ExternalColumns[CATEGORY_COLOR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CATEGORY_COLOR" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].ExternalColumns[CATEGORY_GENDER]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CATEGORY_GENDER" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\SPLIT - Not Empty Category_Value"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="SPLIT - Not Empty Category_Value"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\SPLIT - Not Empty Category_Value.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\SPLIT - Not Empty Category_Value.Inputs[Conditional Split Input].Columns[CATEGORY_VALUE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CATEGORY_VALUE"
+                      lineageId="Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_VALUE]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\SPLIT - Not Empty Category_Value.Outputs[Not Empty]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Not Empty"
+                  synchronousInputId="Package\Data Flow Task\SPLIT - Not Empty Category_Value.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[LEN](#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_VALUE]}) &gt; 0</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">LEN(CATEGORY_VALUE) &gt; 0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\SPLIT - Not Empty Category_Value.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\Data Flow Task\SPLIT - Not Empty Category_Value.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\SPLIT - Not Empty Category_Value.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Data Flow Task\SPLIT - Not Empty Category_Value.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\SPLIT - Not Empty Category_Value.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\SPLIT - Not Empty Category_Value.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\SPLIT - Not Empty Category_Value.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\SPLIT - Not Empty Category_Value.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\UNION ALL - Into Category_Value"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="UNION ALL - Into Category_Value"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 1].Columns[ITEM_CODE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ITEM_CODE"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[ITEM_CODE]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[ITEM_CODE]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 1].Columns[CATEGORY_MAIN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CATEGORY_MAIN"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_MAIN]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_VALUE]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 1].Columns[CATEGORY_ID]"
+                      cachedDataType="i4"
+                      cachedName="CATEGORY_ID"
+                      lineageId="Package\Data Flow Task\DERIVED - Main_Category (ID 1).Outputs[Derived Column Output].Columns[CATEGORY_ID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_ID]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 2].Columns[ITEM_CODE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ITEM_CODE"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[ITEM_CODE]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[ITEM_CODE]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 2].Columns[CATEGORY_ID]"
+                      cachedDataType="i4"
+                      cachedName="CATEGORY_ID"
+                      lineageId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2).Outputs[Derived Column Output].Columns[CATEGORY_ID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_ID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 2].Columns[CATEGORY_SECONDARY]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CATEGORY_SECONDARY"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_SECONDARY]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_VALUE]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 3]"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 3].Columns[ITEM_CODE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ITEM_CODE"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[ITEM_CODE]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[ITEM_CODE]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 3].Columns[CATEGORY_ID]"
+                      cachedDataType="i4"
+                      cachedName="CATEGORY_ID"
+                      lineageId="Package\Data Flow Task\DERIVED - Color_Category (ID 3).Outputs[Derived Column Output].Columns[CATEGORY_ID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_ID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 3].Columns[CATEGORY_COLOR]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CATEGORY_COLOR"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_COLOR]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_VALUE]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 5]"
+                  hasSideEffects="true"
+                  name="Union All Input 5">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 5].Columns[ITEM_CODE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ITEM_CODE"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[ITEM_CODE]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[ITEM_CODE]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 5].Columns[CATEGORY_ID]"
+                      cachedDataType="i4"
+                      cachedName="CATEGORY_ID"
+                      lineageId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4).Outputs[Derived Column Output].Columns[CATEGORY_ID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_ID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 5].Columns[CATEGORY_GENDER]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CATEGORY_GENDER"
+                      lineageId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output].Columns[CATEGORY_GENDER]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_VALUE]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 4]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 4">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[ITEM_CODE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[ITEM_CODE]"
+                      name="ITEM_CODE" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_VALUE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_VALUE]"
+                      name="CATEGORY_VALUE" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_ID]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1].Columns[CATEGORY_ID]"
+                      name="CATEGORY_ID" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Derived Column Output]"
+              endId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 1]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\DERIVED - Main_Category (ID 1).Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Derived Column Output1]"
+              endId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 2]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2).Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Derived Column Output2]"
+              endId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 5]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4).Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Derived Column Output3]"
+              endId="Package\Data Flow Task\UNION ALL - Into Category_Value.Inputs[Union All Input 3]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\DERIVED - Color_Category (ID 3).Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task\MULTICAST (1).Inputs[Multicast Input 1]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task\SOURCE CSV - Input.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Merge Join Output]"
+              endId="Package\Data Flow Task\DESTINATION CSV - ItemCategory.Inputs[Flat File Destination Input]"
+              name="Merge Join Output"
+              startId="Package\Data Flow Task\MERGE JOIN - Category_Value.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 1]"
+              endId="Package\Data Flow Task\DERIVED - Main_Category (ID 1).Inputs[Derived Column Input]"
+              name="Multicast Output 1"
+              startId="Package\Data Flow Task\MULTICAST (1).Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 11]"
+              endId="Package\Data Flow Task\SORT - Remove Duplicates.Inputs[Sort Input]"
+              name="Multicast Output 1"
+              startId="Package\Data Flow Task\MULTICAST (2).Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 21]"
+              endId="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2).Inputs[Derived Column Input]"
+              name="Multicast Output 2"
+              startId="Package\Data Flow Task\MULTICAST (1).Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 2]"
+              endId="Package\Data Flow Task\SORT - Category_Value (PK).Inputs[Sort Input]"
+              name="Multicast Output 2"
+              startId="Package\Data Flow Task\MULTICAST (3).Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 3]"
+              endId="Package\Data Flow Task\DESTINATION CSV - Category.Inputs[Flat File Destination Input]"
+              name="Multicast Output 3"
+              startId="Package\Data Flow Task\MULTICAST (3).Outputs[Multicast Output 3]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 31]"
+              endId="Package\Data Flow Task\DERIVED - Color_Category (ID 3).Inputs[Derived Column Input]"
+              name="Multicast Output 3"
+              startId="Package\Data Flow Task\MULTICAST (1).Outputs[Multicast Output 3]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 32]"
+              endId="Package\Data Flow Task\SORT - Category_Value (FK).Inputs[Sort Input]"
+              name="Multicast Output 3"
+              startId="Package\Data Flow Task\MULTICAST (2).Outputs[Multicast Output 3]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 5]"
+              endId="Package\Data Flow Task\DERIVED - Gender_Category (ID 4).Inputs[Derived Column Input]"
+              name="Multicast Output 5"
+              startId="Package\Data Flow Task\MULTICAST (1).Outputs[Multicast Output 5]" />
+            <path
+              refId="Package\Data Flow Task.Paths[NotEmpty]"
+              endId="Package\Data Flow Task\MULTICAST (2).Inputs[Multicast Input 1]"
+              name="NotEmpty"
+              startId="Package\Data Flow Task\SPLIT - Not Empty Category_Value.Outputs[Not Empty]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Output 0]"
+              endId="Package\Data Flow Task\MULTICAST (3).Inputs[Multicast Input 1]"
+              name="Output 0"
+              startId="Package\Data Flow Task\SCRIPT - Insert ID Column.Outputs[Output 0]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Sort Output2]"
+              endId="Package\Data Flow Task\MERGE JOIN - Category_Value.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Data Flow Task\SORT - Category_Value (FK).Outputs[Sort Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Sort Output]"
+              endId="Package\Data Flow Task\MERGE JOIN - Category_Value.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Data Flow Task\SORT - Category_Value (PK).Outputs[Sort Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Sort Output1]"
+              endId="Package\Data Flow Task\SCRIPT - Insert ID Column.Inputs[Input 0]"
+              name="Sort Output"
+              startId="Package\Data Flow Task\SORT - Remove Duplicates.Outputs[Sort Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Union All Output 1]"
+              endId="Package\Data Flow Task\SPLIT - Not Empty Category_Value.Inputs[Conditional Split Input]"
+              name="Union All Output 1"
+              startId="Package\Data Flow Task\UNION ALL - Into Category_Value.Outputs[Union All Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="113,87" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Data Flow Task\MULTICAST (1)"
+          TopLeft="469,80" />
+        <NodeLayout
+          Size="213,42"
+          Id="Package\Data Flow Task\SORT - Category_Value (PK)"
+          TopLeft="680,449" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Data Flow Task\MULTICAST (3)"
+          TopLeft="468,453" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Data Flow Task\SOURCE CSV - Input"
+          TopLeft="458,14" />
+        <NodeLayout
+          Size="262,42"
+          Id="Package\Data Flow Task\DERIVED - Secondary_Category (ID 2)"
+          TopLeft="278,162" />
+        <NodeLayout
+          Size="221,42"
+          Id="Package\Data Flow Task\DESTINATION CSV - Category"
+          TopLeft="430,545" />
+        <NodeLayout
+          Size="239,42"
+          Id="Package\Data Flow Task\UNION ALL - Into Category_Value"
+          TopLeft="424,241" />
+        <NodeLayout
+          Size="213,42"
+          Id="Package\Data Flow Task\SORT - Category_Value (FK)"
+          TopLeft="675,377" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Data Flow Task\MULTICAST (2)"
+          TopLeft="468,377" />
+        <NodeLayout
+          Size="235,42"
+          Id="Package\Data Flow Task\DERIVED - Main_Category (ID 1)"
+          TopLeft="32,161" />
+        <NodeLayout
+          Size="247,42"
+          Id="Package\Data Flow Task\DERIVED - Gender_Category (ID 4)"
+          TopLeft="802,161" />
+        <NodeLayout
+          Size="206,42"
+          Id="Package\Data Flow Task\SORT - Remove Duplicates"
+          TopLeft="165,376" />
+        <NodeLayout
+          Size="224,42"
+          Id="Package\Data Flow Task\MERGE JOIN - Category_Value"
+          TopLeft="932,413" />
+        <NodeLayout
+          Size="206,42"
+          Id="Package\Data Flow Task\SCRIPT - Insert ID Column"
+          TopLeft="167,453" />
+        <NodeLayout
+          Size="244,42"
+          Id="Package\Data Flow Task\SPLIT - Not Empty Category_Value"
+          TopLeft="423,308" />
+        <NodeLayout
+          Size="237,42"
+          Id="Package\Data Flow Task\DERIVED - Color_Category (ID 3)"
+          TopLeft="554,161" />
+        <NodeLayout
+          Size="244,42"
+          Id="Package\Data Flow Task\DESTINATION CSV - ItemCategory"
+          TopLeft="925,545" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Union All Output 1]"
+          TopLeft="544.25,283">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25"
+              Start="0,0"
+              End="0,17.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output]"
+          TopLeft="893,470">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="39,-30.3333333333333"
+              Start="0,0"
+              End="31.5,-30.3333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="18.5412844036697,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.5412844036697,0"
+                    Point2="22.5412844036697,0"
+                    Point3="22.5412844036697,-4" />
+                  <mssgle:LineSegment
+                    End="22.5412844036697,-26.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.5412844036697,-26.3333333333333"
+                    Point2="22.5412844036697,-30.3333333333333"
+                    Point3="26.5412844036697,-30.3333333333333" />
+                  <mssgle:LineSegment
+                    End="31.5,-30.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output2]"
+          TopLeft="888,398">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="44,30.3333333333333"
+              Start="0,0"
+              End="36.5,30.3333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="21.4311926605505,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="21.4311926605505,0"
+                    Point2="25.4311926605505,0"
+                    Point3="25.4311926605505,4" />
+                  <mssgle:LineSegment
+                    End="25.4311926605505,26.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25.4311926605505,26.3333333333333"
+                    Point2="25.4311926605505,30.3333333333333"
+                    Point3="29.4311926605505,30.3333333333333" />
+                  <mssgle:LineSegment
+                    End="36.5,30.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output1]"
+          TopLeft="269,418">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35"
+              Start="0,0"
+              End="0,27.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Output 0]"
+          TopLeft="373,474">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="95,0"
+              Start="0,0"
+              End="87.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="87.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[NotEmpty]"
+          TopLeft="544.5,350">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27"
+              Start="0,0"
+              End="0,19.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-23.83193359375,4.10888671875,47.6638671875,11.2822265625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 5]"
+          TopLeft="588.2,122">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="337.3,39"
+              Start="0,0"
+              End="337.3,31.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.75735294117646" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.75735294117646"
+                    Point2="0,11.7573529411765"
+                    Point3="4,11.7573529411765" />
+                  <mssgle:LineSegment
+                    End="333.3,11.7573529411765" />
+                  <mssgle:CubicBezierSegment
+                    Point1="333.3,11.7573529411765"
+                    Point2="337.3,11.7573529411765"
+                    Point3="337.3,15.7573529411765" />
+                  <mssgle:LineSegment
+                    End="337.3,31.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 32]"
+          TopLeft="620,398">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="55,0"
+              Start="0,0"
+              End="47.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="47.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 31]"
+          TopLeft="559.4,122">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="113.1,39"
+              Start="0,0"
+              End="113.1,31.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.4593023255814" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.4593023255814"
+                    Point2="0,17.4593023255814"
+                    Point3="4,17.4593023255814" />
+                  <mssgle:LineSegment
+                    End="109.1,17.4593023255814" />
+                  <mssgle:CubicBezierSegment
+                    Point1="109.1,17.4593023255814"
+                    Point2="113.1,17.4593023255814"
+                    Point3="113.1,21.4593023255814" />
+                  <mssgle:LineSegment
+                    End="113.1,31.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 3]"
+          TopLeft="542.25,495">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50"
+              Start="0,0"
+              End="0,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 2]"
+          TopLeft="620,472">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="60,0"
+              Start="0,0"
+              End="52.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="52.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 21]"
+          TopLeft="530.6,122">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-121.6,40"
+              Start="0,0"
+              End="-121.6,32.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.906976744186" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.906976744186"
+                    Point2="0,17.9069767441861"
+                    Point3="-4,17.9069767441861" />
+                  <mssgle:LineSegment
+                    End="-117.6,17.9069767441861" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-117.6,17.9069767441861"
+                    Point2="-121.6,17.9069767441861"
+                    Point3="-121.6,21.9069767441861" />
+                  <mssgle:LineSegment
+                    End="-121.6,32.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 11]"
+          TopLeft="468,397.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-97,0"
+              Start="0,0"
+              End="-89.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-89.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 1]"
+          TopLeft="501.8,122">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-352.3,39"
+              Start="0,0"
+              End="-352.3,31.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.75735294117647" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.75735294117647"
+                    Point2="0,11.7573529411765"
+                    Point3="-4,11.7573529411765" />
+                  <mssgle:LineSegment
+                    End="-348.3,11.7573529411765" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-348.3,11.7573529411765"
+                    Point2="-352.3,11.7573529411765"
+                    Point3="-352.3,15.7573529411765" />
+                  <mssgle:LineSegment
+                    End="-352.3,31.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Merge Join Output]"
+          TopLeft="1045.5,455">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,90"
+              Start="0,0"
+              End="0,82.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,82.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="545.5,56">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24"
+              Start="0,0"
+              End="0,16.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output3]"
+          TopLeft="672.5,203">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-105.9,38"
+              Start="0,0"
+              End="-105.9,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.032885595183" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.032885595183"
+                    Point2="0,21.032885595183"
+                    Point3="-4,21.032885595183" />
+                  <mssgle:LineSegment
+                    End="-101.9,21.032885595183" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-101.9,21.032885595183"
+                    Point2="-105.9,21.032885595183"
+                    Point3="-105.9,25.032885595183" />
+                  <mssgle:LineSegment
+                    End="-105.9,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output2]"
+          TopLeft="925.5,203">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-312.7,38"
+              Start="0,0"
+              End="-312.7,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.7589864466706" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.7589864466706"
+                    Point2="0,26.7589864466706"
+                    Point3="-4,26.7589864466706" />
+                  <mssgle:LineSegment
+                    End="-308.7,26.7589864466706" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-308.7,26.7589864466706"
+                    Point2="-312.7,26.7589864466706"
+                    Point3="-312.7,30.7589864466706" />
+                  <mssgle:LineSegment
+                    End="-312.7,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output1]"
+          TopLeft="409,204">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="111.4,37"
+              Start="0,0"
+              End="111.4,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.479388605836" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.479388605836"
+                    Point2="0,20.479388605836"
+                    Point3="4,20.479388605836" />
+                  <mssgle:LineSegment
+                    End="107.4,20.479388605836" />
+                  <mssgle:CubicBezierSegment
+                    Point1="107.4,20.479388605836"
+                    Point2="111.4,20.479388605836"
+                    Point3="111.4,24.479388605836" />
+                  <mssgle:LineSegment
+                    End="111.4,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="149.5,203">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="324.7,38"
+              Start="0,0"
+              End="324.7,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.7589864466706" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.7589864466706"
+                    Point2="0,26.7589864466706"
+                    Point3="4,26.7589864466706" />
+                  <mssgle:LineSegment
+                    End="320.7,26.7589864466706" />
+                  <mssgle:CubicBezierSegment
+                    Point1="320.7,26.7589864466706"
+                    Point2="324.7,26.7589864466706"
+                    Point3="324.7,30.7589864466706" />
+                  <mssgle:LineSegment
+                    End="324.7,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
