@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6b0a9e4b-4ba8-4fef-bbb4-afd9875d360f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>BI</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>VIEW DIM Dates</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7f777d7f-6535-4cf6-9b48-4ab08dc54922">
+          <ID>VIEW DIM Dates</ID>
+          <Name>VIEW DIM Dates</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="81f68386-cb41-4004-bc18-0892c45d5c4b">
+            <DataSourceViewID>DSVMain</DataSourceViewID>
+            <TableID>dbo_VIEW_DIM_Dates</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>VIEW DIM Time</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="725e4b72-f6d6-4bfa-8529-430a39a9b702">
+          <ID>VIEW DIM Time</ID>
+          <Name>VIEW DIM Time</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="811a3638-b9e6-4d04-8632-b532a9a851f9">
+            <DataSourceViewID>DSVMain</DataSourceViewID>
+            <TableID>dbo_VIEW_DIM_Time</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>GIS Municipalty DCount 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2980942f-f31b-42e6-ba3f-f377dad9cd47">
+          <ID>VIEW DIM GIS</ID>
+          <Name>VIEW DIM GIS</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="177c1dae-3eb6-472b-8c34-49b7db2a1fa0">
+            <DataSourceViewID>DSVMain</DataSourceViewID>
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>GIS Municipalty DCount</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="cac890e6-1946-4e56-b257-b933e39f6e56">
+          <ID>VIEW DIM GIS</ID>
+          <Name>VIEW DIM GIS</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="febe5c4a-d7ce-498d-a184-dd6c4cdce966">
+            <DataSourceViewID>DSVMain</DataSourceViewID>
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

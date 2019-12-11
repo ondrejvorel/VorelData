@@ -1,0 +1,220 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="93f4c127-a61f-467a-9bfe-5b53a148f562" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Transaction Types</ID>
+  <Name>Transaction Types</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2506" scrolltop="-6615" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12224" y="18733" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01a10000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="VIEW_DIM_Transaction_Types" left="-800" top="-4709" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="7329" height="7434" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000a11c00000a1d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VIEW_DIM_Transaction_Types" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2506</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6615</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-800</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-4709</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d46c7be1-b1ca-4e28-87e2-e21b28640089">
+    <DataSourceViewID>DSVMain</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="8ed4606b-e01d-44c6-8171-31b40426d6e7">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="7cae9a8f-1674-495a-a5ac-c63eb441dd07">
+      <ID>PKEY</ID>
+      <Name>PKEY</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="21feaf1a-4cf6-45e8-92ee-fec62dbcf860">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2def0777-77d2-4458-9807-81cd80a1d6a5">
+            <TableID>dbo_VIEW_DIM_Transaction_Types</TableID>
+            <ColumnID>Transaction_Type_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="80221634-39ed-4f61-81ba-84b39681c322">
+          <AttributeID>Transaction Type ID</AttributeID>
+          <Name>Transaction Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d28b148b-ddba-4391-974f-df1aeca3c7d3">
+          <AttributeID>Transaction Type Group Level1 ID</AttributeID>
+          <Name>Transaction Type Group Level1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="74b0bf35-6f25-49d9-9bfd-5803a5cdd68d">
+          <AttributeID>Transaction Type Group Level2 ID</AttributeID>
+          <Name>Transaction Type Group Level2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c8776247-f9f4-4491-a013-c5089dc80340">
+          <AttributeID>Transaction Type Group Level3 ID</AttributeID>
+          <Name>Transaction Type Group Level3</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>Transactions\Transaction Types</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0d93ae8d-4661-4a8f-8319-3a25760e9df3">
+      <ID>Transaction Type ID</ID>
+      <Name>Transaction Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="569e39d4-8153-48b5-ab85-bd5f84298279">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ed62a98-6d56-449a-87ba-890133a11bca">
+            <TableID>dbo_VIEW_DIM_Transaction_Types</TableID>
+            <ColumnID>Transaction_Type_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="bb0b7726-aa2d-4899-833f-453403e7ac35">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="90340f0e-2314-40c2-904b-f5e7ecc7e2fa">
+          <TableID>dbo_VIEW_DIM_Transaction_Types</TableID>
+          <ColumnID>Transaction_Type_Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Transactions\Transaction Types</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0216a376-75b1-4a39-96ac-8cd32500a548">
+      <ID>Transaction Type Group Level1 ID</ID>
+      <Name>Transaction Type Group Level1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ca3c03c4-0f9b-44ba-9e75-e42044bb0f4d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="497fc588-0044-4ac7-9870-acb84f9ca4ae">
+            <TableID>dbo_VIEW_DIM_Transaction_Types</TableID>
+            <ColumnID>Transaction_Type_Group_Level1_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="44a4399e-07b8-4126-8e05-85b0a858686a">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="011a4301-031b-432f-8eee-3d1b6d801947">
+          <TableID>dbo_VIEW_DIM_Transaction_Types</TableID>
+          <ColumnID>Transaction_Type_Group_Level1_Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Transactions\Transaction Types</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3d1cc503-8e0c-4466-9399-2b973190dd6b">
+      <ID>Transaction Type Group Level2 ID</ID>
+      <Name>Transaction Type Group Level2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3f9826d8-c56a-4fc3-a054-e63f1174f395">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="923513ce-240d-4f42-ae37-9206bdf7fc49">
+            <TableID>dbo_VIEW_DIM_Transaction_Types</TableID>
+            <ColumnID>Transaction_Type_Group_Level2_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="095e61f7-7ed9-4d4f-a8a7-dadf80da72d4">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4a2d0bc5-eb14-4aca-b40f-2a392d8a5b37">
+          <TableID>dbo_VIEW_DIM_Transaction_Types</TableID>
+          <ColumnID>Transaction_Type_Group_Level2_Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Transactions\Transaction Types</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3a1f12dc-3763-46dd-8a57-7dc27fd7210a">
+      <ID>Transaction Type Group Level3 ID</ID>
+      <Name>Transaction Type Group Level3</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="58df709d-891a-48c9-aaee-c73963273c00">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a070c7cd-0024-4150-a202-5f03a5ed9b8d">
+            <TableID>dbo_VIEW_DIM_Transaction_Types</TableID>
+            <ColumnID>Transaction_Type_Group_Level3_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ba729992-0dd0-4334-8a94-623413772213">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cae951d8-4e92-4557-bb5b-eccdc5773846">
+          <TableID>dbo_VIEW_DIM_Transaction_Types</TableID>
+          <ColumnID>Transaction_Type_Group_Level3_Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Transactions\Transaction Types</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

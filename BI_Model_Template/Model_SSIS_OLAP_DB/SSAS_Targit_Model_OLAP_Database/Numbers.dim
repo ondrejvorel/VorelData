@@ -1,0 +1,694 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="59826fc4-a672-4767-89d0-4588a235cef6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Numbers</ID>
+  <Name>Numbers</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3949" scrolltop="-6866" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12224" y="18733" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01a10000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="VIEW_DIM_Numbers" left="-2044" top="-4577" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="8228" height="15477" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a000024200000753c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VIEW_DIM_Numbers" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3949</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6866</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-2044</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-4577</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="135">
+            <Shape Id="PKEY" Expanded="false">
+              <Attributes>
+                <Attribute Id="PKEY" />
+                <Attribute Id="Custom Group 1 ID" />
+                <Attribute Id="Custom Group 2 ID" />
+                <Attribute Id="Custom Group 3 ID" />
+                <Attribute Id="Custom Group 4 ID" />
+                <Attribute Id="Custom Group 5 ID" />
+                <Attribute Id="Custom Group 6 ID" />
+                <Attribute Id="Custom Group 7 ID" />
+                <Attribute Id="Custom Group 8 ID" />
+                <Attribute Id="Custom Group 9 ID" />
+                <Attribute Id="Group By 100 ID" />
+                <Attribute Id="Group By 1000 ID" />
+                <Attribute Id="Group By 150 ID" />
+                <Attribute Id="Group By 250 ID" />
+                <Attribute Id="Group By 50 ID" />
+                <Attribute Id="Group By 500 ID" />
+                <Attribute Id="PKEY 1" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Group By 50 ID 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="Group By 50 ID 1" />
+              </Attributes>
+              <Position x="193" y="20" />
+            </Shape>
+            <Shape Id="Group By 100 ID 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="Group By 100 ID 1" />
+              </Attributes>
+              <Position x="367" y="20" />
+            </Shape>
+            <Shape Id="Group By 500 ID 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="Group By 500 ID 1" />
+              </Attributes>
+              <Position x="541" y="20" />
+            </Shape>
+            <Shape Id="Group By 1000 ID 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="Group By 1000 ID 1" />
+              </Attributes>
+              <Position x="715" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2c7d1d80-ffca-4bc7-9d39-9e442021d00c">
+    <DataSourceViewID>DSVMain</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="a0c3002a-dc8c-40b8-bfef-9304fd6a74cb">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="cd31aab5-dbad-4f6c-a9cd-dd567dfa5d45">
+      <ID>PKEY</ID>
+      <Name>PKEY</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a90c6613-82d0-4db8-a5b2-a62a5aab8148">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b846ec4-5827-47d5-9a72-1e1f25b949b6">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>PKEY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="586ebb5c-b3aa-42b7-babe-6b0688a1b282">
+          <AttributeID>PKEY 1</AttributeID>
+          <Name>Value</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="13b76e4a-80ae-4d0a-8e58-9b5edc6cdb02">
+          <AttributeID>Group By 50 ID</AttributeID>
+          <Name>Group By 50</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="76fe80e4-930f-4df5-b22a-55f6365a78c0">
+          <AttributeID>Group By 100 ID</AttributeID>
+          <Name>Group By 100</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="70771761-2ad6-407d-a683-7b59a23fde02">
+          <AttributeID>Group By 150 ID</AttributeID>
+          <Name>Group By 150</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="97becc2c-bb36-44b3-9fee-e8312765be03">
+          <AttributeID>Group By 250 ID</AttributeID>
+          <Name>Group By 250</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cb83f902-f9d0-4e5d-a9e4-7d95477f6c6b">
+          <AttributeID>Group By 500 ID</AttributeID>
+          <Name>Group By 500</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e975eac4-5af1-4304-a2c6-57c2e7b2fab0">
+          <AttributeID>Group By 1000 ID</AttributeID>
+          <Name>Group By 1000</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="729bd85c-d0ea-4162-a8cb-be394537166a">
+          <AttributeID>Custom Group 1 ID</AttributeID>
+          <Name>Custom Group 1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8ee1d9ec-2e82-491a-b467-4a2a3198ac11">
+          <AttributeID>Custom Group 2 ID</AttributeID>
+          <Name>Custom Group 2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="786b2707-6510-4186-a8c2-bcd6927843eb">
+          <AttributeID>Custom Group 3 ID</AttributeID>
+          <Name>Custom Group 3</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b68dfb76-9ebd-4971-a2da-22c698b82a4f">
+          <AttributeID>Custom Group 4 ID</AttributeID>
+          <Name>Custom Group 4</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9d6509c6-57e5-4b38-9767-bbbeb29799aa">
+          <AttributeID>Custom Group 5 ID</AttributeID>
+          <Name>Custom Group 5</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fd1f34ab-192c-4219-8d2b-2dcbdf3cadb2">
+          <AttributeID>Custom Group 6 ID</AttributeID>
+          <Name>Custom Group 6</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b2635fc2-caed-4c1d-aa35-1e915e49f6e1">
+          <AttributeID>Custom Group 7 ID</AttributeID>
+          <Name>Custom Group 7</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5beeea92-4a6d-460c-b562-0e7b325c233d">
+          <AttributeID>Custom Group 8 ID</AttributeID>
+          <Name>Custom Group 8</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ed305293-a285-46ac-973a-b7e770b6d816">
+          <AttributeID>Custom Group 9 ID</AttributeID>
+          <Name>Custom Group 9</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5b70d4ff-1a74-4065-88cd-cd9e8f65e4d1">
+          <AttributeID>Group By 50 ID 1</AttributeID>
+          <Name>H1_Group By 50</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d653a324-f5c4-43a9-80bf-b8c2293142c6">
+      <ID>PKEY 1</ID>
+      <Name>Value</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fa4e3e3f-e04e-4c22-b3db-69e6975761d5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="15827484-24bd-4de0-a0da-298f9dbf7d06">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>PKEY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="f0c582eb-0208-4ded-800a-a0b76bc9fbd3">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7c7fc45c-d1e2-4c77-b10d-b7ed2eba1969">
+          <TableID>dbo_VIEW_DIM_Numbers</TableID>
+          <ColumnID>Number</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e5e1f52e-bad5-409b-a88c-974ffbb2b328">
+      <ID>Group By 50 ID</ID>
+      <Name>Group By 50</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b8bb5ae9-8336-46d9-ab0f-4b625f2bb5ab">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bed51e89-2004-49ec-8792-651e6a39b87d">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Group_by_50_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="058f2797-8b5d-42dc-bdeb-3039ac2cd216">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="14504626-cc7a-4fa1-b5ac-66de9fa3c11a">
+          <TableID>dbo_VIEW_DIM_Numbers</TableID>
+          <ColumnID>Group_by_50_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="603a9bef-cc20-4e53-ad5e-60e1efa58f63">
+      <ID>Group By 100 ID</ID>
+      <Name>Group By 100</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="63448410-d4a8-44eb-860f-113996176c1d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d01deb32-cc80-4e62-af3c-49b1b216519c">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Group_by_100_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b8b49f49-d7e8-4801-941a-f066a5cccb0f">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f7fc3009-9dee-4f03-92bc-e7a3be1a163d">
+          <TableID>dbo_VIEW_DIM_Numbers</TableID>
+          <ColumnID>Group_by_100_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="40574228-99e9-4a8f-9e9e-32ebdb72ed61">
+      <ID>Group By 150 ID</ID>
+      <Name>Group By 150</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="da092e79-90ed-453d-8194-45cdf083ccc9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="950c9e4f-e35d-4e0d-a158-ac2a95d35158">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Group_by_150_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d6f18f6b-d9d1-4a22-875c-35b993f670c2">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9879a943-8283-41b7-b309-61d9e7e28c83">
+          <TableID>dbo_VIEW_DIM_Numbers</TableID>
+          <ColumnID>Group_by_150_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="91f2ca88-9923-4ad0-aa76-b8f05ca9b0a0">
+      <ID>Group By 250 ID</ID>
+      <Name>Group By 250</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a585fc3b-9d79-4d8b-a3a2-80c13bbeaaad">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="90264322-fb51-414d-a276-dc66114f9fae">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Group_by_250_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="7771f074-8034-45dd-92f1-32231af0dbf4">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5b8b3a13-0914-4f52-ac5c-37677a271afc">
+          <TableID>dbo_VIEW_DIM_Numbers</TableID>
+          <ColumnID>Group_by_250_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ec76ddd9-8bc7-48e3-91c6-e387324abfb0">
+      <ID>Group By 500 ID</ID>
+      <Name>Group By 500</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="711cfddc-1ebe-487b-9c5f-1bc6e202d128">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="465d14af-40e8-4765-aee1-a0b70a51103e">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Group_by_500_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d9aaaebe-262b-4940-ac45-3955086efb84">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1b71f2ad-1968-4a9e-8bec-3fb0c67e07c7">
+          <TableID>dbo_VIEW_DIM_Numbers</TableID>
+          <ColumnID>Group_by_500_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1f752fbb-d04a-40ae-9404-ce71cdae14af">
+      <ID>Group By 1000 ID</ID>
+      <Name>Group By 1000</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0dfc7557-2c1f-45d3-8476-24c94d4f4978">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="356c8750-b7ee-43a2-b627-4df6a909f4f1">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Group_by_1000_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ea283cfc-6961-4a44-82f2-4a84dfc0df88">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="59853caa-68e8-4f05-b64d-b2e4ad5c12ec">
+          <TableID>dbo_VIEW_DIM_Numbers</TableID>
+          <ColumnID>Group_by_1000_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c009ab24-b215-4d2c-bae9-4ca5930a48a0">
+      <ID>Custom Group 1 ID</ID>
+      <Name>Custom Group 1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="28eeeaf2-f1f8-4f1e-913c-549ff8a44fde">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b893d2f-24e4-4c7e-b7eb-c121e040c658">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Custom_Group_1_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="c750a873-c449-45de-aad1-22cd64552b57">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="060c75c3-4485-4a4a-8e77-97462b3646b7">
+          <TableID>dbo_VIEW_DIM_Numbers</TableID>
+          <ColumnID>Custom_Group_1_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="54d489b2-1165-41ce-97a4-0302489fe432">
+      <ID>Custom Group 2 ID</ID>
+      <Name>Custom Group 2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="21b4ec52-fd86-466c-af69-41a61eff053d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2c0652ab-994f-475f-bd3d-accb12476638">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Custom_Group_2_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="9f6c4c41-7ea3-495a-b524-598b9ab239ba">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6b8de283-459d-4d23-8a8f-fdb352f4e4c0">
+          <TableID>dbo_VIEW_DIM_Numbers</TableID>
+          <ColumnID>Custom_Group_2_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="737b09f3-57bd-4574-acb1-b9186236bf71">
+      <ID>Custom Group 3 ID</ID>
+      <Name>Custom Group 3</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3ac3f92b-9422-41f3-8947-7e20e32e11f6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c7e7020f-6ba0-4e1d-9255-d364588414de">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Custom_Group_3_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a98e95c3-7bf8-4870-8528-655acc59efba">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="37503c50-b5a9-4d43-867d-639173f44a57">
+          <TableID>dbo_VIEW_DIM_Numbers</TableID>
+          <ColumnID>Custom_Group_3_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1234e080-38a6-4d53-be8f-8f0c63e26044">
+      <ID>Custom Group 4 ID</ID>
+      <Name>Custom Group 4</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9ef5ebee-16ba-46bc-86f1-5818e9303e89">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c7600240-ecd8-41f9-9811-963437ea3dd6">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Custom_Group_4_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="462103f9-2644-4340-bda5-afdb9bdf4f57">
+      <ID>Custom Group 5 ID</ID>
+      <Name>Custom Group 5</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="07869c2f-d212-4401-b5e9-7606d3803b28">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c2c006dd-6013-4d69-b153-bc515da0e585">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Custom_Group_5_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f79a0ed0-d822-4e47-8531-0dbc79237b1c">
+      <ID>Custom Group 6 ID</ID>
+      <Name>Custom Group 6</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="db987f72-0225-4e03-9651-560ee8012a47">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9cfa2119-2b90-467b-9f16-a85545867940">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Custom_Group_6_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="301a2c2f-3116-4f7c-ac41-508befd3bb44">
+      <ID>Custom Group 7 ID</ID>
+      <Name>Custom Group 7</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9171200d-78c2-4ba2-b590-4007f52bf678">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="651539c8-3745-4f03-a65e-b908fccd4762">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Custom_Group_7_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bef8f9e2-8151-4d28-a791-df1b3570d685">
+      <ID>Custom Group 8 ID</ID>
+      <Name>Custom Group 8</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b2734bae-97e5-4b8f-a068-2b04134a3fc3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e389f40d-7154-4732-a9cb-b8af6a1a3bba">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Custom_Group_8_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7c4a4f2b-2ca5-4175-9f90-ca749d66a7cb">
+      <ID>Custom Group 9 ID</ID>
+      <Name>Custom Group 9</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9442c6fe-16fe-45b4-9425-a39a88e86aa1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="79947f3f-eff2-45f6-984e-057eb8fb7ae0">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Custom_Group_9_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="67e2880f-0b91-4bf0-98db-9d90cbe8a2a6">
+      <ID>Group By 50 ID 1</ID>
+      <Name>H1_Group By 50</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e9c34e1e-75bd-449b-9cab-18f1d03df748">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a34ff91a-b94f-4208-a300-dc92da4a6612">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Group_by_50_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a95c8968-d257-449c-b3bd-a6b87d22d829">
+          <AttributeID>Group By 100 ID 1</AttributeID>
+          <Name>H1_Group By 100</Name>
+          <Visible>false</Visible>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4e39d3fb-74d4-48cd-915b-51771a34da94">
+      <ID>Group By 100 ID 1</ID>
+      <Name>H1_Group By 100</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7efc50ef-9854-4240-9fe1-e2b295d0f1c0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="608db9aa-1b32-4c2e-901e-a273ac6f544d">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Group_by_100_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6e72653e-0bfd-40f2-a706-20c4a0617f8c">
+          <AttributeID>Group By 500 ID 1</AttributeID>
+          <Name>H1_Group By 500</Name>
+          <Visible>false</Visible>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1228da6a-f7f8-485f-95b5-f7d4c1612a64">
+      <ID>Group By 500 ID 1</ID>
+      <Name>H1_Group By 500</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e54dd26a-7aa9-4ff2-9689-7d69a70da0a6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8f0f3158-5c58-4cd0-947b-75957c4a79a2">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Group_by_500_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3536ceae-1f4c-4bd8-8c42-9af7ca4303ac">
+          <AttributeID>Group By 1000 ID 1</AttributeID>
+          <Name>H1_Group By 1000</Name>
+          <Visible>false</Visible>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d8434356-d14c-44fc-8855-b28b73003fbc">
+      <ID>Group By 1000 ID 1</ID>
+      <Name>H1_Group By 1000</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="216a1aee-44bd-4988-aea0-3c64a6f16544">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a511247f-6398-4ad5-be35-868b1b8346c3">
+            <TableID>dbo_VIEW_DIM_Numbers</TableID>
+            <ColumnID>Group_by_1000_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Special</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="d532fae7-12ae-48ac-acba-4ff2c58b9bc0">
+      <ID>Hierarchy</ID>
+      <Name>Numbers Hierarchy</Name>
+      <DisplayFolder>Special</DisplayFolder>
+      <Levels>
+        <Level dwd:design-time-name="c5a0eac9-7e3a-4a94-b483-160d71e05315">
+          <ID>H1_Group By 1000</ID>
+          <Name>Group By 1000</Name>
+          <SourceAttributeID>Group By 1000 ID 1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="4b9a1aea-46e6-4b99-b732-7741a31d8e09">
+          <ID>H1_Group By 500</ID>
+          <Name>Group By 500</Name>
+          <SourceAttributeID>Group By 500 ID 1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="fc479d62-baed-423a-8246-9d88f87780ed">
+          <ID>H1_Group By 100</ID>
+          <Name>Group By 100</Name>
+          <SourceAttributeID>Group By 100 ID 1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e87688b8-dc5b-4b17-bb94-1b0f9578e9d7">
+          <ID>H1_Group By 50</ID>
+          <Name>Group By 50</Name>
+          <SourceAttributeID>Group By 50 ID 1</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

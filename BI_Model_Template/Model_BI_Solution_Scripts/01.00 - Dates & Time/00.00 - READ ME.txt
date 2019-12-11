@@ -1,0 +1,10 @@
+1. Create a database (if not exists) named TARGIT_MDL
+2. Run SQL Scripts with the numeric order they exist.
+
+
+in order to be able to create Cube Dimensions with the provided XML Code you have to:
+1. Create a Data Source named DSMain which will connect to TARGIT_MDL
+2. Create a Data Source View named DSVMain which will use the DSMain
+3. Fetch bellow tables/views into DSVMain:
+	VIEW_DIM_Dates
+	VIEW_DIM_Time

@@ -1,0 +1,2 @@
+TRUNCATE TABLE tb_Dummy_DEF
+INSERT INTO tb_Dummy_DEF (SourceFieldName) SELECT NULL

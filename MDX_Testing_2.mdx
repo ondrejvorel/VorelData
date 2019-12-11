@@ -1,0 +1,253 @@
+-------------------------------------------------------------------------------------------------------------
+--Pokud je NULL hodnota u pocitaneho clena, nastav NULL, jinak hodnota pocitaneho clena
+WITH	MEMBER	[Measures].[Prodej s DPH] AS 
+				[Measures].[Reseller Sales Amount] * 1.21
+		MEMBER	[Date].[Calendar Year].[All Periods].[2001 & 2002] AS 
+				([Measures].[Reseller Sales Amount], [Date].[Calendar].[Calendar Year].[CY 2001]) +
+				([Measures].[Reseller Sales Amount], [Date].[Calendar].[Calendar Year].[CY 2002])
+		MEMBER	[Nazev Roku] AS
+				IIF(ISEMPTY([Measures].[Reseller Sales Amount]),
+					NULL,
+					[Date].[Calendar Year].CurrentMember.Name)
+
+SELECT {([Measures].[Reseller Sales Amount]), ([Measures].[Prodej s DPH]), ([Nazev Roku])} ON COLUMNS,
+NON EMPTY {([Date].[Calendar Year].[Calendar Year].AllMembers)} ON ROWS
+FROM MDX_Sales
+
+-------------------------------------------------------------------------------------------------------------
+--Zobrazeni urovne MEMBERa
+
+WITH	MEMBER x AS
+		[Date].[Calendar].CurrentMember.Properties("LEVEL_NUMBER")
+SELECT	{[Measures].[Reseller Sales Amount], x} ON COLUMNS,
+		{[Date].[Calendar].AllMembers} ON ROWS
+FROM MDX_Sales
+
+-------------------------------------------------------------------------------------------------------------
+--Zobrazeni uplane adresy 
+
+WITH	MEMBER x AS
+		[Date].[Calendar].CurrentMember.UniqueName
+SELECT	{[Measures].[Reseller Sales Amount], x} ON COLUMNS,
+		{[Date].[Calendar].AllMembers} ON ROWS
+FROM MDX_Sales
+
+-------------------------------------------------------------------------------------------------------------
+--Vypocet prodeje za nadrazene obdobi
+
+WITH	MEMBER x AS
+		([Measures].[Reseller Sales Amount],
+		[Date].[Calendar].CurrentMember.Parent)
+SELECT	{[Measures].[Reseller Sales Amount], x} ON COLUMNS,
+		NON EMPTY {[Date].[Calendar].AllMembers} ON ROWS
+FROM MDX_Sales
+
+-------------------------------------------------------------------------------------------------------------
+--Seradit podle Subcategory - TOP 5 zaznamu
+
+SELECT	{[Measures].[Reseller Sales Amount]} ON COLUMNS,
+HEAD(
+ORDER ({[Product].[Subcategory].[Subcategory].Members},
+		([Product].[Subcategory].CurrentMember,
+		 [Measures].[Reseller Sales Amount]),
+		 DESC), 5) ON ROWS
+FROM MDX_Sales
+
+-------------------------------------------------------------------------------------------------------------
+--Seradit podle Subcategory - TOP 5 zaznamu odspoda; NonEmpty -> Pouze zaznamy ktere nejsou null v [Reseller Sales Amount]
+
+SELECT	{[Measures].[Reseller Sales Amount]} ON COLUMNS,
+TAIL(
+	NonEmpty (
+		ORDER ({[Product].[Subcategory].[Subcategory].Members},
+				([Product].[Subcategory].CurrentMember,
+				 [Measures].[Reseller Sales Amount]),
+				 DESC),
+				 ([Measures].[Reseller Sales Amount])
+	),
+5) ON ROWS
+FROM MDX_Sales
+
+-------------------------------------------------------------------------------------------------------------
+--Zjednoduseny ale pomaly (protoze provadi vzdy ORDER) select TOP 5 zaznamu pomoci TOPCOUNT
+--Pokud chceme TOP 5 odspoda -> BOTTOMCOUNT 
+
+SELECT	{[Measures].[Reseller Sales Amount]} ON COLUMNS,
+TOPCOUNT ({[Product].[Subcategory].[Subcategory].Members},
+5,
+([Measures].[Reseller Sales Amount])) ON ROWS
+FROM MDX_Sales
+
+-------------------------------------------------------------------------------------------------------------
+-- Zobrazit nejprodavanejsi Produkt z kazde Kategorie
+WITH MEMBER [Measures].[Nej Produkt z Kategorie] AS
+		TOPCOUNT (	EXISTING [Product].[Product].[Product].Members,
+					1,
+					([Measures].[Reseller Sales Amount])
+					).Item(0).Item(0).Name
+SELECT	{[Measures].[Reseller Sales Amount],[Measures].[Nej Produkt z Kategorie]} ON COLUMNS,
+		{[Product].[Category].[Category].Members} ON ROWS
+FROM MDX_Sales
+
+-------------------------------------------------------------------------------------------------------------
+-- Zobrazit vice nejprodavanejsich Produktu z kazde Kategorie
+WITH MEMBER [Measures].[Nej Produkt z Kategorie] AS
+GENERATE(
+		TOPCOUNT (	EXISTING [Product].[Product].[Product].Members,
+					2,
+					([Measures].[Reseller Sales Amount])
+					)
+		,
+		[Product].[Product].CurrentMember.Name,
+		" || ")
+SELECT	{[Measures].[Reseller Sales Amount],[Measures].[Nej Produkt z Kategorie]} ON COLUMNS,
+		{[Product].[Category].[Category].Members} ON ROWS
+FROM MDX_Sales
+
+-------------------------------------------------------------------------------------------------------------
+-- Zobrazit vice nejprodavanejsich Produktu z kazde Kategorie & Nazev Kategorie
+WITH MEMBER [Measures].[Category] AS
+			[Product].[Category].CurrentMember.Name
+
+SELECT	{([Measures].[Reseller Sales Amount]),([Measures].[Category])} ON COLUMNS,
+		--{[Product].[Category].[Category].Members} ON ROWS
+GENERATE(	{[Product].[Category].[Category].Members},
+			TOPCOUNT (	EXISTING [Product].[Product].[Product].Members,
+						2,
+						([Measures].[Reseller Sales Amount])
+						)
+		) ON ROWS
+FROM MDX_Sales
+-------------------------------------------------------------------------------------------------------------
+--Filtrovat hodnoty ktere maji prodeje vetsi nez 500k nebo mensi nez 10k & neni null 
+
+SELECT	{([Measures].[Reseller Sales Amount])} ON COLUMNS,
+FILTER ({[Product].[Product].[Product].Members},
+		(([Measures].[Reseller Sales Amount]) > 500000 OR
+		([Measures].[Reseller Sales Amount]) < 10000) AND
+		NOT ISEMPTY ([Measures].[Reseller Sales Amount])
+		) ON ROWS
+FROM MDX_Sales
+
+-------------------------------------------------------------------------------------------------------------
+--UNION musi byt vzdy nad stejnou dimenzi.. Pokud chceme UNION s jine Dimenze, je potreb obejit pres calculated MEMBER.
+
+SELECT	{([Measures].[Reseller Sales Amount])} ON COLUMNS,
+UNION (
+	HEAD ({[Product].[Product Categories].[Subcategory].Members}, 5)
+	,
+	{[Product].[Product Categories].[Category].Members}
+) ON ROWS
+FROM MDX_Sales
+
+-------------------------------------------------------------------------------------------------------------
+--Agregace pomoci SUM funkce pro prvnich TOP 5 prodeju
+--Prvni je potreba definovat co budeme SUMovat a potom nad cim, tedy [Measures].[Reseller Sales Amount]
+WITH MEMBER [Measures].[TOP 5 Produktu] AS
+	SUM (	
+		TOPCOUNT (	EXISTING [Product].[Product].[Product].Members,
+					5,
+					[Measures].[Reseller Sales Amount]
+					),
+		([Measures].[Reseller Sales Amount])
+		)
+
+SELECT	{[Measures].[Reseller Sales Amount], [Measures].[TOP 5 Produktu]} ON COLUMNS,
+	{[Product].[Product Categories].[Category].Members} ON ROWS
+FROM MDX_Sales
+
+-------------------------------------------------------------------------------------------------------------
+-- SUM TOP 5 v danem sloupci, kdyz chceme prizpusobit MEMBER kazdemu sloupci -> CurrentMember, AGGREGATE misto SUM
+WITH MEMBER [Product].[Product Categories].[TOP 5 Produktu] AS
+	AGGREGATE (	
+		TOPCOUNT (	[Product].[Product].[Product].Members,
+					5,
+					[Measures].CurrentMember
+					),
+		([Measures].CurrentMember)
+		)
+
+SELECT {[Measures].[Reseller Sales Amount],
+		[Measures].[Reseller Transaction Count],
+		[Measures].[Reseller Order Count]
+		} ON COLUMNS,
+	{[Product].[Product Categories].[Category].Members}
+	+
+	{[Product].[Product Categories].[TOP 5 Produktu]}
+	+
+	{[Product].[Product Categories].[(All)]}
+ON ROWS
+FROM MDX_Sales
+
+-------------------------------------------------------------------------------------------------------------
+-- Pocet (COUNT) podkategorii
+WITH	MEMBER	[Measures].[Celkovy prodej] AS
+				([Measures].[Reseller Sales Amount],
+				[Product].[Product Categories].CurrentMember.Parent)
+		MEMBER [Measures].[Pocet Podkategorii] AS
+		COUNT ([Product].[Product Categories].CurrentMember.Children)
+SELECT	{[Measures].[Reseller Sales Amount],
+		[Measures].[Celkovy prodej],
+		[Measures].[Pocet Podkategorii]} ON COLUMNS,
+		{[Product].[Product Categories].[Category].Members}
+ON ROWS
+FROM MDX_Sales
+
+-------------------------------------------------------------------------------------------------------------
+-- Pocet dni v roce vs. Pocetni v kterych probehl prodej vs. Prumerny denni prodej
+WITH	MEMBER [Measures].[Pocet dni v roce] AS
+		COUNT(DESCENDANTS(	[Date].[Calendar].CurrentMember,
+							[Date].[Calendar].[Date]))
+		MEMBER [Measures].[Pocet dni s prodejem] AS
+		COUNT(
+			NonEmpty(
+				DESCENDANTS(	[Date].[Calendar].CurrentMember,
+								[Date].[Calendar].[Date]),
+				([Measures].[Internet Sales Amount])
+			)
+		)
+		MEMBER  [Measures].[Prumerny denni prodej] AS
+				([Measures].[Internet Sales Amount]) /
+				([Measures].[Pocet dni s prodejem])
+		MEMBER	[Measures].[Prumer v predchozim obdobi] AS
+				([Date].[Calendar].CurrentMember.PrevMember,
+				[Measures].[Internet Sales Amount])
+		
+SELECT	{	[Measures].[Internet Sales Amount],
+			[Measures].[Pocet dni v roce],
+			[Measures].[Pocet dni s prodejem],
+			[Measures].[Prumerny denni prodej],
+			[Measures].[Prumer v predchozim obdobi]} ON COLUMNS,
+		{[Date].[Calendar].[Month].Members}
+ON ROWS
+FROM MDX_Sales
+
+-------------------------------------------------------------------------------------------------------------
+-- Kumulativni soucet Prodeju za rok
+WITH
+MEMBER	[Measures].[Prodej YTD] AS
+		SUM(PeriodsToDate(	[Date].[Calendar].[Calendar Year],
+							[Date].[Calendar].CurrentMember),
+			([Measures].[Internet Sales Amount])
+			)
+
+SELECT	{	[Measures].[Internet Sales Amount],
+			[Measures].[Prodej YTD]} ON COLUMNS,
+		{[Date].[Calendar].[Month].Members} ON ROWS
+FROM MDX_Sales
+
+--Kumulativni soucet za vsechny roky
+WITH
+MEMBER	[Measures].[Prodej YTD] AS
+		SUM(NULL : [Date].[Calendar].CurrentMember,
+			([Measures].[Internet Sales Amount])
+			)
+
+SELECT	{	[Measures].[Internet Sales Amount],
+			[Measures].[Prodej YTD]} ON COLUMNS,
+		{[Date].[Calendar].[Month].Members} ON ROWS
+FROM MDX_Sales
+
+
+
+

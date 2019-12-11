@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<targitView majorVersion="2017" minorVersion="9403" designwidth="1595" designheight="845">
+	<defaultcube>
+		<metadata database="DataWarehouse" cube="CB_DW"/>
+	</defaultcube>
+	<smiley enabled="true" goodtrend="positive" useoverride="false">
+		<metadata database="DataWarehouse" cube="CB_DW" measure="Days"/>
+	</smiley>
+	<globalCriteria build="9403"/>
+	<storedcriteria/>
+	<criteriabar visible="true" showdateorigin="true"/>
+	<modified user="SYS"/>
+	<thumbnail>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
+RK5CYII=</thumbnail>
+	<data>
+		<object typeName="Crosstab" build="9403" ID="{E114AE1D-6C8F-4E7F-986B-FBE3C69DCA77}" DrillStateCompatibilityID="{FA75FD05-326C-4C70-9AC2-F5CAC8E7F47A}">
+			<metadata database="DataWarehouse" cube="CB_DW"/>
+			<title hide="false" autohideexplanationicon="true">
+				<text>Calendar YMD Example</text>
+			</title>
+			<frame>
+				<caption visible="true" buttongap="3"/>
+			</frame>
+			<fieldUsage onlynonempty="default">
+				<x customDim="true" useCaption="false">
+					<caption>
+						<text>Period</text>
+					</caption>
+					<value color="#74CFD7">
+						<title>
+							<text>TY YTD</text>
+						</title>
+						<criteria build="9403">
+	<criterium kind="dynamictime">
+		<metadata database="DataWarehouse" cube="CB_DW" dimension="Dates" hierarchy="Calendar YMD"/>
+		<operator kind="inrange">
+			<left closed="true">
+				<applyto level="day"/>
+				<steps>
+					<month absolute="1"/>
+					<day absolute="1"/>
+				</steps>
+			</left>
+			<right closed="true">
+				<applyto level="day"/>
+				<steps/>
+			</right>
+		</operator>
+	</criterium>
+						</criteria>
+					</value>
+					<value color="#00A6B3">
+						<title>
+							<text>LY YTD</text>
+						</title>
+						<criteria build="9403">
+	<criterium kind="dynamictime">
+		<metadata database="DataWarehouse" cube="CB_DW" dimension="Dates" hierarchy="Calendar YMD"/>
+		<operator kind="inrange">
+			<left closed="true">
+				<applyto level="day"/>
+				<steps>
+					<year relative="-1"/>
+					<month absolute="1"/>
+					<day absolute="1"/>
+				</steps>
+			</left>
+			<right closed="true">
+				<applyto level="day"/>
+				<steps>
+					<year relative="-1"/>
+				</steps>
+			</right>
+		</operator>
+	</criterium>
+						</criteria>
+					</value>
+				</x>
+				<y>
+					<metadata dimension="Dates" hierarchy="Calendar YMD" level="Day"/>
+	<drillDown value="1"/>
+				</y>
+				<data>
+					<metadata measure="Days"/>
+				</data>
+			</fieldUsage>
+			<gridOptions>
+				<compactHierarchy>false</compactHierarchy>
+				<wordwrap global="true"/>
+				<autodetecturl enabled="true"/>
+				<dynamicChartType>false</dynamicChartType>
+				<totals grandtotals="true" subtotals="true"/>
+				<measureproperties idx="0">
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<columnWidths>
+					<item ref="[@&quot;[LY YTD]&quot;(l1),m1]" size="320"/>
+					<item ref="[@&quot;[TY YTD]&quot;(l1),m1]" size="313.333"/>
+				</columnWidths>
+				<gridcolors id="{656E94A8-F142-4F05-9030-0BC0242E5EDD}" outside="FFFFFF">
+					<collabel bg="FFFFFF" text="00858F" url="00858F">
+						<border bottom="A1A8AD"/>
+						<font name="Segoe UI" size="10" bold="true"/>
+						<alt bg="FFFFFF" text="00858F" url="00858F">
+							<border bottom="A1A8AD"/>
+							<font name="Segoe UI" size="10" bold="true"/>
+						</alt>
+					</collabel>
+					<rowlabel bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</rowlabel>
+					<cell bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</cell>
+					<simcell bg="FCEFD3" text="000000" url="00858F">
+						<alt bg="FFBB74" text="000000" url="00858F"/>
+					</simcell>
+					<comment bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="E0E0E0" text="000000" url="00858F"/>
+					</comment>
+					<selected bg="2EB7C2" text="FFFFFF" url="000000">
+						<alt bg="2EB7C2" text="FFFFFF" url="000000"/>
+					</selected>
+					<hidden bg="CBE4ED" text="000000" url="7BD0FF">
+						<alt bg="9ACBDD" text="000000" url="7BD0FF"/>
+					</hidden>
+				</gridcolors>
+				<xorder totals="before" originalorder="false"/>
+				<yorder totals="before" originalorder="false"/>
+			</gridOptions>
+		</object>
+		<object typeName="Crosstab" build="9403" ID="{F6EBFCAF-048B-474E-A885-E0E87504D8D1}" DrillStateCompatibilityID="{AFF12BFD-E343-4DA0-A193-321D702433F5}">
+			<metadata database="DataWarehouse" cube="CB_DW"/>
+			<title hide="false" autohideexplanationicon="true">
+				<text>ISO Week Example</text>
+			</title>
+			<frame>
+				<caption visible="true" buttongap="3"/>
+			</frame>
+			<fieldUsage onlynonempty="default">
+				<x customDim="true" useCaption="false">
+					<caption>
+						<text>Week Periods</text>
+					</caption>
+					<value color="#00858F">
+						<title>
+							<text>TY YTD</text>
+						</title>
+						<criteria build="9403">
+	<criterium kind="dynamictime">
+		<metadata database="DataWarehouse" cube="CB_DW" dimension="Dates" hierarchy="ISO Week YWD"/>
+		<operator kind="inrange">
+			<left closed="true">
+				<applyto level="day"/>
+				<steps>
+					<week absolute="1"/>
+					<day absolute="1"/>
+				</steps>
+			</left>
+			<right closed="true">
+				<applyto level="day"/>
+				<steps/>
+			</right>
+		</operator>
+	</criterium>
+						</criteria>
+					</value>
+					<value color="#FED97D">
+						<title>
+							<text>LY YTD</text>
+						</title>
+						<criteria build="9403">
+	<criterium kind="dynamictime">
+		<metadata database="DataWarehouse" cube="CB_DW" dimension="Dates" hierarchy="ISO Week YWD"/>
+		<operator kind="inrange">
+			<left closed="true">
+				<applyto level="day"/>
+				<steps>
+					<year relative="-1"/>
+					<week absolute="1"/>
+					<day absolute="1"/>
+				</steps>
+			</left>
+			<right closed="true">
+				<applyto level="day"/>
+				<steps>
+					<year relative="-1"/>
+				</steps>
+			</right>
+		</operator>
+	</criterium>
+						</criteria>
+					</value>
+				</x>
+				<y>
+					<metadata dimension="Dates" hierarchy="ISO Week YWD" level="Day"/>
+	<drillDown value="2"/>
+				</y>
+				<data>
+					<metadata measure="Days"/>
+				</data>
+			</fieldUsage>
+			<gridOptions>
+				<compactHierarchy>true</compactHierarchy>
+				<indentHierarchy>true</indentHierarchy>
+				<wordwrap global="true"/>
+				<autodetecturl enabled="true"/>
+				<dynamicChartType>false</dynamicChartType>
+				<totals grandtotals="true" subtotals="true"/>
+				<measureproperties idx="0">
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<columnWidths>
+					<item ref="[@&quot;[LY YTD]&quot;(l1),m1]" size="300"/>
+					<item ref="[@&quot;[TY YTD]&quot;(l1),m1]" size="366.667"/>
+				</columnWidths>
+				<gridcolors id="{656E94A8-F142-4F05-9030-0BC0242E5EDD}" outside="FFFFFF">
+					<collabel bg="FFFFFF" text="00858F" url="00858F">
+						<border bottom="A1A8AD"/>
+						<font name="Segoe UI" size="10" bold="true"/>
+						<alt bg="FFFFFF" text="00858F" url="00858F">
+							<border bottom="A1A8AD"/>
+							<font name="Segoe UI" size="10" bold="true"/>
+						</alt>
+					</collabel>
+					<rowlabel bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</rowlabel>
+					<cell bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</cell>
+					<simcell bg="FCEFD3" text="000000" url="00858F">
+						<alt bg="FFBB74" text="000000" url="00858F"/>
+					</simcell>
+					<comment bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="E0E0E0" text="000000" url="00858F"/>
+					</comment>
+					<selected bg="2EB7C2" text="FFFFFF" url="000000">
+						<alt bg="2EB7C2" text="FFFFFF" url="000000"/>
+					</selected>
+					<hidden bg="CBE4ED" text="000000" url="7BD0FF">
+						<alt bg="9ACBDD" text="000000" url="7BD0FF"/>
+					</hidden>
+				</gridcolors>
+				<xorder totals="before" originalorder="false"/>
+				<yorder totals="before" originalorder="false"/>
+			</gridOptions>
+		</object>
+		<object typeName="Crosstab" build="9403" ID="{8A1C7EF0-0C33-4427-A6EF-FF883005F4E1}" DrillStateCompatibilityID="{C829B68F-BEA3-44C4-A49F-617F5FE755C0}">
+			<metadata database="DataWarehouse" cube="CB_DW"/>
+			<title hide="false" autohideexplanationicon="true">
+				<text>Fiscal YMD Example</text>
+			</title>
+			<frame>
+				<caption visible="true" buttongap="3"/>
+			</frame>
+			<fieldUsage onlynonempty="default">
+				<x customDim="true" useCaption="false">
+					<caption>
+						<text>Period</text>
+					</caption>
+					<value color="#74CFD7">
+						<title>
+							<text>TY YTD</text>
+						</title>
+						<criteria build="9403">
+	<criterium kind="dynamictime">
+		<metadata database="DataWarehouse" cube="CB_DW" dimension="Dates" hierarchy="Fiscal YMD"/>
+		<operator kind="inrange">
+			<left closed="true">
+				<applyto level="day"/>
+				<steps>
+					<month absolute="1"/>
+					<day absolute="1"/>
+				</steps>
+			</left>
+			<right closed="true">
+				<applyto level="day"/>
+				<steps/>
+			</right>
+		</operator>
+	</criterium>
+						</criteria>
+					</value>
+					<value color="#00A6B3">
+						<title>
+							<text>LY YTD</text>
+						</title>
+						<criteria build="9403">
+	<criterium kind="dynamictime">
+		<metadata database="DataWarehouse" cube="CB_DW" dimension="Dates" hierarchy="Fiscal YMD"/>
+		<operator kind="inrange">
+			<left closed="true">
+				<applyto level="day"/>
+				<steps>
+					<year relative="-1"/>
+					<month absolute="1"/>
+					<day absolute="1"/>
+				</steps>
+			</left>
+			<right closed="true">
+				<applyto level="day"/>
+				<steps>
+					<year relative="-1"/>
+				</steps>
+			</right>
+		</operator>
+	</criterium>
+						</criteria>
+					</value>
+				</x>
+				<y>
+					<metadata dimension="Dates" hierarchy="Fiscal YMD" level="Day"/>
+	<drillDown value="2"/>
+				</y>
+				<data>
+					<metadata measure="Days"/>
+				</data>
+			</fieldUsage>
+			<gridOptions>
+				<compactHierarchy>true</compactHierarchy>
+				<indentHierarchy>true</indentHierarchy>
+				<wordwrap global="true"/>
+				<autodetecturl enabled="true"/>
+				<dynamicChartType>false</dynamicChartType>
+				<totals grandtotals="true" subtotals="true"/>
+				<measureproperties idx="0">
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<columnWidths>
+					<item ref="[@&quot;[LY YTD]&quot;(l1),m1]" size="320"/>
+					<item ref="[@&quot;[TY YTD]&quot;(l1),m1]" size="320"/>
+				</columnWidths>
+				<gridcolors id="{656E94A8-F142-4F05-9030-0BC0242E5EDD}" outside="FFFFFF">
+					<collabel bg="FFFFFF" text="00858F" url="00858F">
+						<border bottom="A1A8AD"/>
+						<font name="Segoe UI" size="10" bold="true"/>
+						<alt bg="FFFFFF" text="00858F" url="00858F">
+							<border bottom="A1A8AD"/>
+							<font name="Segoe UI" size="10" bold="true"/>
+						</alt>
+					</collabel>
+					<rowlabel bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</rowlabel>
+					<cell bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</cell>
+					<simcell bg="FCEFD3" text="000000" url="00858F">
+						<alt bg="FFBB74" text="000000" url="00858F"/>
+					</simcell>
+					<comment bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="E0E0E0" text="000000" url="00858F"/>
+					</comment>
+					<selected bg="2EB7C2" text="FFFFFF" url="000000">
+						<alt bg="2EB7C2" text="FFFFFF" url="000000"/>
+					</selected>
+					<hidden bg="CBE4ED" text="000000" url="7BD0FF">
+						<alt bg="9ACBDD" text="000000" url="7BD0FF"/>
+					</hidden>
+				</gridcolors>
+				<xorder totals="before" originalorder="false"/>
+				<yorder totals="before" originalorder="false"/>
+			</gridOptions>
+		</object>
+		<object typeName="Crosstab" build="9403" ID="{1C6399DB-D325-4050-8B10-233E1C7E530D}" DrillStateCompatibilityID="{EE4ADDA7-CB94-4C01-BEA5-BE123F3C571A}">
+			<metadata database="DataWarehouse" cube="CB_DW"/>
+			<title hide="false" autohideexplanationicon="true">
+				<text>Calendar YQMD Example</text>
+			</title>
+			<frame>
+				<caption visible="true" buttongap="3"/>
+			</frame>
+			<fieldUsage onlynonempty="default">
+				<x customDim="true" useCaption="false">
+					<caption>
+						<text>Period</text>
+					</caption>
+					<value color="#74CFD7">
+						<title>
+							<text>TY YTD</text>
+						</title>
+						<criteria build="9403">
+	<criterium kind="dynamictime">
+		<metadata database="DataWarehouse" cube="CB_DW" dimension="Dates" hierarchy="Calendar YQMD"/>
+		<operator kind="inrange">
+			<left closed="true">
+				<applyto level="day"/>
+				<steps>
+					<month absolute="1"/>
+					<day absolute="1"/>
+				</steps>
+			</left>
+			<right closed="true">
+				<applyto level="day"/>
+				<steps/>
+			</right>
+		</operator>
+	</criterium>
+						</criteria>
+					</value>
+					<value color="#00A6B3">
+						<title>
+							<text>LY YTD</text>
+						</title>
+						<criteria build="9403">
+	<criterium kind="dynamictime">
+		<metadata database="DataWarehouse" cube="CB_DW" dimension="Dates" hierarchy="Calendar YQMD"/>
+		<operator kind="inrange">
+			<left closed="true">
+				<applyto level="day"/>
+				<steps>
+					<year relative="-1"/>
+					<month absolute="1"/>
+					<day absolute="1"/>
+				</steps>
+			</left>
+			<right closed="true">
+				<applyto level="day"/>
+				<steps>
+					<year relative="-1"/>
+				</steps>
+			</right>
+		</operator>
+	</criterium>
+						</criteria>
+					</value>
+				</x>
+				<y>
+					<metadata dimension="Dates" hierarchy="Calendar YQMD" level="Day"/>
+	<drillDown value="3"/>
+				</y>
+				<data>
+					<metadata measure="Days"/>
+				</data>
+			</fieldUsage>
+			<gridOptions>
+				<compactHierarchy>true</compactHierarchy>
+				<indentHierarchy>true</indentHierarchy>
+				<wordwrap global="true"/>
+				<autodetecturl enabled="true"/>
+				<dynamicChartType>false</dynamicChartType>
+				<totals grandtotals="true" subtotals="true"/>
+				<measureproperties idx="0">
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<columnWidths>
+					<item ref="[@&quot;[LY YTD]&quot;(l1),m1]" size="300"/>
+					<item ref="[@&quot;[TY YTD]&quot;(l1),m1]" size="340"/>
+				</columnWidths>
+				<gridcolors id="{656E94A8-F142-4F05-9030-0BC0242E5EDD}" outside="FFFFFF">
+					<collabel bg="FFFFFF" text="00858F" url="00858F">
+						<border bottom="A1A8AD"/>
+						<font name="Segoe UI" size="10" bold="true"/>
+						<alt bg="FFFFFF" text="00858F" url="00858F">
+							<border bottom="A1A8AD"/>
+							<font name="Segoe UI" size="10" bold="true"/>
+						</alt>
+					</collabel>
+					<rowlabel bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</rowlabel>
+					<cell bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</cell>
+					<simcell bg="FCEFD3" text="000000" url="00858F">
+						<alt bg="FFBB74" text="000000" url="00858F"/>
+					</simcell>
+					<comment bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="E0E0E0" text="000000" url="00858F"/>
+					</comment>
+					<selected bg="2EB7C2" text="FFFFFF" url="000000">
+						<alt bg="2EB7C2" text="FFFFFF" url="000000"/>
+					</selected>
+					<hidden bg="CBE4ED" text="000000" url="7BD0FF">
+						<alt bg="9ACBDD" text="000000" url="7BD0FF"/>
+					</hidden>
+				</gridcolors>
+				<xorder totals="before" originalorder="false"/>
+				<yorder totals="before" originalorder="false"/>
+			</gridOptions>
+		</object>
+		<object typeName="Crosstab" build="9403" ID="{84CA8626-7C12-49A4-90E6-4DE330EC5140}" DrillStateCompatibilityID="{1B3FFADE-356E-4BEA-A07D-871EADBDDD3D}">
+			<metadata database="DataWarehouse" cube="CB_DW"/>
+			<title hide="false" autohideexplanationicon="true">
+				<text>Fiscal YQMD Example</text>
+			</title>
+			<frame>
+				<caption visible="true" buttongap="3"/>
+			</frame>
+			<fieldUsage onlynonempty="default">
+				<x customDim="true" useCaption="false">
+					<caption>
+						<text>Period</text>
+					</caption>
+					<value color="#74CFD7">
+						<title>
+							<text>TY YTD</text>
+						</title>
+						<criteria build="9403">
+	<criterium kind="dynamictime">
+		<metadata database="DataWarehouse" cube="CB_DW" dimension="Dates" hierarchy="Fiscal YMD"/>
+		<operator kind="inrange">
+			<left closed="true">
+				<applyto level="day"/>
+				<steps>
+					<month absolute="1"/>
+					<day absolute="1"/>
+				</steps>
+			</left>
+			<right closed="true">
+				<applyto level="day"/>
+				<steps/>
+			</right>
+		</operator>
+	</criterium>
+						</criteria>
+					</value>
+					<value color="#00A6B3">
+						<title>
+							<text>LY YTD</text>
+						</title>
+						<criteria build="9403">
+	<criterium kind="dynamictime">
+		<metadata database="DataWarehouse" cube="CB_DW" dimension="Dates" hierarchy="Fiscal YMD"/>
+		<operator kind="inrange">
+			<left closed="true">
+				<applyto level="day"/>
+				<steps>
+					<year relative="-1"/>
+					<month absolute="1"/>
+					<day absolute="1"/>
+				</steps>
+			</left>
+			<right closed="true">
+				<applyto level="day"/>
+				<steps>
+					<year relative="-1"/>
+				</steps>
+			</right>
+		</operator>
+	</criterium>
+						</criteria>
+					</value>
+				</x>
+				<y>
+					<metadata dimension="Dates" hierarchy="Fiscal YQMD" level="Day"/>
+	<drillDown value="3"/>
+				</y>
+				<data>
+					<metadata measure="Days"/>
+				</data>
+			</fieldUsage>
+			<gridOptions>
+				<compactHierarchy>true</compactHierarchy>
+				<indentHierarchy>true</indentHierarchy>
+				<wordwrap global="true"/>
+				<autodetecturl enabled="true"/>
+				<dynamicChartType>false</dynamicChartType>
+				<totals grandtotals="true" subtotals="true"/>
+				<measureproperties idx="0">
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<columnWidths>
+					<item ref="[@&quot;[LY YTD]&quot;(l1),m1]" size="293.333"/>
+					<item ref="[@&quot;[TY YTD]&quot;(l1),m1]" size="340"/>
+				</columnWidths>
+				<gridcolors id="{656E94A8-F142-4F05-9030-0BC0242E5EDD}" outside="FFFFFF">
+					<collabel bg="FFFFFF" text="00858F" url="00858F">
+						<border bottom="A1A8AD"/>
+						<font name="Segoe UI" size="10" bold="true"/>
+						<alt bg="FFFFFF" text="00858F" url="00858F">
+							<border bottom="A1A8AD"/>
+							<font name="Segoe UI" size="10" bold="true"/>
+						</alt>
+					</collabel>
+					<rowlabel bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</rowlabel>
+					<cell bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</cell>
+					<simcell bg="FCEFD3" text="000000" url="00858F">
+						<alt bg="FFBB74" text="000000" url="00858F"/>
+					</simcell>
+					<comment bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="E0E0E0" text="000000" url="00858F"/>
+					</comment>
+					<selected bg="2EB7C2" text="FFFFFF" url="000000">
+						<alt bg="2EB7C2" text="FFFFFF" url="000000"/>
+					</selected>
+					<hidden bg="CBE4ED" text="000000" url="7BD0FF">
+						<alt bg="9ACBDD" text="000000" url="7BD0FF"/>
+					</hidden>
+				</gridcolors>
+				<xorder totals="before" originalorder="false"/>
+				<yorder totals="before" originalorder="false"/>
+			</gridOptions>
+		</object>
+		<object typeName="Crosstab" build="9403" ID="{B344C4E5-7EBA-40ED-8120-5413A72C71CE}" DrillStateCompatibilityID="{D4E81F89-AF2D-4E3F-93C1-6B3345255888}">
+			<metadata database="DataWarehouse" cube="CB_DW"/>
+			<title hide="false" autohideexplanationicon="true">
+				<text>Calendar</text>
+			</title>
+			<frame>
+				<caption visible="true" buttongap="3"/>
+			</frame>
+			<fieldUsage onlynonempty="default">
+				<x>
+					<metadata dimension="Dates" hierarchy="Calendar WeekDay"/>
+				</x>
+				<y>
+					<metadata dimension="Dates" hierarchy="Calendar Month"/>
+				</y>
+				<y>
+					<metadata dimension="Dates" hierarchy="Calendar Week Of Month"/>
+					<hideLevel type="label">Calendar Week Of Month</hideLevel>
+				</y>
+				<data>
+					<metadata measure="Max Month Day"/>
+				</data>
+			</fieldUsage>
+			<gridOptions>
+				<compactHierarchy>false</compactHierarchy>
+				<wordwrap global="true"/>
+				<autodetecturl enabled="true"/>
+				<totals grandtotals="false" subtotals="false"/>
+				<measureproperties idx="0">
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<gridcolors id="{656E94A8-F142-4F05-9030-0BC0242E5EDD}" outside="FFFFFF">
+					<collabel bg="FFFFFF" text="00858F" url="00858F">
+						<border bottom="A1A8AD"/>
+						<font name="Segoe UI" size="10" bold="true"/>
+						<alt bg="FFFFFF" text="00858F" url="00858F">
+							<border bottom="A1A8AD"/>
+							<font name="Segoe UI" size="10" bold="true"/>
+						</alt>
+					</collabel>
+					<rowlabel bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</rowlabel>
+					<cell bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</cell>
+					<simcell bg="FCEFD3" text="000000" url="00858F">
+						<alt bg="FFBB74" text="000000" url="00858F"/>
+					</simcell>
+					<comment bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="E0E0E0" text="000000" url="00858F"/>
+					</comment>
+					<selected bg="2EB7C2" text="FFFFFF" url="000000">
+						<alt bg="2EB7C2" text="FFFFFF" url="000000"/>
+					</selected>
+					<hidden bg="CBE4ED" text="000000" url="7BD0FF">
+						<alt bg="9ACBDD" text="000000" url="7BD0FF"/>
+					</hidden>
+				</gridcolors>
+				<xorder totals="before" originalorder="false"/>
+				<yorder totals="before" originalorder="false"/>
+			</gridOptions>
+			<localCriteria build="9403">
+	<criterium kind="dynamictime">
+		<metadata database="DataWarehouse" cube="CB_DW" dimension="Dates" hierarchy="Calendar YMD"/>
+		<operator kind="eq">
+			<applyto level="year"/>
+			<steps/>
+		</operator>
+	</criterium>
+			</localCriteria>
+		</object>
+		<object typeName="Crosstab" build="9403" ID="{EB18E4BE-A74B-4C05-B6F1-6D63529A6BCF}" DrillStateCompatibilityID="{0D9FC9C6-9AC5-4581-BD5A-75FFA371CDEF}">
+			<metadata database="DataWarehouse" cube="CB_DW"/>
+			<title hide="false" autohideexplanationicon="true">
+				<text>Fiscal Calendar</text>
+			</title>
+			<frame>
+				<caption visible="true" buttongap="3"/>
+			</frame>
+			<fieldUsage onlynonempty="default">
+				<x>
+					<metadata dimension="Dates" hierarchy="Fiscal WeekDay"/>
+				</x>
+				<y>
+					<metadata dimension="Dates" hierarchy="Fiscal Month"/>
+				</y>
+				<y>
+					<metadata dimension="Dates" hierarchy="Fiscal Week Of Month"/>
+					<hideLevel type="label">Fiscal Week Of Month</hideLevel>
+				</y>
+				<data>
+					<metadata measure="Max Month Day"/>
+				</data>
+			</fieldUsage>
+			<gridOptions>
+				<compactHierarchy>false</compactHierarchy>
+				<wordwrap global="true"/>
+				<autodetecturl enabled="true"/>
+				<totals grandtotals="false" subtotals="false"/>
+				<measureproperties idx="0">
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<gridcolors id="{656E94A8-F142-4F05-9030-0BC0242E5EDD}" outside="FFFFFF">
+					<collabel bg="FFFFFF" text="00858F" url="00858F">
+						<border bottom="A1A8AD"/>
+						<font name="Segoe UI" size="10" bold="true"/>
+						<alt bg="FFFFFF" text="00858F" url="00858F">
+							<border bottom="A1A8AD"/>
+							<font name="Segoe UI" size="10" bold="true"/>
+						</alt>
+					</collabel>
+					<rowlabel bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</rowlabel>
+					<cell bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</cell>
+					<simcell bg="FCEFD3" text="000000" url="00858F">
+						<alt bg="FFBB74" text="000000" url="00858F"/>
+					</simcell>
+					<comment bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="E0E0E0" text="000000" url="00858F"/>
+					</comment>
+					<selected bg="2EB7C2" text="FFFFFF" url="000000">
+						<alt bg="2EB7C2" text="FFFFFF" url="000000"/>
+					</selected>
+					<hidden bg="CBE4ED" text="000000" url="7BD0FF">
+						<alt bg="9ACBDD" text="000000" url="7BD0FF"/>
+					</hidden>
+				</gridcolors>
+				<xorder totals="before" originalorder="false"/>
+				<yorder totals="before" originalorder="false"/>
+			</gridOptions>
+			<localCriteria build="9403">
+	<criterium kind="dynamictime">
+		<metadata database="DataWarehouse" cube="CB_DW" dimension="Dates" hierarchy="Fiscal YMD"/>
+		<operator kind="eq">
+			<applyto level="year"/>
+			<steps/>
+		</operator>
+	</criterium>
+			</localCriteria>
+		</object>
+	</data>
+	<placement>
+		<layout>
+			<cell orientation="horizontal" id="{BE9D64A0-8454-473F-B265-83678FEB363A}">
+				<rect L="0" T="0" W="1595" H="845"/>
+				<cell orientation="vertical" id="{6220A62E-5A01-4E97-9B3D-7772649D3E15}">
+					<rect L="0" T="0" W="601" H="845"/>
+					<cell orientation="horizontal" id="{90BB8FA0-273B-4B8B-98AB-99EA377B55FB}">
+						<rect L="0" T="0" W="601" H="448"/>
+						<cell name="obj0" id="{94F465A3-CEF7-459D-BC2E-E6E56B47D6E4}">
+							<rect L="0" T="0" W="273" H="448"/>
+						</cell>
+						<cell name="obj3" id="{BFDCAC05-385A-450C-83D1-6EFD6ADFB214}">
+							<rect L="273" T="0" W="328" H="448"/>
+						</cell>
+					</cell>
+					<cell orientation="horizontal" id="{8BC9B3E9-05DC-441D-B13C-00FCA5C180F9}">
+						<rect L="0" T="448" W="601" H="397"/>
+						<cell name="obj2" id="{C6162B45-C49F-4E35-AD4C-DDD4D6346AF0}">
+							<rect L="0" T="448" W="277" H="397"/>
+						</cell>
+						<cell name="obj4" id="{3FA3B367-5B51-4450-8907-FE3C0E578257}">
+							<rect L="277" T="448" W="324" H="397"/>
+						</cell>
+					</cell>
+				</cell>
+				<cell name="obj1" id="{2DA6B767-31E8-4508-BBA1-8650DF9E4B92}">
+					<rect L="601" T="0" W="360" H="845"/>
+				</cell>
+				<cell name="obj5" id="{C05C1817-B9A2-46BA-AE32-2A13FBE449D0}">
+					<rect L="961" T="0" W="314" H="845"/>
+				</cell>
+				<cell name="obj6" id="{AEBD7FF2-A384-4573-8C45-5C7F3665889A}">
+					<rect L="1275" T="0" W="320" H="845"/>
+				</cell>
+			</cell>
+		</layout>
+	</placement>
+</targitView>

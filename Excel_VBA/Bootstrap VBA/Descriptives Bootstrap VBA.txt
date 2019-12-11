@@ -1,0 +1,170 @@
+Sub format_reports()
+
+'Define the last row of the report
+FinalRow = ActiveSheet.Cells(ActiveSheet.Rows.Count, 1).End(xlUp).Row
+
+'Additional part executed only if the file format is comming from Bootstrap methodology
+If (Cells(1, 3).Value = "product_id") Then
+
+    Dim i As Long
+    Dim RangeA As Range
+    
+    'Rename "Total" rows in order to be aligned with previous format
+    Columns("A:A").Replace "Total_brand", "GROUP TOTAL", xlPart, xlByRows, True
+    Columns("B:B").Replace "Total", "GROUP TOTAL", xlPart, xlByRows, True
+
+    'Move total to the end
+    For x = 2 To FinalRow
+        NR = ActiveSheet.Cells(Rows.Count, 1).End(xlUp).Row + 1
+        ThisValue = Cells(x, 1).Value
+        If (ThisValue = "GROUP TOTAL") Then
+            ActiveSheet.Cells(x, 1).Resize(1, 7).Cut
+            ActiveSheet.Paste Destination:=ActiveSheet.Cells(NR, 1)
+        End If
+    Next x
+    
+    'Find extended data range togethere with empty rows
+    Set RangeA = ActiveSheet.Range(ActiveSheet.Range("A1"), ActiveSheet.Range("G" & Rows.Count).End(xlUp))
+    
+    'Delete empty rows within the RangeA
+    For i = RangeA.Rows.Count To 1 Step (-1)
+        If (WorksheetFunction.CountA(RangeA.Rows(i)) = 0) Then
+            RangeA.Rows(i).EntireRow.Delete
+        End If
+    Next
+    
+    'Sort the data by "prouct_id" column
+    RangeA.Sort Key1:=Range("C1"), Order1:=xlAscending, Header:=xlYes
+    
+    'Move column "product_id" column to be the last column
+    Columns("C:C").Cut
+    Columns("H:H").Insert
+    
+End If
+
+'Group setting
+For x = 2 To FinalRow
+For n = 1 To 10
+ThisValue = Cells(x, 1).Value
+ThisValue2 = Cells(x, 8).Value
+ThisValue3 = Cells(x, 7).Value
+    If (ThisValue <> "GROUP TOTAL" And (ThisValue2 = n Or ThisValue3 = n)) Then
+    Range("A" & x & ":H" & x).Rows.Group
+    End If
+Next n
+Next x
+ 
+'Colors setting
+Range("A1:H1").Font.Color = vbWhite
+Range("A1:H1").Font.Bold = True
+Range("A1:H1").Interior.Color = RGB(54, 96, 146)
+        
+With Range("A1:H1")
+    .HorizontalAlignment = xlCenter
+    .VerticalAlignment = xlBottom
+    .WrapText = False
+    .Orientation = 0
+    .AddIndent = False
+    .IndentLevel = 0
+    .ShrinkToFit = False
+    .ReadingOrder = xlContext
+    .MergeCells = False
+End With
+
+For x = 2 To FinalRow
+ThisValue2 = Cells(x, 8).Value
+ThisValue3 = Cells(x, 7).Value
+    If (ThisValue2 = "1" Or ThisValue3 = "1") Then
+        Range("A" & x & ":H" & x).Interior.Color = RGB(220, 230, 241)
+    Else
+        Range("A" & x & ":H" & x).Interior.Color = RGB(242, 220, 219)
+    End If
+Next x
+
+For x = 2 To FinalRow
+ThisValue = Cells(x, 1).Value
+    If (ThisValue = "GROUP TOTAL") Then
+    Range("A" & x & ":H" & x).Interior.Color = RGB(218, 150, 148)
+    Range("A" & x & ":H" & x).Font.Color = vbWhite
+    Range("A" & x & ":H" & x).Font.Bold = True
+    End If
+Next x
+
+For x = 2 To FinalRow
+ThisValue = Cells(x, 1).Value
+ThisValue2 = Cells(x, 8).Value
+ThisValue3 = Cells(x, 7).Value
+    If (ThisValue = "GROUP TOTAL" And (ThisValue2 = "1" Or ThisValue3 = "1")) Then
+        Range("A" & x & ":H" & x).Interior.Color = RGB(83, 141, 213)
+    End If
+Next x
+           
+'Set the rounding format
+For x = 2 To FinalRow
+    Range("C" & x & ":D" & x).Style = "Comma"
+Next x
+
+'Set the percentage format
+For x = 2 To FinalRow
+    Range("E" & x & ":F" & x).Style = "Percent"
+    Range("E" & x & ":F" & x).NumberFormat = "0.00%"
+Next x
+
+'Delete all extra columns
+Range("G:I").Delete Shift:=xlToLeft
+
+'Final formating
+For x = 1 To FinalRow
+Range("A" & x & ":F" & x).Borders(xlDiagonalDown).LineStyle = xlNone
+    Range("A" & x & ":F" & x).Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Range("A" & x & ":F" & x).Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Range("A" & x & ":F" & x).Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Range("A" & x & ":F" & x).Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Range("A" & x & ":F" & x).Borders(xlInsideVertical)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Range("A" & x & ":F" & x).Borders(xlInsideHorizontal)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+Next x
+
+'Name the columns properly
+Range("A1").Value = "tsv_brand"
+Range("B1").Value = "majorbrand"
+Range("C1").Value = "Pre $ Sales"
+Range("D1").Value = "Post $ Sales"
+Range("E1").Value = "Pre $ Sale Share"
+Range("F1").Value = "Post $ Sale Share"
+
+'Resize the columns in order to make all values visible
+Range("A1:F1").EntireColumn.AutoFit
+
+
+End Sub

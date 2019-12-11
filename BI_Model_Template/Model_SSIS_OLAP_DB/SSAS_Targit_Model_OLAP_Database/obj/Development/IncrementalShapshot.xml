@@ -1,0 +1,229 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Targit_Model_OLAP_Database</Database>
+    <Server>SOCIALSRV</Server>
+    <ConnectionString>DataSource=SOCIALSRV;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>bAH84+yIKUBMFjwpmRor3/ij0D0=13/07/2017 1:24:43 μμ13/07/2017 12:41:57 μμ</TimeStamp>
+        <ID>
+          <String>DSMain</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>ZgRsBsAIow3UQDr526p6E5B85gY=13/07/2017 1:24:59 μμ13/07/2017 12:41:57 μμ</TimeStamp>
+        <ID>
+          <String>DSTargit Log</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>6T5qjqWzg5wq2BDvXtRDvxbHYK4=13/07/2017 12:21:55 μμ13/07/2017 12:41:57 μμ</TimeStamp>
+        <ID>
+          <String>DSVMain</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lGsWx6JiwYZpHRC0WL8AY7g7+Y4=07/07/2017 6:43:54 μμ13/07/2017 12:41:57 μμ</TimeStamp>
+        <ID>
+          <String>Companies</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>CyHLT1rzUD2m83qWzxHaczL6SVw=06/07/2017 7:03:01 μμ13/07/2017 12:41:57 μμ</TimeStamp>
+        <ID>
+          <String>Cost Centers</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>pxmLoHwWQKWVWxZeqOC+1DV0kZ4=11/07/2017 5:06:22 μμ13/07/2017 12:41:57 μμ</TimeStamp>
+        <ID>
+          <String>Customers</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XZGz0IewMpw2dDzFYLJq62zKRX0=13/07/2017 12:21:55 μμ13/07/2017 12:41:57 μμ</TimeStamp>
+        <ID>
+          <String>Dates</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3LLhu0pluSndRhOH4YH8CL3LehQ=15/06/2017 4:33:55 μμ13/07/2017 12:41:57 μμ</TimeStamp>
+        <ID>
+          <String>Geospatial Info</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>jQYhiIA+WoR/y5DWIOglXr1Ab+w=12/07/2017 1:03:27 μμ13/07/2017 12:41:57 μμ</TimeStamp>
+        <ID>
+          <String>Products</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rwvDg8bJnisas1V0+9qfW8/RWIM=15/06/2017 4:33:55 μμ13/07/2017 12:41:57 μμ</TimeStamp>
+        <ID>
+          <String>SAGENT Execution Statuses</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1lv53g+LNq1jIekyBLTQmj3DybI=15/06/2017 4:33:55 μμ13/07/2017 12:41:58 μμ</TimeStamp>
+        <ID>
+          <String>SAGENT Jobs And Steps</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XKBlAT3pLTtO7OZUjv/AdhSfMPA=15/06/2017 4:33:55 μμ13/07/2017 12:41:58 μμ</TimeStamp>
+        <ID>
+          <String>SAGENT Logs</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xyo06xloLet6SPlKm9vM+mtdMLA=19/06/2017 9:21:11 πμ13/07/2017 12:41:58 μμ</TimeStamp>
+        <ID>
+          <String>Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/QaOE9xp8YB5oarGyJ/IY/lO3O0=10/07/2017 10:40:58 πμ13/07/2017 12:41:58 μμ</TimeStamp>
+        <ID>
+          <String>Transaction Types</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>iwJ6p8fbrBIRxQ+8DN4weaFuMyo=10/07/2017 1:09:26 μμ13/07/2017 12:41:58 μμ</TimeStamp>
+        <ID>
+          <String>Transactions</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>5FIPuwuj/Tgt5/RQown2jcLxCmg=20/06/2017 2:27:58 μμ13/07/2017 12:41:58 μμ</TimeStamp>
+        <ID>
+          <String>TRGLOG Dimensions</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1C3hzcDYtXLrENUF+Hd2eKbz35s=23/06/2017 9:34:41 πμ13/07/2017 12:41:58 μμ</TimeStamp>
+        <ID>
+          <String>TRGLOG IP Addresses</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BS6WshK6KC2FFTNJc78Pvb1L824=20/06/2017 2:29:01 μμ13/07/2017 12:41:59 μμ</TimeStamp>
+        <ID>
+          <String>TRGLOG Measures</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oR9MaWF1FO6C14pFF18O0D4US3M=20/06/2017 2:08:44 μμ13/07/2017 12:41:59 μμ</TimeStamp>
+        <ID>
+          <String>TRGLOG Targit Data Sources</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>16BJuBLRBtB9QYBCMRXNtIGKc7Q=20/06/2017 2:08:04 μμ13/07/2017 12:41:59 μμ</TimeStamp>
+        <ID>
+          <String>TRGLOG Targit Files</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>MeJKIS51mUi6IXUAJK96bvtfgV0=20/06/2017 2:09:31 μμ13/07/2017 12:41:59 μμ</TimeStamp>
+        <ID>
+          <String>TRGLOG Targit Users</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7xrPcM3GOKTN1BHDY1jtNyK7LHE=07/07/2017 8:25:43 πμ13/07/2017 12:41:57 μμ</TimeStamp>
+        <ID>
+          <String>Branches</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dywcd3DLrw9mdlPKsuJVMOOuuqw=07/07/2017 8:52:58 πμ13/07/2017 12:41:57 μμ</TimeStamp>
+        <ID>
+          <String>Budget Version</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/KZYBKz5ym7Pilb85xDYZkRhSHA=10/07/2017 10:40:58 πμ13/07/2017 12:41:58 μμ</TimeStamp>
+        <ID>
+          <String>Transaction Document Types</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>SLZVLMR9K0HoRZzCGUjFxdUDuKI=10/07/2017 1:07:14 μμ13/07/2017 12:41:57 μμ</TimeStamp>
+        <ID>
+          <String>Numbers</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>1CaPnySpeYZ/28FdZbNn9Pj7Jcs=13/07/2017 1:46:34 μμ13/07/2017 12:41:56 μμbZqBn/RGK3qdOrHJbtp1huqMTaY=13/07/2017 1:32:15 μμ13/07/2017 12:41:56 μμ</TimeStamp>
+        <ID>
+          <String>BI</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>dB5aAdBMFwtns47qXvmEVmTEVxI=13/07/2017 12:21:55 μμ13/07/2017 12:41:58 μμkYBFNYDK3cbp0bnsHDHf3/uAkLg=15/06/2017 4:35:37 μμ13/07/2017 12:41:58 μμ</TimeStamp>
+        <ID>
+          <String>SQLAgent Logs</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>jMppQbwn5WffJvRM3QhUkObUiyo=13/07/2017 12:21:55 μμ13/07/2017 12:41:58 μμV2sTHXdzMYDRM4RWkTnQqxq+0fM=20/06/2017 2:32:03 μμ13/07/2017 12:41:58 μμ</TimeStamp>
+        <ID>
+          <String>Targit Logs</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>mWW0Z1waZdh2AR75W9AuV4sku8k=15/06/2017 4:35:26 μμ13/07/2017 12:41:58 μμ</TimeStamp>
+      <ID>
+        <String>SSAS_Targit_Model_OLAP_Database</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2017-07-13T10:47:11.783333Z</LastDeployed>
+</DeploymentSnapshot>

@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>MDL_OLAP_Database</Database>
+    <Server>localhost</Server>
+    <ConnectionString>DataSource=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>QKyzSYad3fhHuCo+mKkjiAwgx+4=17/5/2017 9:22:23 πμ26/5/2017 9:02:58 πμ</TimeStamp>
+        <ID>
+          <String>DSMain</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>tCTZNqLCKfiLlavzzkpYHJKbpu8=13/6/2017 10:35:46 πμ26/5/2017 9:02:58 πμ</TimeStamp>
+        <ID>
+          <String>DSVMain</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>N9DCKB/7VaulZEurW2lVidyTr2E=17/5/2017 12:18:53 μμ26/5/2017 9:02:58 πμ</TimeStamp>
+        <ID>
+          <String>Dates</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Rhv1wPr5KBLf0M9hTateCEVo+UE=17/5/2017 9:35:59 πμ26/5/2017 9:02:58 πμ</TimeStamp>
+        <ID>
+          <String>Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RFK3YhZl2FxtpvZSZ1RIdXWd/fY=13/6/2017 10:09:34 πμ26/5/2017 9:02:58 πμ</TimeStamp>
+        <ID>
+          <String>Geospatial Info</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XU+i+O/UtgIoNbYDSClMOHBc5ZU=17/5/2017 9:39:40 πμ26/5/2017 9:02:58 πμ</TimeStamp>
+        <ID>
+          <String>SAGENT Execution Statuses</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>UnFBoAiGn2mMWTYcQlfFBRr5pns=17/5/2017 9:40:31 πμ26/5/2017 9:02:58 πμ</TimeStamp>
+        <ID>
+          <String>SAGENT Jobs And Steps</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>07G3YQnY7xDfm2+HCFLAHK0LAbI=17/5/2017 9:41:48 πμ26/5/2017 9:02:58 πμ</TimeStamp>
+        <ID>
+          <String>SAGENT Logs</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>4ZnzD6UecriU8EbjQeLj1ggiH+A=26/5/2017 9:07:00 πμ26/5/2017 9:02:58 πμ0C9WYZW37hfGGF4jR0PZHtTOW+8=17/5/2017 10:24:31 πμ26/5/2017 9:02:58 πμ</TimeStamp>
+        <ID>
+          <String>SQLAgent Logs</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>plX8+v9uj1IDCgnBLGs2338mL54=13/6/2017 10:09:34 πμ26/5/2017 9:02:58 πμIVQ1V+EDvjxs6N52n4tArBWwYhc=17/5/2017 10:23:15 πμ26/5/2017 9:02:58 πμ</TimeStamp>
+        <ID>
+          <String>BI</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>XhtYoYNQ059KuPiQJomj+luXjkI=17/5/2017 9:21:41 πμ26/5/2017 9:02:58 πμ</TimeStamp>
+      <ID>
+        <String>MDL_OLAP_Database</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2017-06-13T07:36:10.776667Z</LastDeployed>
+</DeploymentSnapshot>

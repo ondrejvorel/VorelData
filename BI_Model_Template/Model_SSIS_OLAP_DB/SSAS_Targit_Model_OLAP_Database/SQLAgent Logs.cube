@@ -1,0 +1,3130 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="16cdaa1b-a681-433e-b951-d64a203b808b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>SQLAgent Logs</ID>
+  <Name>SQLAgent Logs</Name>
+  <CreatedTimestamp>2017-05-17T06:43:59.37Z</CreatedTimestamp>
+  <LastSchemaUpdate>2017-06-13T07:36:10.19Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3723" scrolltop="-2386" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="27940" y="15954" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01a10000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="VIEW_SAGENT_DIM_Jobs_And_Steps" left="16335" top="-192" logicalid="10" controlid="1" masterid="0" hint1="0" hint2="0" width="4048" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000d00f0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VIEW_SAGENT_DIM_Jobs_And_Steps" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="VIEW_SAGENT_DIM_ExecutionStatuses" left="-397" top="7430" logicalid="11" controlid="2" masterid="0" hint1="0" hint2="0" width="4048" height="2329" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000d00f000019090000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VIEW_SAGENT_DIM_ExecutionStatuses" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="VIEW_DIM_Dates" left="16335" top="4630" logicalid="12" controlid="3" masterid="0" hint1="0" hint2="0" width="4048" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000d00f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VIEW_DIM_Dates" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="VIEW_DIM_Time" left="-397" top="0" logicalid="13" controlid="4" masterid="0" hint1="0" hint2="0" width="4048" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000d00f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VIEW_DIM_Time" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time" left="5715" top="-846" logicalid="14" controlid="5" masterid="0" hint1="0" hint2="0" width="8837" height="8334" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000852200008e200000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="14252" top="4531" logicalid="15" controlid="6" masterid="0" hint1="0" hint2="0" width="2383" height="1840" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time-VIEW_DIM_Dates]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="5" sourceattachpoint="14" destattachpoint="55" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="16335" y="4930" />
+              <point x="15444" y="4930" />
+              <point x="15444" y="6071" />
+              <point x="14552" y="6071" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3351" top="-279" logicalid="16" controlid="7" masterid="0" hint1="0" hint2="0" width="2664" height="3179" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time-VIEW_DIM_Time]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="5" sourceattachpoint="23" destattachpoint="32" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3651" y="2500" />
+              <point x="4947" y="2500" />
+              <point x="4947" y="21" />
+              <point x="5715" y="21" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3351" top="4121" logicalid="17" controlid="8" masterid="0" hint1="0" hint2="0" width="2664" height="4323" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time-VIEW_SAGENT_DIM_ExecutionStatuses]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="5" sourceattachpoint="15" destattachpoint="48" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3651" y="8044" />
+              <point x="4904" y="8044" />
+              <point x="4904" y="4421" />
+              <point x="5715" y="4421" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="14252" top="271" logicalid="18" controlid="9" masterid="0" hint1="0" hint2="0" width="2383" height="2273" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time-VIEW_SAGENT_DIM_Jobs_And_Steps]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="5" sourceattachpoint="22" destattachpoint="35" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="16335" y="2144" />
+              <point x="15417" y="2144" />
+              <point x="15417" y="571" />
+              <point x="14552" y="571" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3723</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2386</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-397</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-846</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2017-06-13T07:38:06.986667Z</LastProcessed>
+  <State>Processed</State>
+  <Language>1033</Language>
+  <Collation>Greek_CI_AS</Collation>
+  <Dimensions>
+    <Dimension dwd:design-time-name="274b64ba-89fd-4d21-abe1-edb4cb36963f">
+      <ID>Time</ID>
+      <Name>Time</Name>
+      <DimensionID>Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ef9ec105-6b76-4d24-812e-a2d49d3e5d18">
+          <AttributeID>PKEY</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="6fc0e2f2-3fd3-4e67-89fc-111ccb0db5ff">
+          <AttributeID>TM Hour</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="484bb4f2-ad8a-44c8-93d3-629ad425658d">
+          <AttributeID>TM Minute</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e6ee50cd-f04a-46c6-b6cc-daec2e5f3a7c">
+          <AttributeID>PKEY 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7c5590a0-d09e-4cda-859f-b11c6e4e2a19">
+          <AttributeID>TM Hour 1</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="7e1927ae-4ac8-4560-b8ff-55f8f3251379">
+          <AttributeID>TM Minute 1</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="65765c2d-e801-4f34-a95f-3422041a3aac">
+          <AttributeID>Last 30 Min Flag</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fefb03cf-4e8d-49d9-b3f5-4ec9b7dd4d45">
+          <AttributeID>Half Hour Text</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4d104e3c-4280-40e9-b86c-9c6ca2716fd1">
+          <AttributeID>Quarter Text</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2b21c47b-f697-44c2-a424-6c09075421f4">
+          <AttributeID>Half Hour Text 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9d801c21-4263-4d38-8490-1149b4983d8b">
+          <AttributeID>Quarter Text 1</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="be2fd4e8-bb8e-4035-a201-b2c7a28936de">
+          <AttributeID>Last 05 Min Flag</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4dac818d-ab13-4461-b310-6cfd0531286f">
+          <AttributeID>Last 15 Min Flag</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a686fb6b-4223-43e4-91a5-b3861a89571a">
+          <AttributeID>Last 60 Min Flag</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="afc6594f-ed7c-483d-af98-6c7e4e8380ce">
+          <AttributeID>Day Part ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="95c4978e-be24-4161-9ad2-5622aa8f5840">
+          <AttributeID>Day Part ID 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4b4ae73f-a423-4889-bd61-ab24b1012e94">
+          <AttributeID>Day Part ID 2</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="54e07d0c-dfdd-462f-ae6b-71988fc46997">
+          <AttributeID>TM Hour 2</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="c4de8f2f-c74c-4a54-8387-6c709ac4ea9c">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="0f845d7e-a615-44bc-8831-b4033cb9bf6f">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="d144f277-4ed6-426a-8083-d51541cc9251">
+      <ID>Dates</ID>
+      <Name>Dates</Name>
+      <DimensionID>Dates</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0dab478b-7e5b-4d2f-b5b8-e38c56ed58bc">
+          <AttributeID>PKEY</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="ab6197a9-b2df-48a4-af77-273adb091382">
+          <AttributeID>CL Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b33ee943-4ce7-40f7-be0a-adcf82eac906">
+          <AttributeID>CL Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1598f1c4-1289-4e88-9086-54104ac37311">
+          <AttributeID>CL Year 2</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="9c70da24-0650-4853-9d48-502c3006e7b9">
+          <AttributeID>CL Month 2</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="2088062b-b940-4a8b-85cc-0830277c82a1">
+          <AttributeID>CM Month Day 1</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="d94d724d-2949-4356-82c1-f59371f2575a">
+          <AttributeID>ISO Year 1</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="902495bd-080e-451f-90f9-9f508d781afa">
+          <AttributeID>ISO Week 1</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="cd347320-025f-4912-bba9-55ac79d0abbe">
+          <AttributeID>PKEY 1</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="9e0edb11-3cc2-45f3-829a-c3f7562fdf29">
+          <AttributeID>CM Month Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3cbaf1dc-3ad9-4f11-bd78-bb220417cd54">
+          <AttributeID>ISO Week Day Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="31757daf-8a27-4805-b126-0167ca8164dd">
+          <AttributeID>ISO Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1a78f773-17ff-41ec-a9aa-f484be960098">
+          <AttributeID>ISO Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="500a4867-3e85-4d57-8d1f-a516f60efe1f">
+          <AttributeID>CL Quarter</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="220b140a-da7a-4472-85b6-7d9d2ba23bc8">
+          <AttributeID>FL Quarter</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="4e4a0572-1469-408c-90d7-034d896cd483">
+          <AttributeID>FL Month</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="047fd126-2d14-49da-9825-115e33d0757d">
+          <AttributeID>PKEY 1 1</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="b8f5279d-8071-4281-a5c3-c0f36d4ad362">
+          <AttributeID>FL Year</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="8b1b1fc9-ae12-4f8b-a9e4-d906284c0f03">
+          <AttributeID>FL Year 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7c089ceb-5b5f-42dd-84cb-cee831c8f431">
+          <AttributeID>PKEY 1 2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0393e693-e161-4272-827b-576312f2d7dd">
+          <AttributeID>CL Quarter 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a531251-568e-4b12-a659-d9ede44955cb">
+          <AttributeID>FL Quarter 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fd28c52c-89ac-43bb-88d6-c0417cce9b42">
+          <AttributeID>FL Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a615c93-6cfe-47bb-a856-2f0a78e887a9">
+          <AttributeID>CL Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6c38a508-77a8-4208-8c0d-47151c626e05">
+          <AttributeID>CL Week Day Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4bfdfa66-f566-496d-b835-fe1079ed89ae">
+          <AttributeID>FL Week Day Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0fb7aef8-82f5-4d48-a97b-18c65bc90189">
+          <AttributeID>CM Week Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9d8661ba-810d-49ff-afdb-5d514a3dd671">
+          <AttributeID>FL Week Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c3047e2b-1a24-4c00-a341-8b3a1113b997">
+          <AttributeID>Holiday Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8f88e692-f9dd-483a-81ba-2d2f38e8b54a">
+          <AttributeID>Holiday Name 2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7226ca72-5900-456a-bb64-8dd3b2842aee">
+          <AttributeID>Holiday Group</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3b19cc44-8af3-4dc9-ba61-eed86cb21a3e">
+          <AttributeID>Holiday Group 2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="17ff4842-856d-4fd9-b5d1-b592a63960b2">
+          <AttributeID>Holiday Flag Retail HQ</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7783987d-b3ef-47bb-82af-f4327d36750d">
+          <AttributeID>Holiday Flag Retail Stores</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d9b38f38-e19c-44f3-9f4d-b6d55483a0af">
+          <AttributeID>Holiday Flag Shipping HQ</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8ae2f8ef-9d52-4089-8e1c-e4c574ad8880">
+          <AttributeID>Holiday Flag Shipping Ships</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a3aa8ba1-ec3a-4b39-a482-f0d4b589bd6f">
+          <AttributeID>CL Semester</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b30bc089-3064-4865-98df-c746550d8b0a">
+          <AttributeID>FL Semester</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c40f6fdf-9a5e-48d3-b8c0-f48d2d080810">
+          <AttributeID>FL Month 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3d03c056-c671-4cfd-8aaa-9120734391f5">
+          <AttributeID>CL Month 1</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="247df7e6-e248-43e3-b340-869929059494">
+          <AttributeID>CL Quarter 2</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="49c6c3e8-9aa6-4110-9ea2-1e7c5c9e881b">
+          <AttributeID>CL Year 1</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="7e49cbad-77d0-441d-acc1-ca4b47a887ff">
+          <AttributeID>FL Year 2</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="b0d7182e-30c0-4765-8ec4-909a5aace091">
+          <AttributeID>FL Quarter 2</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="cb83f67e-8ab9-4a7e-8723-bc7c0cab6fa4">
+          <AttributeID>FL Month 2</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="f8470e01-fa7c-4c12-b24a-4655c893150e">
+          <AttributeID>Weekend Flag</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="50b087e4-010c-4503-97d2-038c095ea908">
+          <AttributeID>Working Day Flag 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="45138718-6721-4962-92dc-491e91afedee">
+          <AttributeID>Working Day Flag 2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bac53457-43b3-4ccc-8f8e-0629cade7bde">
+          <AttributeID>Special Date Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a88e6403-2cf0-4eb6-adaf-e489b62600f6">
+          <AttributeID>Special Date Group L1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4aace74d-8e76-45aa-9d92-83c685dda89d">
+          <AttributeID>Special Date Group L2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ef2ca337-5359-4c8b-b5e1-59ec90a46028">
+          <AttributeID>Special Date Group L3</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="85ff6f59-7d2a-4d55-92de-4dadb4803237">
+          <AttributeID>SALES Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="78f04c1a-7ea6-411f-892e-0819a73a6d8c">
+          <AttributeID>SALES Group L1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f2a89ef6-d537-47c2-b4a7-58c7eba3ec03">
+          <AttributeID>SALES Group L2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a7f081ac-7291-4994-82d2-ef3145b716f3">
+          <AttributeID>SALES Group L3</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="0d0f8ee5-054e-4fc7-b8e3-8fd404d91bdb">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="c712193e-459c-47f8-b494-0dcaa39b46c9">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="47a63225-db37-48ac-9931-bb7ccfe1d298">
+          <HierarchyID>Hierarchy 1 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="26042821-9c62-4f73-a4b2-d711e4db80e6">
+          <HierarchyID>Hierarchy 4</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="2fd9bd7f-9822-4f8c-8599-d8c9efc9410b">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="30580c05-bcc5-4f0b-bb4b-1ebe78c1eaa0">
+          <HierarchyID>Hierarchy 2 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="33602dd0-acd4-44f7-9447-a38ad6571f4e">
+          <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="63bd23dc-f71f-47ec-991b-70b91671f72f">
+          <HierarchyID>Hierarchy 1 1 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="39a27450-993b-4f79-96ca-8a44aad3e6de">
+          <HierarchyID>Hierarchy 4 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="955b6621-f98f-43f0-81ea-3bc32692c6c6">
+      <ID>SAGENT Jobs And Steps</ID>
+      <Name>SAGENT Jobs And Steps</Name>
+      <DimensionID>SAGENT Jobs And Steps</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e9c81b6b-c379-4792-b943-f774c00d990e">
+          <AttributeID>Job Step PKEY</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="6c84f79a-936f-4b13-b089-b8c6e5fa6bb6">
+          <AttributeID>Job ID 2</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="6dd2b236-0faa-424f-8031-8da046a3458e">
+          <AttributeID>Job Step PKEY 1</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="398c7ce6-edcc-4779-a727-3ee3e515818e">
+          <AttributeID>Job ID 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3ace2cc1-678b-4ff7-84ab-9617680ba431">
+          <AttributeID>Step Sorter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="629fb9d4-87f0-475c-bc7c-a436f2fed7cf">
+          <AttributeID>Step ID 1</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="6b971b0d-23fb-4e89-94b1-f78681bfd95e">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="7f467acf-b6d9-4e43-b2f7-4cfc741d02f7">
+      <ID>SAGENT Logs</ID>
+      <Name>SAGENT Logs</Name>
+      <DimensionID>SAGENT Logs</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9fd14224-52a0-47db-b8af-589f25041433">
+          <AttributeID>PKEY</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="0ea21714-2d05-4caf-9a0c-c76b9086af97">
+          <AttributeID>Last 24H Run FLAG</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2a323073-5ae0-49c0-bbf8-613db5542e34">
+          <AttributeID>Execution PKEY</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="0e4d1fe1-eedf-4d7f-b986-61205cfef3d5">
+      <ID>SAGENT Execution Statuses</ID>
+      <Name>SAGENT Execution Statuses</Name>
+      <DimensionID>SAGENT Execution Statuses</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4d6bd322-ecea-4a73-b909-3ce8f23e4641">
+          <AttributeID>PKEY</AttributeID>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+        </Attribute>
+        <Attribute dwd:design-time-name="a5dd3597-feae-4c0b-a2b1-a205bb98f7c1">
+          <AttributeID>Execution Status ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="d6a43ba9-58cd-41e9-8078-d08010ad804c">
+      <ID>VIEW SAGENT FACT SQL Agent History Logs Over Time</ID>
+      <Name>Log Measures</Name>
+      <CreatedTimestamp>2017-05-17T06:43:59.433333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2017-06-13T07:36:10.223333Z</LastSchemaUpdate>
+      <LastProcessed>2017-06-13T07:38:06.656667Z</LastProcessed>
+      <State>Processed</State>
+      <Measures>
+        <Measure dwd:design-time-name="cbdf8236-92a9-48bb-953a-d58dceb52734">
+          <ID>VIEW SAGENT FACT SQL Agent History Logs Over Time Count</ID>
+          <Name>Row Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="91666809-820c-41df-9619-15655f30871a">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="1985a20d-0a96-4f20-99a0-84822e59776f">
+              <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+            </Source>
+          </Source>
+          <DisplayFolder>Logs</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="abc08465-df72-489d-9ebc-0376d1a9bfad">
+          <ID>Succeded FLAG</ID>
+          <Name>Succeded JobSteps</Name>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="e81ba90b-7708-4240-8ca7-95d5f896ed50">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c5aca6f9-bb32-4f1a-9541-4dd81799abb8">
+              <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+              <ColumnID>Succeded_FLAG</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Logs</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="16de0d7d-8ed8-482c-8e39-911d4a51dd54">
+          <ID>Failed FLAG</ID>
+          <Name>Failed JobSteps</Name>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="cef477eb-3298-4406-be6c-74fcffdcada4">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3872aa3a-5169-4579-8421-00e3dd3831e4">
+              <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+              <ColumnID>Failed_FLAG</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Logs</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="6f6934f4-d249-4127-a53c-4393311155c3">
+          <ID>Duration Minutes</ID>
+          <Name>Duration Minutes</Name>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="3dd345d3-f21f-4850-9f95-e1ad0ba55682">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b52dc4df-be0f-4f93-85a4-be064407fd52">
+              <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+              <ColumnID>Duration_Minutes</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Logs</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedSize>558</EstimatedSize>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="3935ffe4-25e1-447b-b982-11c0b29d9cb6">
+          <CubeDimensionID>SAGENT Logs</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bf29e299-5380-4df0-b846-6592b04d6368">
+              <AttributeID>PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="66c8e177-af79-4576-a3a3-18764b26d654">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f65755c4-2782-41d8-b257-5c98fd077b7c">
+                    <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="0ee34be2-128e-4761-a40d-22d197993f61">
+              <AttributeID>Last 24H Run FLAG</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5c3dcba5-8b3b-4cf3-adca-0c85092c057f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="61c6d592-079a-404c-8776-0752257ee811">
+                    <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+                    <ColumnID>Last_24H_Run_FLAG</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7019596f-d200-47c6-a9bf-178711b0d673">
+              <AttributeID>Execution PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="92c216b4-946b-4423-8873-bdc6e6c5159c">
+                  <DataType>WChar</DataType>
+                  <DataSize>25</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cc92f24f-acdc-4b1e-be12-1eb06baf3b00">
+                    <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+                    <ColumnID>Execution_PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="274e2465-864d-4833-8535-72037b4efbdc">
+          <CubeDimensionID>Dates</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="81b9d515-1d55-493f-b5f7-da2c348f12a7">
+              <AttributeID>PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e2e19397-76c4-4216-85aa-00e2389b28ec">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="05e8497a-8907-4488-8b31-9f8081b3f8bb">
+                    <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+                    <ColumnID>Date_PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="21e26eeb-0a3d-467f-b4cb-96735cc1dfab">
+              <AttributeID>CL Year</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c5f7689c-3cf6-4881-80db-f54a28407146">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a30de951-9ba5-4448-bf31-75676cf3b77e">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="f7d2dbf7-a089-448d-ab3f-7c82e911316e">
+              <AttributeID>CL Month</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="514ab732-9920-4b86-8732-39e3ab7ce74a">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ec1c7a83-aba0-401d-b9bd-aa27405f01de">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="5686cbb7-2cd8-449e-b8d7-28912b670f27">
+              <AttributeID>CL Year 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5a4184ed-b369-42be-a6a2-051e0cdcb86e">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3e3c0e75-ad17-471d-890b-83fa4d00e2eb">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="862d680d-2f5c-487d-b87a-746ba6517c9e">
+              <AttributeID>CL Month 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6f0aeec5-b923-42e0-ac7a-a4873469af1c">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="97f772ea-4845-4787-a09b-bacb50cf0bc8">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="75393533-06fe-4282-bf38-db5fa8cb9935">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="298689c3-9f96-4c81-8948-5ec2046f2822">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="d54f5486-a8e4-4e60-b7cd-de844b22486b">
+              <AttributeID>CM Month Day 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5d4cb796-0227-4bf4-93ec-56f0564d93b7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5f40d705-7697-4f5f-ba8d-6d19edaafe3f">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="4c679371-98ff-422e-81bf-23100ff1099a">
+              <AttributeID>ISO Year 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4728cd8d-9bb3-4090-b248-8ce0a8fa6cae">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dcd552a1-e937-4f46-84d8-d1ab6257e803">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e19f01a4-1f4b-48e6-a8e9-0f551af18e6c">
+              <AttributeID>ISO Week 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bd779796-2858-4881-9371-aaa52e2677e4">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3afcb3cc-d1a2-430a-a673-e3e9be852d59">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="043e6eaa-7e8f-4139-9084-f1bc36506861">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9b3acead-ebb8-4a3b-aced-3b06bf084c02">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_Week</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="baf4f050-b33e-4fdb-a986-2233719fb5cc">
+              <AttributeID>PKEY 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d165e875-f7c3-4453-9dd7-e65b65c094ba">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f07e21b5-7fca-4893-9866-a0bde443dac4">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7fbc4cd4-120e-4a8c-8e9e-1d31c51003bb">
+              <AttributeID>CM Month Day</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d263a8c2-45c1-43f6-87d7-3e09649a76bb">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c24b343e-4b26-4d0b-af2f-931aa1eb618d">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CM_MonthDay</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="93d937d5-7c9b-48da-bc1f-e805264e4d4c">
+              <AttributeID>ISO Week Day Number</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a8e62b8d-453c-4fd0-b528-00a148749092">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9b29cefa-dcec-40a4-a081-c7e09813e99a">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_WeekDay_Number</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="dede6251-7cc6-4877-ba6b-fcef1a8f30f8">
+              <AttributeID>ISO Year</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cd769216-d86e-4715-b6ea-d279f40ad422">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a35ab083-9a37-46ac-8648-3c4575e24074">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="db274e80-99f6-44a9-8d6e-ef15525af61c">
+              <AttributeID>ISO Week</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e3e0ec52-e8a4-4ec4-a654-05ab1a1ea3e0">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d30499af-8ceb-4953-a0d0-d22f561d70a3">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_Week</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="a48b4825-ef1a-4cc8-ac4f-20652e747756">
+              <AttributeID>CL Quarter</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c950acd3-d76a-414a-825e-2ee49e1deb3e">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6c1f9423-fa17-41c5-b3f8-426a36a4292b">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="93b7d417-bb9c-4f1d-9fa3-229186461dcd">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ad8aa1ff-2e4d-469a-8f92-401850b40c55">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="fc177310-a47c-44cc-99e2-6313bee2f53c">
+              <AttributeID>FL Quarter</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dad00dc3-5d21-4fac-ae2b-f3e15b73dca0">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="67991873-28fc-4eb3-8c4a-f478de5431ab">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="a65f0e21-8f84-4e08-b349-09187ac56974">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3b2291f1-0680-4053-9621-e49c7d0bf07d">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="f6041006-c006-4d4e-b60f-a0e9649bc505">
+              <AttributeID>FL Month</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c1ecf00e-7981-4b43-8e73-344512685a24">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="59ad51a5-62eb-4b91-843f-a9c17ef334ce">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="ce883eec-d203-419e-9eca-19f8e4aa665a">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d22b7413-b6b0-4efe-a493-cf076c9b42ac">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="f3595f95-fc72-4a81-9446-17bdeed4b353">
+              <AttributeID>PKEY 1 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="870c2d96-a438-497c-9909-aaef4fa38441">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fe2e8db4-4cfd-4f08-9d5d-dea90dbbd038">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="8e676a83-3e43-46f2-8c94-431bfe9a8aa8">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="27282562-14d2-410c-8513-b6b51dd84573">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="cf577773-19da-4d4d-9ebe-75c8368d1f68">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ad720ef3-b4ab-405f-9689-1b82b4aecc97">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CM_MonthDay</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="22a12064-1563-41ae-a9fb-4be898e20812">
+              <AttributeID>FL Year</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="82f158b2-d0cd-4aaa-a56d-7080a3fd2631">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e3e0dacc-4415-4476-b496-44d1fe9e3d15">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="3d48ea40-fcdc-4222-8b1e-5ce30712b256">
+              <AttributeID>FL Year 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="38264c8a-1294-4ff5-b7b0-87204674903e">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b5186d81-2786-4d20-9bcc-dfdfbe587021">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7818ec9d-381b-4965-b458-42bcc714178f">
+              <AttributeID>PKEY 1 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f3652b85-17ae-47a1-b034-52ef82b950f2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4dbe3843-0ed0-43e3-b872-9712b1cd494d">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="8d1d8bbe-dfa7-49f7-8543-0d5ee800634e">
+              <AttributeID>CL Quarter 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7832e453-22d4-4258-9862-135ec35c704b">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="06f2a314-f034-406d-89fa-0b027e88527c">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="89ab7e43-3959-4581-8a00-9ff4e54bc982">
+              <AttributeID>FL Quarter 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3f08bffa-3a44-48f0-ae5d-898d13f5e1f7">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="83eb9f16-1228-4b77-a6ff-49e1e38d6edd">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="6ca0b6f6-c4ba-47b0-a6f6-1ec87cf74f4f">
+              <AttributeID>FL Week</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d4598777-2867-4061-8400-2b48f7effe8a">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1629743c-dc83-48b6-9c14-6fd0c5b21c0c">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Week</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="d5af027d-55e6-42d1-a834-ffb0ecbe6c9e">
+              <AttributeID>CL Week</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a25a5bd8-0f7f-429c-b64f-6ba28b120ec1">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dc728fa8-d73e-410d-860a-fe845b8cd9ad">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Week</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="29d90093-de5e-4c47-ac76-b73524974079">
+              <AttributeID>CL Week Day Number</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1e472871-085e-471e-9444-1392c905a699">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="379de332-0c80-4ad3-b4c6-d311b91fec4b">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_WeekDay_Number</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="49b1ceb3-a931-4fc1-9c78-3931b43732de">
+              <AttributeID>FL Week Day Number</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c8aac1cb-8842-40d9-8fcb-2961a8eda7c2">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="81fc6620-e120-4c0d-ad68-7320985fb414">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_WeekDay_Number</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="f9e787b1-7399-4155-bb92-d488a779d0ca">
+              <AttributeID>CM Week Of Month</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="33d3d06c-f934-4940-bf66-38377081e3af">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="218bc9ac-dfba-45f8-a900-70329ade33fc">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Week_Of_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="0b05d24c-1d25-4a87-b552-fa27408d4562">
+              <AttributeID>FL Week Of Month</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="000dc52a-457f-47e6-8ca3-b32e61d710cc">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5963cc1a-406d-447c-92cf-f93d7feeba29">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Week_Of_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="abae8ace-eb3a-482d-9b9e-481b12a63ddb">
+              <AttributeID>Holiday Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="54ddf920-943f-48ae-8149-439001c0b270">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="205d3805-7ac9-4915-8869-eb000a08091a">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Name</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="459d1686-0758-420f-9409-a14245eb3a60">
+              <AttributeID>Holiday Name 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="59d83dea-8ff4-47de-9071-aa355f4f5609">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4be58e4a-8a33-4553-9fd8-19078c3157d2">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Name_2</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="b934b947-ecda-4a41-9251-faef1a3934c3">
+              <AttributeID>Holiday Group</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a9b56be8-41e6-4050-83eb-e4c3d7e055cf">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6e156881-704a-41ac-82c7-7a12dd38cc20">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Group</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="ef2e95dc-1608-445b-9b40-7289d2a3eca0">
+              <AttributeID>Holiday Group 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9894d2d1-c8e7-49d5-9643-ab731c04055d">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6873fcad-57f8-4e2c-ad7a-862a0a99385e">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Group_2</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="171314e9-7d7f-4260-af33-74c3651cc7b7">
+              <AttributeID>Holiday Flag Retail HQ</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b5bd907b-cff9-4036-a73f-67f47cff2d50">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6a6386fd-d688-4830-82c5-a7cc06205dc8">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Flag_RetailHQ</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="2f73bd21-85dc-409b-b621-1a1c89dbce7a">
+              <AttributeID>Holiday Flag Retail Stores</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="49c568e6-5e3b-4252-b790-bcf609c83b9d">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b520769b-18df-425e-b329-69a8b5d01f47">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Flag_RetailStores</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="b1472419-673f-41be-9142-59c122cca6de">
+              <AttributeID>Holiday Flag Shipping HQ</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c0ec3753-5a43-4dba-a63b-023960d2a49a">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3b33a232-a6f7-477f-9298-1d2b8769b853">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Flag_ShippingHQ</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="3c2a8808-0330-429c-8d5e-5098717fcbb5">
+              <AttributeID>Holiday Flag Shipping Ships</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="588370b3-e43a-42ba-8b6f-fef4644cd233">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="babf4d32-3577-4a1b-b369-fba12f8abac8">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Flag_ShippingShips</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="814b8f3a-a9c6-481d-9610-8c45f9062758">
+              <AttributeID>CL Semester</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="13f2924d-280d-477e-be4c-9411342c4991">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9e1f34bf-213f-484c-949a-0f61d9bae37e">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Semester</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="c409d73a-a648-40f3-9592-ed077d834376">
+              <AttributeID>FL Semester</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b158e199-3753-4fb2-a737-cceecc073c13">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="01cfbe6e-c8be-409f-a48c-56dd9d3f6fbc">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Semester</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="52ee7d6c-c44a-48b2-9a50-ba076a3198f5">
+              <AttributeID>FL Month 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d6afa582-5810-4cb3-ae00-55aa7f738a39">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="410006cf-6d59-4c38-8db8-fa6f70af43b9">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="4a249ce2-7e1b-4637-a1d2-7ecec8f22d3a">
+              <AttributeID>CL Month 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="878e15af-e62b-4bab-9a66-0e6ee1ae20a6">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b06f25d1-c47b-46cd-991d-154f693daf78">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="6bb2f562-63c5-4762-92fb-e19679442f3b">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b31feffd-cdbe-4f17-a980-f52fc2e65d51">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="5b458617-988a-4852-a91a-9899997db2e3">
+              <AttributeID>CL Quarter 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5c4e0c21-6e01-47b2-a751-df992fc06ee6">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b17a4551-a005-4762-8a10-b5130679f504">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="edd9d905-4de0-4dee-becc-d42c71f324bb">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8fc0ceba-1879-4368-8933-6c407ccc372d">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="c3411aa0-5eb3-427b-b6d4-f800b649ce87">
+              <AttributeID>CL Year 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a8c32cc2-9a2b-46bb-99b0-a1c778964d2a">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="705fa464-082b-4e7e-beac-50ca79f7d781">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="304d2554-d845-4e55-a918-bba256b856e9">
+              <AttributeID>FL Year 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7660de52-cdd0-46f3-9dca-743293017618">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="db138d09-a94f-4f19-82ad-808780f7b7a8">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="081c2614-4038-479d-a536-d39e80049160">
+              <AttributeID>FL Quarter 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="83c89773-2dad-4da8-a859-67f254541c69">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="20868284-7a1d-4fdc-a46e-a6faef977d2e">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="84f73ecb-1e90-41d8-8dcc-506a50695c10">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="46ebad87-c69b-4c40-a1e6-3ded6f6020ba">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e09dd333-cd4c-496a-9cac-390ac2b23f88">
+              <AttributeID>FL Month 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cd0a6fad-4c84-459c-b0c3-af9ccd398ea7">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cb35ada1-91de-45bc-87fe-635e13dcac3d">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="75e52f9e-6270-4123-9093-a4b867d91973">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1da7fbb7-6e2f-4a3e-90a5-0f73508eb741">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e5756e33-0a65-43c4-bdde-d24c949a541d">
+          <CubeDimensionID>SAGENT Execution Statuses</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d5c577d0-27e9-4bbc-b3db-847628b1b19e">
+              <AttributeID>PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d730a499-efd1-4f52-8d6f-25b353495730">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="af4cb3cc-7160-4f69-9477-71ff95f0d983">
+                    <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+                    <ColumnID>ExecutionStatus_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="ce652f32-c2be-4ba8-b790-94e360671bf5">
+              <AttributeID>Execution Status ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5cf6c100-c467-4652-a714-737d5f05fe51">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2c631bdc-e452-439e-98e2-c53aabf20c01">
+                    <TableID>dbo_VIEW_SAGENT_DIM_ExecutionStatuses</TableID>
+                    <ColumnID>ExecutionStatus_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f332617b-b157-47c7-88cb-e9494414bfea">
+          <CubeDimensionID>SAGENT Jobs And Steps</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="18c4ca1e-36ab-43da-b294-50d29b64d429">
+              <AttributeID>Job Step PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8a3ddd98-1ec3-4107-8f7d-07f80fb02787">
+                  <DataType>WChar</DataType>
+                  <DataSize>200</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="da90527a-c9f7-4b10-9a77-57ac46edb32c">
+                    <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+                    <ColumnID>Job_Step_PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="328eafc1-2399-4a76-9ac7-9206b977eaf2">
+              <AttributeID>Job ID 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e55f8f8d-e494-439b-9c35-37c12ca082b3">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="33ce1f89-3bfc-4a86-83ad-1a2d3606201d">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Job_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="70d29969-8dfd-4304-8b53-6937880df653">
+              <AttributeID>Job Step PKEY 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a61103fe-dd39-464f-89ec-325efaf4fcb9">
+                  <DataType>WChar</DataType>
+                  <DataSize>200</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5d7fdd6c-7a0c-437e-bce3-a7260f9d6e9e">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Job_Step_PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="43c880b7-d05b-4fdb-9c14-cfc898cb3df8">
+              <AttributeID>Job ID 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5bf06e82-9d08-41ca-aba5-60b8313b9cb3">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7ddfaef6-2da8-423a-b6ce-34c558b8e3a2">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Job_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7d621a93-8125-4f89-bd24-c5afea0b8e7c">
+              <AttributeID>Step Sorter</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3d18a538-efa1-4f8f-8899-3b6600dd8f00">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2d1fc9f8-25c4-4090-b630-63dabb8a104b">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Step_Sorter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7a0bf427-4594-42b7-9320-403a0ac32de4">
+              <AttributeID>Step ID 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fc9121a0-acae-49e4-bf75-eb01fc078b8f">
+                  <DataType>WChar</DataType>
+                  <DataSize>110</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="503fd686-92bc-4b27-90a2-0637711af7f1">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Step_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="addade84-190c-4692-b127-b22a80b8db37">
+          <CubeDimensionID>Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="48a53791-4236-4ea7-b08e-d233fddbc0a5">
+              <AttributeID>PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="42381e9a-089b-4cc6-be1f-f6530e154eb6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0d4e2800-aea1-4f86-95dd-9630f6386bf5">
+                    <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+                    <ColumnID>Time_PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <ProactiveCaching dwd:design-time-name="408dd431-f9ac-4107-9794-31b5900b6582">
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>-PT1S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="11a7ef87-c716-46cc-b566-ae3b6ea4890e" />
+      </ProactiveCaching>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="3cea50ed-a6b8-4912-b783-7640d757f35a">
+      <ID>VIEW DIM Dates</ID>
+      <Name>Date Measures</Name>
+      <CreatedTimestamp>2017-05-17T06:43:59.55Z</CreatedTimestamp>
+      <LastSchemaUpdate>2017-06-13T07:36:10.276667Z</LastSchemaUpdate>
+      <LastProcessed>2017-06-13T07:38:06.973333Z</LastProcessed>
+      <State>Processed</State>
+      <Measures>
+        <Measure dwd:design-time-name="fed02360-1723-4101-8b27-593d5d5ff75e">
+          <ID>VIEW DIM Dates Count</ID>
+          <Name>Days Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="79ed030f-4154-4d52-94d6-fe883e03f2f7">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="d5bd23d9-e621-4790-ac10-4f82fdc76e2e">
+              <TableID>dbo_VIEW_DIM_Dates</TableID>
+            </Source>
+          </Source>
+          <DisplayFolder>Dates</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedSize>670400</EstimatedSize>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="26430a68-f0f3-45cb-bdd6-9339370ecd26">
+          <CubeDimensionID>Dates</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d5e0161b-6b48-4b8c-bd84-200942042be7">
+              <AttributeID>PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="17527b09-432f-432a-8fa7-57f47cb918d8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="48ee9b7a-a9b2-4303-8704-a6e5d19852fb">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="ae2a3d4b-c838-446f-a2e8-88a3cb0cb065">
+              <AttributeID>CL Year</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="095289f7-158c-4750-9847-6534211758d7">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="293a6110-22e8-4d87-a85e-0a53126c73e7">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="90a839c2-792a-4d5e-930a-2b7e8c52e894">
+              <AttributeID>CL Month</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d63568aa-4678-430c-8702-02c5db2cfe73">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6113328d-a4ad-4273-9f80-bb3fed4ab83a">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="d7a81c85-ee76-4c2b-9086-71b4f83522e6">
+              <AttributeID>CL Year 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6144f14c-1b3a-4d60-a1a5-f1b6afa70b61">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7b99d2d0-3113-419e-9146-c922afe60c20">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="d6a1c033-1c93-4b63-a75a-b409a40f99ae">
+              <AttributeID>CL Month 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="281ce103-a905-4095-ad28-5859b0f04bdd">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="001d0497-e7b0-47c9-9371-a3eb18011ac3">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="0e9ac95b-bdc9-4fa8-821d-db18bb488478">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7c56c434-67cb-48c1-a32b-c6df697c1d34">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="8fb97066-cc20-49a6-b23c-a321740f4d56">
+              <AttributeID>CM Month Day 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f939a91d-63ac-47d6-ad67-833341bddb5f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8961fc06-127d-46a3-a76b-c49f6ff41887">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="663b9a46-577e-4ab0-b5fe-b0e1b3899de4">
+              <AttributeID>ISO Year 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4a779d44-c45d-4522-bab5-facb8b4f0fba">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8806478e-88e1-43ad-8b72-dda0b09a869e">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="3d4c371c-f8ec-4d88-aa75-fc06edf573bd">
+              <AttributeID>ISO Week 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="14a75b79-0b16-48fa-8ac7-4435f5de7024">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1f6461c7-6f25-405a-b952-2c97705f96e2">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="825a913a-ce5e-4243-9fd5-56dee556a754">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f3f856fb-7462-4362-aa33-9af1839c1351">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_Week</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="bad071ea-5b54-4c4d-9f13-c83694992952">
+              <AttributeID>PKEY 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ba5216b6-4ab6-4d5f-b890-727551f18af3">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="feae97a7-524d-458b-817b-d4e35a25d829">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="fabaa39c-b103-4a23-b70d-785eb13a6d9a">
+              <AttributeID>CM Month Day</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a379139d-a143-4cf5-a99f-e0248f83dd20">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e60e1e8a-6f13-4703-97bf-736615cb54d9">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CM_MonthDay</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="fe9830b0-2682-428e-b29d-e9c8983b1a55">
+              <AttributeID>ISO Week Day Number</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5f97d27e-3358-4ed5-8cab-aee3130f25f3">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ee31125e-ab8c-4ade-a334-1116a0b30e23">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_WeekDay_Number</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="de41390f-b50b-4819-9766-a1b349da2cf4">
+              <AttributeID>ISO Year</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5229b9c5-abfd-4695-b93e-d2584db3621c">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6720829a-e34f-4a21-9ec3-2ae9671e2556">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="3bcda40f-7d55-45ea-a46f-fd9623c156ce">
+              <AttributeID>ISO Week</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c4693c94-5ca0-42d4-a7d0-5526f22c444d">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b0420143-f7be-406f-83e3-b94284611f54">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_Week</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="ae0a457c-c845-4325-8303-31dcfc2f9557">
+              <AttributeID>CL Quarter</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="598ed151-409d-4121-8ded-11ae8e90922a">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a0bc6a07-6e5f-4754-aa9d-62bf6eab7828">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="2ae1424c-108c-45f1-9ee5-fb3c48e7cde4">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6fd5d421-ecd5-4958-af3d-9618365f01dd">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="028cb9ee-d0d0-4b98-87af-dd37f173ce13">
+              <AttributeID>FL Quarter</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="db466c29-b0d9-4d0e-92c8-b002362efb84">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cdc1fee3-f676-488d-8d2d-9a6815f133d9">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="4e952ba2-d20c-43b3-acc9-632072935f63">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6ad91117-61bd-40c1-bd55-317e4dbb0b1f">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="aa16bbff-0750-4c23-9193-0c987b9a3a8c">
+              <AttributeID>FL Month</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="53a806c2-15a0-4baa-a684-a0009a9fe624">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5cd36dd1-726b-4ebb-ae28-d00e5bd842d5">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="85ac23cb-7130-49af-a36a-0aa7a60e2556">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4511c1f5-2a63-4142-aac4-e4f2360ea57c">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="b94b0356-034c-4cf5-99e8-09c022e01427">
+              <AttributeID>PKEY 1 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0f72afaa-6d76-41a4-936e-5c11ba6bd72b">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3a625ed1-6d20-44df-ace8-7845a8d19950">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="044c298e-98d1-4e95-8c99-934408e033c8">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f667a3aa-ac2d-40ed-b6de-bf82391de48f">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="2673df7b-5a08-40ee-9612-4fd1a1287330">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1d375e20-9073-46c9-a5b7-b80141a8227b">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CM_MonthDay</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="29b7475a-a5cb-40bc-a66c-0bae39845a85">
+              <AttributeID>FL Year</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c1c584da-2248-4d8c-9cde-90288069b2e3">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bc23c69f-739d-4ce8-a90b-8c1ad4d51fd3">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="4672c60d-2662-4c56-acac-3a9dc7161583">
+              <AttributeID>FL Year 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ea4b400b-4993-4f59-a304-31b53b56b8ea">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="93542d98-e639-4664-a829-68630021c2e6">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="802a10cb-5e9e-449d-840d-6c6e23e8671e">
+              <AttributeID>PKEY 1 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="58678de2-b527-4016-a9d9-4f0d3375499b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c3579975-b316-4312-9ef4-f8478ba69148">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="80415840-3b8f-4332-9f80-bd13633c538f">
+              <AttributeID>CL Quarter 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0efa0867-db5e-448d-a26c-393b0caede09">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3ff18f00-739c-4d0c-bf10-d64704127148">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="ac9a22e0-86de-4f5b-9937-8bf7f92856be">
+              <AttributeID>FL Quarter 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="483afb81-9a61-41d8-ae45-9a8ed4e6635c">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bc233026-9532-4270-bf57-c311421f772e">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="ae9f3be5-27dc-45c1-8f8e-a72c45ffa22b">
+              <AttributeID>FL Week</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8b524e65-ea85-4cf6-b736-ec54fbe05c0f">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e6a0ec50-01da-4874-86d7-e6f8260c44ec">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Week</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="20bca185-488f-4eb1-9a12-c3f448e8e774">
+              <AttributeID>CL Week</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c06e9449-d160-4c22-9ffe-560d08803138">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f58b3c5f-a4ad-4078-bfa2-7aa58016b065">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Week</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="a3c2df2e-c74b-42c0-98e8-fafb3a215955">
+              <AttributeID>CL Week Day Number</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="56680355-278b-4198-9b22-3e03911c9730">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c3942211-a602-4af3-a20e-e439dac3e86a">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_WeekDay_Number</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="4b88c096-b056-4c54-aeb6-07f824f6d774">
+              <AttributeID>FL Week Day Number</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5b403b33-fa8f-4826-bd3a-e1ebd57c9d37">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0c17a018-940f-4c08-93b2-4ae18d9218db">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_WeekDay_Number</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="1aca1933-ad91-4a3b-b3a4-d74348baa165">
+              <AttributeID>CM Week Of Month</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7b937e5e-57f1-4c28-af1d-648d9cccac05">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bfa3d96a-8949-44bd-a3c9-44bf92b7d415">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Week_Of_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="da53b83c-0d4a-49b0-a06b-d02b165b47d9">
+              <AttributeID>FL Week Of Month</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="22519c6d-32d0-41fc-a125-0e771fb9084d">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e244527e-7b8f-4e52-8435-1a83a3d92127">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Week_Of_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="b6197dce-7c92-4c13-8b44-89c2e9d7c0a3">
+              <AttributeID>Holiday Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e5a643e6-f74d-4949-b24e-2246ca2ada7d">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b3f4550f-6e87-4808-b540-4b91558cd75a">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Name</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="b7274e16-967b-4c03-b939-445f29575639">
+              <AttributeID>Holiday Name 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8dbdb0b8-e364-464f-94f5-b68aed3c7971">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="326b9cf5-2e34-46ec-abc2-61c68809b135">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Name_2</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="72c6d4d1-a2b6-4e3b-ac47-94f2486b5881">
+              <AttributeID>Holiday Group</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ef231f62-d639-48e9-8842-8ca295db3de4">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9573225c-ee8e-479a-9619-9f7984c8f460">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Group</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="4c1649a6-cd19-49b2-bc4f-f75533dab513">
+              <AttributeID>Holiday Group 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="de84fd7e-3d54-48c7-9644-d032f997d9a6">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4603a3dd-deb2-4d1f-9087-820909ce5852">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Group_2</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="1b46eb71-e936-4a78-8e10-e4fdc561e74e">
+              <AttributeID>Holiday Flag Retail HQ</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="72b1cff5-35cb-456e-a163-0e5509ad7dcb">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2e6b1c44-978a-437f-aa45-7ee14599abb7">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Flag_RetailHQ</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e94b99c9-e790-486e-b8e4-dab09b990ffc">
+              <AttributeID>Holiday Flag Retail Stores</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7b4102d4-98aa-4a15-9e5b-63b265ddb922">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7e0beaaf-a28d-4ceb-9a04-a4ddea3fee31">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Flag_RetailStores</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="391d3ab7-0bc7-4ceb-91c3-542ef850d2e3">
+              <AttributeID>Holiday Flag Shipping HQ</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b5548461-4c4c-45c8-a4b7-b6e41d8d680f">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6b44552b-f7f8-4a44-825c-5affd5b429ad">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Flag_ShippingHQ</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="1b1ce3d0-49ec-4dd2-80be-6dd48e3f067a">
+              <AttributeID>Holiday Flag Shipping Ships</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1784e085-1ad4-40aa-840d-89f6497df96a">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="026deb2d-e2f0-409a-ad15-bab5e7a3231e">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Flag_ShippingShips</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="a047dcf0-f98e-40f9-8876-8df4ef4c74ee">
+              <AttributeID>CL Semester</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5c0a2bc8-2594-4fa6-8e0d-4c519df67b09">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="30b692d0-2404-4f11-9c96-54036fc1fd25">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Semester</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="63419222-5f27-46bf-8439-6e53dd099f90">
+              <AttributeID>FL Semester</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="762bc8e6-91b9-4490-9ea5-395963c80cb0">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2ddca702-a7f2-4db4-9ebd-8b1b1d5a0162">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Semester</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="c1cdd96a-8d87-4720-af84-f2d898ad6e8f">
+              <AttributeID>FL Month 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8024d297-2b91-4cba-be4a-391fc1a134c1">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0d14bfcf-9878-432c-8f1f-3082c0b1b6df">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="8d272a53-05f0-44cf-9ea7-46d4a7dd2d18">
+              <AttributeID>CL Month 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1da7f14b-8ee0-4639-9f6a-967604c69c5f">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a36ae5f1-9c45-46f9-992a-e0dda460640f">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="27be228c-387d-41ad-bbdc-dcaabddec552">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="07672ce7-3e5d-4cf9-abde-33fe6455a934">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="4c5e3d78-45da-4b4e-a810-132fbb02e1f6">
+              <AttributeID>CL Quarter 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="39a6540a-e3d4-4f6f-85f1-f6b30171e79a">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ec173d96-a356-40cf-8996-4c649c528e01">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="76d83da5-8944-433e-a5df-851d35fe27b6">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2caf68b1-2395-4eaa-8329-acd404adfa0a">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="72091f3c-e17e-4191-b5c2-591bad207ba4">
+              <AttributeID>CL Year 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="78d6ffb6-7884-49c5-b7e6-e8bd7850a9a1">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b07f27c5-3c48-43d0-99d8-629c1957f8b4">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="91666952-7395-4f1e-8eb8-a924f9fe6a86">
+              <AttributeID>FL Year 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="af301b3f-93f1-43e7-8d12-32925441ecf1">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9f3520d1-9e83-4ec8-bbde-c6a2005b12f9">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="ccfd3bd4-533c-4389-9c94-d0af9d807693">
+              <AttributeID>FL Quarter 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="804934bb-0b2d-492b-84bc-154ba8bbfa9c">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6ceff117-2222-449b-90aa-5d5f1a3d2199">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="ceac2f77-24d1-420a-b115-6f35cef281c2">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="deb55265-0936-40b5-b7f1-05852032bfcc">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="914bc93f-1d56-44d4-957d-3afcc74f7be0">
+              <AttributeID>FL Month 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="25c8b958-1ae6-44ac-b0c6-2cca7aa7534e">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="98fb550f-15c0-40bc-9618-a11c1af00c44">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="633c84bc-0f19-4759-a79a-c7af94f3837b">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1ce65b14-129c-43d9-b8e7-f527d1570ab5">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <ProactiveCaching dwd:design-time-name="82fb9806-57ca-4fa7-9938-770e329fbc75">
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>-PT1S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="03c735f4-ecef-45eb-bcfa-6f0ae71f93c1" />
+      </ProactiveCaching>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="a9c1362c-4e1b-433c-9acb-eeb25568a7bb">
+      <ID>VIEW DIM Time</ID>
+      <Name>Time Measures</Name>
+      <CreatedTimestamp>2017-05-17T06:43:59.586667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2017-06-13T07:36:10.323333Z</LastSchemaUpdate>
+      <LastProcessed>2017-06-13T07:38:06.603333Z</LastProcessed>
+      <State>Processed</State>
+      <Measures>
+        <Measure dwd:design-time-name="0412c239-f56e-48ac-9d59-22f5401f4a03">
+          <ID>VIEW DIM Time Count</ID>
+          <Name>Minutes Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="330cae13-47c1-4b5c-ba65-a781fdfa5f90">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="2e259e19-77df-4246-8b45-7d5294cd13b1">
+              <TableID>dbo_VIEW_DIM_Time</TableID>
+            </Source>
+          </Source>
+          <DisplayFolder>Time</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedSize>3098</EstimatedSize>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="942a83de-0ce9-4b50-89d8-5da3cdb0c775">
+          <CubeDimensionID>Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c61bb677-1cfc-45a6-98bf-abfc3b598f55">
+              <AttributeID>PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="56df333a-045f-4aa5-b448-cac60fd39914">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9a45c18f-ffa1-4f0d-b9d7-f364ef86c494">
+                    <TableID>dbo_VIEW_DIM_Time</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <ProactiveCaching dwd:design-time-name="e1ef674f-c14c-40f7-a141-8fe2c64eeb4b">
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>-PT1S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="12aa29a0-226b-4626-9872-8c2b2798582c" />
+      </ProactiveCaching>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="28e1e946-4451-472f-9c95-677302e91f04">
+      <ID>Log Measures</ID>
+      <Name>Executions DCount</Name>
+      <CreatedTimestamp>2017-05-17T06:43:59.633333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2017-06-13T07:36:10.376667Z</LastSchemaUpdate>
+      <LastProcessed>2017-06-13T07:38:06.673333Z</LastProcessed>
+      <State>Processed</State>
+      <Measures>
+        <Measure dwd:design-time-name="c2201955-b3a3-421d-9154-14450ffea39a">
+          <ID>Execution PKEY Distinct Count</ID>
+          <Name>Executions Count</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="cf5981cd-cbe5-4332-8595-a022c132f12a">
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0c58c3e1-3b11-45e2-8c66-97418cf4dae5">
+              <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+              <ColumnID>Execution_PKEY</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Logs</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedSize>3004</EstimatedSize>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="036e68f6-4371-4f82-8c58-e8188974a7eb">
+          <CubeDimensionID>SAGENT Logs</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="370944d9-542b-4660-a70a-c302a65e646d">
+              <AttributeID>PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="77013072-b76b-486c-944c-545a95084182">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b238c648-927a-42ef-a25e-402368dc8106">
+                    <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="6b5af704-4e7c-495d-ad6a-f1f357a9481b">
+              <AttributeID>Last 24H Run FLAG</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7c44ea32-25eb-4553-b7b1-d2b0464af06c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6025ead7-5479-4e52-8291-e9633160dce3">
+                    <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+                    <ColumnID>Last_24H_Run_FLAG</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="3f752d2f-4d12-485d-819b-8ec47f9a2241">
+              <AttributeID>Execution PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c5819d08-731d-40f6-8f23-c39966032b6c">
+                  <DataType>WChar</DataType>
+                  <DataSize>25</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8f38165d-1369-434e-8848-ac31746ac70e">
+                    <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+                    <ColumnID>Execution_PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1b938a01-630c-4ba7-bdd4-df62c5767b67">
+          <CubeDimensionID>Dates</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="762498ad-1702-4264-a868-adf444bec1fc">
+              <AttributeID>PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="02005707-12b3-4270-821c-28f7e7ee249e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e5d022bb-7cff-46ae-aefc-4801a34376d0">
+                    <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+                    <ColumnID>Date_PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="810da578-b299-455f-8fab-7a14f35ce006">
+              <AttributeID>CL Year</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8d31e776-ed64-4680-b5fb-801a6a263525">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e2cf924d-69cf-45b0-8f3b-642396cc2303">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="4a0fd571-6541-4b56-8c3c-834de9250f06">
+              <AttributeID>CL Month</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1b04f3ab-4489-43e6-943e-5ef308424562">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="75020922-db2d-443a-b11c-f3f8474fcac7">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="6cc8632c-f23f-4a3b-b326-f09522186aed">
+              <AttributeID>CL Year 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="db050495-b52e-4fa3-8ee9-077bc626d92d">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="36534072-5dd8-495d-9628-4d3587dbec57">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7913ce10-493f-4094-ac87-b4fc4e585848">
+              <AttributeID>CL Month 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9ed91143-2ba0-4e68-9423-d31be66d9b70">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9db44049-7e89-4673-8625-260e8c9e677d">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="9cd99753-91d9-4c4e-b85b-83cfe4ded419">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e52c19c0-3c05-4d25-b6e9-ed55e7a49c7d">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="4f24c914-7498-4273-b485-c1ccbbff8fd5">
+              <AttributeID>CM Month Day 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0c6dd3e9-9f9e-416b-bcd0-e0cec22fe10c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b09bec93-6e3d-4e49-95ab-c70bd4fe0ed6">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7a7374d9-16b4-41dd-9e0f-43b8f84899e0">
+              <AttributeID>ISO Year 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b3eff815-f923-4a99-8d8a-615a20124f55">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d772784e-ba17-4473-80bb-1b8188dfc476">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="fd065823-d403-4886-b34c-aa1247f410da">
+              <AttributeID>ISO Week 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1b30617a-eabd-43ad-bbc0-35a8943c1996">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9f00d488-60d8-4e35-95ee-fa72b41e98e1">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="3afbb15a-4b80-4a92-a49a-d23d16a94463">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="44e7e995-efd6-4743-a857-7164cb82d505">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_Week</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="2d33fed1-0d62-4c65-a538-6c188a92ed2c">
+              <AttributeID>PKEY 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2c0eb244-c084-430e-af2a-518e779d5e34">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fe6ceb40-aa17-457d-a6c8-65b7191fd64e">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="66f3520d-c6cc-47c3-948d-d84062b4b23d">
+              <AttributeID>CM Month Day</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dd1f3018-d6a6-469c-bc1b-5367126323b4">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d96d6431-f373-45d1-8a93-f0a25d368ec6">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CM_MonthDay</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="703ac890-d616-47b2-bba8-ed705865cb53">
+              <AttributeID>ISO Week Day Number</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5e650d0e-91a0-432d-bb78-24f26d5cb0ea">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a7f494fb-d9b9-48f7-bc8c-65c0b1cebe0a">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_WeekDay_Number</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="fe2f1bbd-6284-4076-9ae2-64a8ef85a78b">
+              <AttributeID>ISO Year</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b87b9566-e4f1-4f43-b62d-8239c41397e4">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e6a8948f-a1e1-4051-8e94-2a382207e3c0">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="a93c03c9-6b04-46fb-897e-f4ed0268648c">
+              <AttributeID>ISO Week</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1d491349-2d46-460e-8c2f-3d5f87e49795">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d48bfddb-8fe2-4574-8dfc-f25f9ac5e965">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>ISO_Week</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e7a3325d-0165-44fb-8e1a-8a618c27bfa1">
+              <AttributeID>CL Quarter</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a9ffa88c-ca29-4713-8319-c1dc7f0a8c91">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="18a62c45-0545-4ca0-8fc2-ebd47d938999">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="6b70282c-d87d-4809-9f8f-3b62ee9cd8d0">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e7e9e811-9c85-4bb7-b3ec-a09ac2994710">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="ac027419-351a-4f1e-b04a-4e746a7001bd">
+              <AttributeID>FL Quarter</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="553ce073-d4e9-49cc-9153-eb52c1de7cf4">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cd619b4c-666f-4be6-9476-e74943ff8909">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="7443e278-b909-4b44-b235-7d3fd1be016c">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7f9b966b-78d4-4ada-8643-7441dbe48f17">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="ca685874-3168-4ab4-bcef-747f50e26d6e">
+              <AttributeID>FL Month</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b2da6910-7b5b-418a-b151-9623e285292f">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c4583582-585b-4466-a7d0-21e5cefc8de0">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="c663524e-4ce7-4f30-aef9-5fb178d7e60e">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="280bea42-d32a-499d-a76e-2c142b2dc630">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="87ff0c67-a8ed-404d-90d3-00a8e0da260b">
+              <AttributeID>PKEY 1 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d93cf4a7-1850-4131-a7b4-428ce98a130b">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d140d97e-0005-45a7-8571-dbd8477f036b">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="8f2adb97-1ba5-4bcf-b2e9-c92f296f78cb">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="981d1f9e-2371-4235-a239-566035902636">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="86a2a796-f36a-4be0-a4d2-9d0c8bd62d85">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="272dd45c-1e61-4d0a-a824-e5821b35d78c">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CM_MonthDay</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="227f8de4-6398-4230-8b2d-d05225dc5555">
+              <AttributeID>FL Year</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ef8403dc-8e62-4b05-bb88-0bfc331d9bc8">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0d9ed10b-c7d1-43ff-bacb-e848a448136c">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="2b730f93-042f-4b8d-9c1e-8cf0ad43e74c">
+              <AttributeID>FL Year 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="57f6e35f-9305-4fdc-ab40-dd0283eb4080">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b78ca579-da5e-4573-9816-0c82f268be2a">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="2de860cd-8e62-499a-a72b-4f65c52dcbaf">
+              <AttributeID>PKEY 1 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="437ffc36-66cd-4c22-9e0b-12fafe3c0afa">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5655f632-783b-46f2-a14d-5be5b81dbb5b">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="b9bf6b7e-68df-465a-96a7-ab379e4995c5">
+              <AttributeID>CL Quarter 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b37143d5-5e93-4364-9e21-60332b66d892">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a25da08a-1d7f-4ef3-94b6-86bb58e9dca0">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="5353f869-08cd-499c-a759-862f09583f97">
+              <AttributeID>FL Quarter 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9ad28f39-1252-4375-af61-383059f03d2c">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="267408c0-d40f-43fd-b38c-c0d0daf56b9f">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="cd13219e-64a3-4417-8002-a211ebac8146">
+              <AttributeID>FL Week</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="586742d7-ea2e-432f-a21a-da67c71ed5f8">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5b74eeea-4237-40f8-8e10-460adf680946">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Week</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7b1ee1ce-957b-430d-80d9-38227081a0d6">
+              <AttributeID>CL Week</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="37eac4ed-3a7c-4c3d-89a4-b10226976f34">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2a91285e-4d17-406d-a9a0-7c728b5b38fb">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Week</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="c814e6d1-5992-4bc4-8f77-76b408bd8518">
+              <AttributeID>CL Week Day Number</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fcf2a0ca-cf68-4b41-8898-2436076a7809">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="00c550c6-b024-425b-b455-99958b409b73">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_WeekDay_Number</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="03522bd7-54a8-4a1b-a4bc-1219e7385665">
+              <AttributeID>FL Week Day Number</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="775b8639-c88c-4612-8d23-efeb10e9f1bc">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="30bc71dc-457b-4ed7-ac1d-bae7a7600d6f">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_WeekDay_Number</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="1b079208-dce0-4372-abdc-98816656c1b2">
+              <AttributeID>CM Week Of Month</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d2da7d93-e8b4-4c16-a58e-ae5c34788f3c">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="07f67ab3-0d73-443a-a782-c39b6a635b5d">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Week_Of_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="8801d01a-b354-4551-9142-9789d661772c">
+              <AttributeID>FL Week Of Month</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9e8566ca-5b19-4cf9-9a54-0e27d36b308d">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="efa32592-2281-422a-bb7a-7b4121a54030">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Week_Of_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="3ed75f77-ccc0-4cd7-9eff-a6656d7e48b2">
+              <AttributeID>Holiday Name</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="55b9fb15-be38-4b21-9f57-ab0b108d689c">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3dfb8192-3b83-42e6-ba8c-188a4f24f85c">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Name</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e0a1701b-c9da-47a5-91d2-acf2a83dbfeb">
+              <AttributeID>Holiday Name 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cc9bfd3a-4b24-4f62-976b-92d547c4e79f">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ceec2357-c49c-4724-8e78-d3d8074d9558">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Name_2</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="a9c6936d-3815-436b-9688-324999ae9189">
+              <AttributeID>Holiday Group</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5b1197bb-2663-42fb-9547-cc8e62c44048">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="db1f522b-fc58-44e8-9ce8-3b4bac9c5716">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Group</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="57d83107-8e1e-4a63-a6c0-078ee11e31d2">
+              <AttributeID>Holiday Group 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d07a83f0-991b-4dcf-a09f-134e71ce27f0">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2baacd68-bf56-4945-97fe-9054bfe7c3d6">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Group_2</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="a6fa0596-7e67-49aa-8379-43b12e83c29a">
+              <AttributeID>Holiday Flag Retail HQ</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="343e837e-f96c-4343-8196-37290d982ed3">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="37610550-2f4c-4cc1-91e2-b4be0238a161">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Flag_RetailHQ</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="6a85055e-c003-4b6f-9dda-c2a7f05845c2">
+              <AttributeID>Holiday Flag Retail Stores</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="514101dd-87bd-422d-adc1-e4beeaf3a472">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7fd35262-b40d-424a-af2e-c4d6f053bff6">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Flag_RetailStores</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7c0341bb-1b4f-416b-9a43-9625303a6b43">
+              <AttributeID>Holiday Flag Shipping HQ</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="913843d4-733a-4532-bb8b-5b8e1f854dc7">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8fc4333a-3fd5-4c7d-ae29-3deb4c9ab33c">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Flag_ShippingHQ</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="a3eaeb0c-d050-434c-bfe8-b9db937818eb">
+              <AttributeID>Holiday Flag Shipping Ships</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e2b7fbef-fc0a-4629-a733-1075d2d7ad3b">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9643c02c-5fe7-402d-b37a-dbf8c49c6211">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>Holiday_Flag_ShippingShips</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e0ce605d-bc99-442e-87d1-ee72d8c26525">
+              <AttributeID>CL Semester</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1d9d239a-4bfa-47f0-b163-b664bb4196e8">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d2678035-6376-45dd-937f-d7f528b89af3">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Semester</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="cb513baf-259d-4641-9158-7716b8d439be">
+              <AttributeID>FL Semester</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c6dac050-b34d-4e00-8a52-b276e7f1e592">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="20296170-3a34-4ea6-a350-4a5ae4a60d42">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Semester</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="c96a1991-a1b7-4555-8812-4cc964e2c65c">
+              <AttributeID>FL Month 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="05b59935-e2ba-42b5-8cf7-afcf24c54d99">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4185cea3-7ad9-422b-ad66-7fadaf7021aa">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="dd79248a-bb40-4b19-96ec-cc1a37d32626">
+              <AttributeID>CL Month 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="53b168dc-8181-494c-aa00-4da662830989">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="76b02fb2-db96-48d5-b67d-8e2deb23319f">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="daab5433-94c2-4a57-a25c-66cd8a086414">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7cc1fd0f-084f-466b-890b-e609769b4214">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="b3623628-dea8-4a03-a675-248c8d339b12">
+              <AttributeID>CL Quarter 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dde0ec29-3c55-4d41-8525-0693fde8847d">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a94245b0-8565-4924-811e-c4333d809a2d">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="9aa6e8c5-6da2-415c-a6c9-14dbd557b87e">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0e131416-9d5c-488d-b534-994456fe1431">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="abb5efdb-8a26-45f3-8a12-8d514a89431f">
+              <AttributeID>CL Year 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8f409ed1-6d53-479c-8fae-15ee6ec744a8">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="adb02a50-2b23-4e1e-b87b-40e0a6298a5a">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>CL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="18f11ea5-f242-4eb5-864c-81b54aae1394">
+              <AttributeID>FL Year 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a0402bea-38f4-48e2-8c8e-9e91a4467a6f">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="10df0acc-1ee2-44a8-b89a-1e7458236a2b">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="f678a287-ab5a-4c8d-88be-3a21eb346752">
+              <AttributeID>FL Quarter 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4312f49d-ee29-48a6-ae3a-398f0a9fb593">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="465a73d0-7f72-4453-a410-b141e0d0e029">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="b3911ce0-d218-4f9d-aba7-5cd2fda257ff">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0a254de0-6d41-42e0-b254-b64ca395f2f6">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Quarter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="624e19f6-2907-4cb6-905e-bc2ae4a6469d">
+              <AttributeID>FL Month 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1c1a75d6-0c6d-46b5-9220-fb069883de96">
+                  <DataType>SmallInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="448251e1-5991-4741-b4a0-8b56df3a9b0d">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="e83df140-7f2d-4762-af3a-805c7a8efb8a">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1bb9ca09-4833-4dc2-bb86-132c23ace43a">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>FL_Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e4ccbc55-41d3-45bd-b28e-f800c55ee018">
+          <CubeDimensionID>SAGENT Execution Statuses</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d690715f-2c6a-419c-921b-2f368ff05182">
+              <AttributeID>PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ad1f741f-50ef-4d2b-9d34-413020536cb1">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6705ba66-84f2-4868-b1a3-f2db848f4560">
+                    <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+                    <ColumnID>ExecutionStatus_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="de8025ee-cc18-485c-b006-9bee782d2124">
+              <AttributeID>Execution Status ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dc6666cc-c43c-4a10-80ae-31a08043f49f">
+                  <DataType>UnsignedTinyInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a18bb88d-fbaa-4157-bc53-3092739ab26b">
+                    <TableID>dbo_VIEW_SAGENT_DIM_ExecutionStatuses</TableID>
+                    <ColumnID>ExecutionStatus_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="73258059-910e-4a9f-83c4-0ccac31e41f3">
+          <CubeDimensionID>SAGENT Jobs And Steps</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9f7cbc66-b842-4c92-9404-6d68f13788dc">
+              <AttributeID>Job Step PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="511f8c6c-afbd-495b-ac93-a4285e42137b">
+                  <DataType>WChar</DataType>
+                  <DataSize>200</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d0f9f411-da68-4bf5-89dd-84925fa3c61e">
+                    <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+                    <ColumnID>Job_Step_PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="f3f10887-439d-4851-acc4-80001d93810e">
+              <AttributeID>Job ID 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="86c12e6e-1f32-4a5f-9b85-adf87fcf4fc9">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d206a7b5-fe0b-47c0-a1c3-7fba796d9e15">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Job_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="be7e198e-a7d5-43bb-8e85-0b33e5ccee17">
+              <AttributeID>Job Step PKEY 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7d0b1363-6ef8-43c5-9669-13f81c678d6e">
+                  <DataType>WChar</DataType>
+                  <DataSize>200</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ebd61f1c-b7f0-49ec-a363-a6630498f66b">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Job_Step_PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="845b46ba-4c1c-49f0-bb4f-ad77c4664e31">
+              <AttributeID>Job ID 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2b26ece3-7157-4a33-9f0f-b7b43c3a7a80">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5572ef9b-ea1d-47dc-bd3d-b6f09583db2f">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Job_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="003d7a95-39df-461d-80cf-3a9542cbe5e0">
+              <AttributeID>Step Sorter</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9a8baa01-f2ab-4631-9153-5418e2e98c24">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7c057a58-2752-4be4-9c86-ba1d4b049365">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Step_Sorter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="43f640af-8fd0-42fd-8212-b060d56eb8a6">
+              <AttributeID>Step ID 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e53c3f40-32e6-41ad-a7c2-8d2cf5d15b1b">
+                  <DataType>WChar</DataType>
+                  <DataSize>110</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5fdc10e9-e3d8-4e3f-a532-18d014d2013e">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Step_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fd784e50-5178-468a-b495-8fdf1cd24aab">
+          <CubeDimensionID>Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a4042406-6792-4828-9124-1082bcc0d02a">
+              <AttributeID>PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6362814e-b62c-46ba-a68c-f098edc0ab70">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="257b638b-cb5f-48fb-a99d-196ddc014c81">
+                    <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+                    <ColumnID>Time_PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <ProactiveCaching dwd:design-time-name="7584fce3-f3c9-470f-afaa-2313ed2c8704">
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>-PT1S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="aa66b693-2434-4056-9d80-93433b1f8333" />
+      </ProactiveCaching>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="16fd7186-d533-4e3e-8d89-9f7cf0885116">
+      <ID>VIEW SAGENT DIM Jobs And Steps</ID>
+      <Name>Jobs DCount</Name>
+      <CreatedTimestamp>2017-05-17T06:43:59.67Z</CreatedTimestamp>
+      <LastSchemaUpdate>2017-06-13T07:36:10.423333Z</LastSchemaUpdate>
+      <LastProcessed>2017-06-13T07:38:06.586667Z</LastProcessed>
+      <State>Processed</State>
+      <Measures>
+        <Measure dwd:design-time-name="6829d562-c277-4a66-8e45-4140400fc113">
+          <ID>Job ID Distinct Count</ID>
+          <Name>Job Count</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="93d39361-a44a-447e-a0bd-e50c874186b5">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d8648e54-9124-4fa9-9c7e-e25b03c5026f">
+              <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+              <ColumnID>Job_ID</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Jobs and Steps</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedSize>222</EstimatedSize>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d401e7e5-a685-42ef-a429-0e64d25115a8">
+          <CubeDimensionID>SAGENT Jobs And Steps</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e3c6be2c-821a-4181-bd2b-fb153e1a85d0">
+              <AttributeID>Job Step PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="57253de5-4422-4961-aac0-309cede96571">
+                  <DataType>WChar</DataType>
+                  <DataSize>200</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="64019d83-09bc-4e60-8b74-7176955d6607">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Job_Step_PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="726e4769-3798-4ba6-8170-f431380ee6c2">
+              <AttributeID>Job ID 2</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2293aa0b-e1ca-448a-8a60-43187c2d77cb">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fb30187f-3723-4afa-98b8-61a912a1e9fe">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Job_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="e3a9f4b3-810c-49a2-b100-87fde839482a">
+              <AttributeID>Job Step PKEY 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5e03ae40-cf39-4422-8cd8-dbda37419043">
+                  <DataType>WChar</DataType>
+                  <DataSize>200</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="51c136de-bbbf-4440-ad72-a4ed2045d3aa">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Job_Step_PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="cee0cfc5-9d45-408a-a68b-cdd4c1f735cd">
+              <AttributeID>Job ID 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c9776c80-d551-4720-96cc-e076112e1117">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6c6e8ad7-00ab-45bd-a9fe-ceebb91b7ef1">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Job_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="719717b6-5c08-4fc3-b87f-615e872a07ac">
+              <AttributeID>Step Sorter</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="673724b5-1981-42b5-9235-f5c4be01d2d2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="91214ef3-f8c8-4763-a00b-b3dd957c3846">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Step_Sorter</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="f824e90d-d9fd-4a7a-8046-2a15cdfedb19">
+              <AttributeID>Step ID 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2ee16c05-49f5-44a6-9be1-57802e466fe5">
+                  <DataType>WChar</DataType>
+                  <DataSize>110</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="34ab7329-a13b-40f1-a59e-962271ddde8d">
+                    <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+                    <ColumnID>Step_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <ProactiveCaching dwd:design-time-name="c8917448-0dbc-4ba3-b36d-8ee330c90bfa">
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>-PT1S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="63521916-3081-49db-82ef-cc9b524db383" />
+      </ProactiveCaching>
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="eb8acd1a-b3ee-450f-8303-98ef66b2e8bf">
+    <DataSourceViewID>DSVMain</DataSourceViewID>
+  </Source>
+  <ProactiveCaching dwd:design-time-name="68ad22aa-4c1e-4c36-9d89-4bccd89b8459">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="debe8cb6-fb66-47f8-8a8f-34115628d1c9" />
+  </ProactiveCaching>
+</Cube>

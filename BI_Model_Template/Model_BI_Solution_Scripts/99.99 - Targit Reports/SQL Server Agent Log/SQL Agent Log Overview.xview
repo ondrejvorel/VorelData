@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<targitView majorVersion="2017" minorVersion="9403" designwidth="1595" designheight="845">
+	<defaultcube>
+		<metadata database="DataWarehouse" cube="Cube SQLAgent Logs"/>
+	</defaultcube>
+	<smiley enabled="true" goodtrend="positive" useoverride="false">
+		<metadata database="DataWarehouse" cube="Cube SQLAgent Logs" measure="Failed JobSteps"/>
+	</smiley>
+	<globalCriteria build="9403">
+	<criterium kind="dynamictime">
+		<metadata database="DataWarehouse" cube="Cube SQLAgent Logs" dimension="Dates" hierarchy="Calendar YMD"/>
+		<operator kind="inrange">
+			<left closed="true">
+				<applyto level="day"/>
+				<steps>
+					<day relative="-6"/>
+				</steps>
+			</left>
+			<right closed="true">
+				<applyto level="day"/>
+				<steps/>
+			</right>
+		</operator>
+	</criterium>
+	</globalCriteria>
+	<storedcriteria/>
+	<criteriabar visible="true" showdateorigin="true">
+		<selector kind="hierarchy" multiselect="true" searchonly="false" onlynonempty="default">
+			<metadata database="DataWarehouse" cube="Cube SQLAgent Logs" dimension="Dates" hierarchy="Holiday Name"/>
+		</selector>
+	</criteriabar>
+	<modified user="SYS"/>
+	<thumbnail>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
+RU5ErkJggg==</thumbnail>
+	<data>
+		<object typeName="Crosstab" build="9403" ID="{6C1B6558-1AAE-4A2C-AC20-08D737C61D2F}" DrillStateCompatibilityID="{DEBC880E-A7A6-4141-80B9-112DE593F37E}">
+			<metadata database="DataWarehouse" cube="Cube SQLAgent Logs"/>
+			<title hide="false" autohideexplanationicon="true">
+				<text>Alert for Failed Jobs/Steps</text>
+			</title>
+			<frame>
+				<caption visible="true" buttongap="3"/>
+			</frame>
+			<fieldUsage onlynonempty="default">
+				<y>
+					<metadata dimension="SAGENT Jobs And Steps" hierarchy="Job and Steps Hierarchy" level="Step"/>
+	<drillDown value="1"/>
+				</y>
+				<data>
+					<metadata measure="Succeded JobSteps"/>
+				</data>
+				<data>
+					<metadata measure="Failed JobSteps"/>
+				</data>
+			</fieldUsage>
+			<gridOptions>
+				<vertData>false</vertData>
+				<compactHierarchy>true</compactHierarchy>
+				<indentHierarchy>true</indentHierarchy>
+				<wordwrap global="true"/>
+				<autodetecturl enabled="true"/>
+				<dynamicChartType>false</dynamicChartType>
+				<totals grandtotals="false" subtotals="true"/>
+				<measureproperties idx="0">
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<measureproperties idx="1">
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<columnWidths>
+					<item ref="#0" size="1253.333"/>
+					<item ref="[d-1(l0),m1]" size="613.333"/>
+					<item ref="[d-1(l0),m2]" size="493.333"/>
+				</columnWidths>
+				<gridcolors id="{656E94A8-F142-4F05-9030-0BC0242E5EDD}" outside="FFFFFF">
+					<collabel bg="FFFFFF" text="00858F" url="00858F">
+						<border bottom="A1A8AD"/>
+						<font name="Segoe UI" size="10" bold="true"/>
+						<alt bg="FFFFFF" text="00858F" url="00858F">
+							<border bottom="A1A8AD"/>
+							<font name="Segoe UI" size="10" bold="true"/>
+						</alt>
+					</collabel>
+					<rowlabel bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</rowlabel>
+					<cell bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="FFFFFF" text="000000" url="00858F"/>
+					</cell>
+					<simcell bg="FCEFD3" text="000000" url="00858F">
+						<alt bg="FFBB74" text="000000" url="00858F"/>
+					</simcell>
+					<comment bg="F8F8F8" text="000000" url="00858F">
+						<alt bg="E0E0E0" text="000000" url="00858F"/>
+					</comment>
+					<selected bg="2EB7C2" text="FFFFFF" url="000000">
+						<alt bg="2EB7C2" text="FFFFFF" url="000000"/>
+					</selected>
+					<hidden bg="CBE4ED" text="000000" url="7BD0FF">
+						<alt bg="9ACBDD" text="000000" url="7BD0FF"/>
+					</hidden>
+				</gridcolors>
+				<xorder totals="before" originalorder="false"/>
+				<yorder totals="before" originalorder="false"/>
+			</gridOptions>
+			<localCriteria build="9403">
+	<criterium kind="member">
+		<metadata database="DataWarehouse" cube="Cube SQLAgent Logs" dimension="SAGENT Execution Statuses" hierarchy="Execution Status"/>
+		<operator kind="eq">
+			<member key="[SAGENT Execution Statuses].[Execution Status].&amp;[0]" value="'Failed'"/>
+		</operator>
+	</criterium>
+	<criterium kind="member">
+		<metadata database="DataWarehouse" cube="Cube SQLAgent Logs" dimension="Time" hierarchy="Last 30 Min Flag"/>
+		<operator kind="eq">
+			<member key="[Time].[Last 30 Min Flag].&amp;[1]" value="'1'"/>
+		</operator>
+	</criterium>
+			</localCriteria>
+		</object>
+		<object typeName="Crosstab" build="9403" ID="{11481F86-2F19-444F-99FF-82852B5E31A8}" DrillStateCompatibilityID="{6DF28001-979F-4A5C-9C11-451BB10F834C}">
+			<metadata database="DataWarehouse" cube="Cube SQLAgent Logs"/>
+			<title hide="false" autohideexplanationicon="true">
+				<text>Execution Results Last 7 Days by Date &amp; Time</text>
+			</title>
+			<frame>
+				<caption visible="true" buttongap="3"/>
+			</frame>
+			<fieldUsage onlynonempty="default">
+				<x>
+					<metadata dimension="Dates" hierarchy="Calendar Month"/>
+				</x>
+				<x hideTotal="true">
+					<metadata dimension="Dates" hierarchy="Calendar Month Day"/>
+				</x>
+				<y>
+					<metadata dimension="Time" hierarchy="Time Hierarchy" level="Hour"/>
+				</y>
+				<data>
+					<metadata measure="Minutes Count"/>
+				</data>
+				<data>
+					<metadata measure="Days Count"/>
+				</data>
+				<data>
+					<metadata measure="Row Count"/>
+				</data>
+				<data>
+					<metadata measure="Failed JobSteps"/>
+				</data>
+				<data>
+					<metadata measure="Succeded JobSteps"/>
+				</data>
+			</fieldUsage>
+			<gridOptions>
+				<vertData>false</vertData>
+				<compactHierarchy>false</compactHierarchy>
+				<wordwrap global="true"/>
+				<autodetecturl enabled="true"/>
+				<agentList>
+					<agent type="measure" ref="0(l0)" dataref="m3" action="cellbackgroundcolor" entirerow="false" hidetext="true" color="369344">
+						<caption>
+							<text>Success</text>
+						</caption>
+						<condition>value &gt; 0</condition>
+					</agent>
+					<agent type="measure" ref="0(l0)" dataref="m3" action="cellbackgroundcolor" entirerow="false" hidetext="true" color="820101">
+						<caption>
+							<text>Failure</text>
+						</caption>
+						<condition>sum(0, 0, m4) &gt; 0</condition>
+					</agent>
+				</agentList>
+				<dynamicChartType>false</dynamicChartType>
+				<totals grandtotals="false" subtotals="false"/>
+				<measureproperties idx="0">
+					<hidden>true</hidden>
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<measureproperties idx="1">
+					<hidden>true</hidden>
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<measureproperties idx="2">
+					<dynamiclabelformat> </dynamiclabelformat>
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<measureproperties idx="3">
+					<hidden>true</hidden>
+					<dynamiclabelformat>F</dynamiclabelformat>
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<measureproperties idx="4">
+					<hidden>true</hidden>
+					<dynamiclabelformat>S</dynamiclabelformat>
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<gridcolors id="{F232205B-E945-4328-9B14-CC67586832C3}" outside="FFFFFF">
+					<collabel bg="088CC9" text="FFFFFF" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<font name="Segoe UI" size="10" bold="true"/>
+						<alt bg="088CC9" text="FFFFFF" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+							<font name="Segoe UI" size="10" bold="true"/>
+						</alt>
+					</collabel>
+					<rowlabel bg="FFFFFF" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="FFFFFF" text="000000" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</rowlabel>
+					<cell bg="FFFFFF" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="FFFFFF" text="000000" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</cell>
+					<simcell bg="FCEFD3" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="FFBB74" text="000000" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</simcell>
+					<comment bg="F8F8F8" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="E0E0E0" text="000000" url="00858F"/>
+					</comment>
+					<selected bg="83D3F8" text="000000" url="000000">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="83D3F8" text="000000" url="000000">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</selected>
+					<hidden bg="CBE4ED" text="000000" url="7BD0FF">
+						<alt bg="9ACBDD" text="000000" url="7BD0FF"/>
+					</hidden>
+				</gridcolors>
+				<xorder totals="before" originalorder="false"/>
+				<yorder totals="before" originalorder="false"/>
+			</gridOptions>
+		</object>
+		<object typeName="Crosstab" build="9403" ID="{8933C45A-9695-4A71-A9E8-72E90D634BC7}" DrillStateCompatibilityID="{C7C836EB-8731-4AB2-A1B4-E000A4582606}">
+			<metadata database="DataWarehouse" cube="Cube SQLAgent Logs"/>
+			<title hide="false" autohideexplanationicon="true">
+				<text>Execution Results Last 7 Days by Job &amp; Step</text>
+			</title>
+			<frame>
+				<caption visible="true" buttongap="3"/>
+			</frame>
+			<fieldUsage onlynonempty="default">
+				<x>
+					<metadata dimension="Dates" hierarchy="Calendar Month"/>
+				</x>
+				<x hideTotal="true">
+					<metadata dimension="Dates" hierarchy="Calendar Month Day"/>
+				</x>
+				<y>
+					<metadata dimension="SAGENT Jobs And Steps" hierarchy="Job and Steps Hierarchy" level="Step"/>
+	<drillDown value="1"/>
+					<dynamiccaptionformat level="Job" title="Jobs &amp; Steps"/>
+				</y>
+				<data>
+					<metadata measure="Row Count"/>
+				</data>
+				<data>
+					<metadata measure="Failed JobSteps"/>
+				</data>
+				<data>
+					<metadata measure="Succeded JobSteps"/>
+				</data>
+				<data>
+					<metadata measure="Days Count"/>
+				</data>
+			</fieldUsage>
+			<gridOptions>
+				<vertData>false</vertData>
+				<compactHierarchy>true</compactHierarchy>
+				<indentHierarchy>true</indentHierarchy>
+				<wordwrap global="true"/>
+				<autodetecturl enabled="true"/>
+				<agentList>
+					<agent type="measure" ref="0(l0)" dataref="m1" action="cellbackgroundcolor" entirerow="false" hidetext="true" color="369344">
+						<caption>
+							<text>Success</text>
+						</caption>
+						<condition>value &gt; 0</condition>
+					</agent>
+					<agent type="measure" ref="0(l0)" dataref="m1" action="cellbackgroundcolor" entirerow="false" hidetext="true" color="820101">
+						<caption>
+							<text>Failure</text>
+						</caption>
+						<condition>sum(0, 0, m2) &gt; 0</condition>
+					</agent>
+				</agentList>
+				<dynamicChartType>false</dynamicChartType>
+				<totals grandtotals="false" subtotals="true"/>
+				<measureproperties idx="0">
+					<dynamiclabelformat> </dynamiclabelformat>
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<measureproperties idx="1">
+					<hidden>true</hidden>
+					<dynamiclabelformat>F</dynamiclabelformat>
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<measureproperties idx="2">
+					<hidden>true</hidden>
+					<dynamiclabelformat>S</dynamiclabelformat>
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<measureproperties idx="3">
+					<hidden>true</hidden>
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<rowstyles>
+					<rowstyle>
+						<range ref="all(l(1))"/>
+						<style>
+							<background color="#B2E4FA"/>
+							<border>
+								<right color="#004D70" size="1"/>
+								<bottom color="#004D70" size="1"/>
+							</border>
+						</style>
+					</rowstyle>
+				</rowstyles>
+				<gridcolors id="{F232205B-E945-4328-9B14-CC67586832C3}" outside="FFFFFF">
+					<collabel bg="088CC9" text="FFFFFF" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<font name="Segoe UI" size="10" bold="true"/>
+						<alt bg="088CC9" text="FFFFFF" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+							<font name="Segoe UI" size="10" bold="true"/>
+						</alt>
+					</collabel>
+					<rowlabel bg="FFFFFF" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="FFFFFF" text="000000" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</rowlabel>
+					<cell bg="FFFFFF" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="FFFFFF" text="000000" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</cell>
+					<simcell bg="FCEFD3" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="FFBB74" text="000000" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</simcell>
+					<comment bg="F8F8F8" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="E0E0E0" text="000000" url="00858F"/>
+					</comment>
+					<selected bg="83D3F8" text="000000" url="000000">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="83D3F8" text="000000" url="000000">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</selected>
+					<hidden bg="CBE4ED" text="000000" url="7BD0FF">
+						<alt bg="9ACBDD" text="000000" url="7BD0FF"/>
+					</hidden>
+				</gridcolors>
+				<xorder totals="before" originalorder="false"/>
+				<yorder totals="before" originalorder="false"/>
+			</gridOptions>
+		</object>
+		<object typeName="Crosstab" build="9403" ID="{F83529EE-37FA-4E12-94FB-5376E7FBA601}" DrillStateCompatibilityID="{C57DB7C2-89ED-48CC-AAA1-3A0F9816EBBE}">
+			<metadata database="DataWarehouse" cube="Cube SQLAgent Logs"/>
+			<title hide="false" autohideexplanationicon="true">
+				<text>Average Durations by Job &amp; Step</text>
+			</title>
+			<frame>
+				<caption visible="true" buttongap="3"/>
+			</frame>
+			<fieldUsage onlynonempty="default">
+				<y>
+					<metadata dimension="SAGENT Jobs And Steps" hierarchy="Job and Steps Hierarchy" level="Step"/>
+	<drillDown value="1"/>
+				</y>
+				<data>
+					<metadata measure="Executions Count"/>
+				</data>
+				<data>
+					<metadata measure="Duration Minutes"/>
+				</data>
+			</fieldUsage>
+			<gridOptions>
+				<vertData>false</vertData>
+				<rowCalculations>
+					<formula>
+						<title>Avg Duration</title>
+						<expression>sum(d-1, 0, m2) / sum(d-1, 0, m1)</expression>
+						<color>FF74CFD7</color>
+						<format astime="false" abbreviatebmk="false">#,##0.0;"-"#,##0.0</format>
+						<label visible="true" measure="false" dimension="false" percent="false" value="false" total="false"/>
+					</formula>
+				</rowCalculations>
+				<compactHierarchy>false</compactHierarchy>
+				<wordwrap global="true"/>
+				<autodetecturl enabled="true"/>
+				<dynamicChartType>false</dynamicChartType>
+				<totals grandtotals="false" subtotals="true"/>
+				<measureproperties idx="0">
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<measureproperties idx="1">
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<columnWidths>
+					<item ref="#0" size="773.333"/>
+					<item ref="#1" size="880"/>
+					<item ref="[c1]" size="553.333"/>
+					<item ref="[d-1(l0),m1]" size="540"/>
+					<item ref="[d-1(l0),m2]" size="553.333"/>
+				</columnWidths>
+				<rowstyles>
+					<rowstyle>
+						<range ref="all(l(1))"/>
+						<style>
+							<background color="#B2E4FA"/>
+							<border>
+								<right color="#004D70" size="1"/>
+								<bottom color="#004D70" size="1"/>
+							</border>
+						</style>
+					</rowstyle>
+				</rowstyles>
+				<gridcolors id="{F232205B-E945-4328-9B14-CC67586832C3}" outside="FFFFFF">
+					<collabel bg="088CC9" text="FFFFFF" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<font name="Segoe UI" size="10" bold="true"/>
+						<alt bg="088CC9" text="FFFFFF" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+							<font name="Segoe UI" size="10" bold="true"/>
+						</alt>
+					</collabel>
+					<rowlabel bg="FFFFFF" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="FFFFFF" text="000000" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</rowlabel>
+					<cell bg="FFFFFF" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="FFFFFF" text="000000" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</cell>
+					<simcell bg="FCEFD3" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="FFBB74" text="000000" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</simcell>
+					<comment bg="F8F8F8" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="E0E0E0" text="000000" url="00858F"/>
+					</comment>
+					<selected bg="83D3F8" text="000000" url="000000">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="83D3F8" text="000000" url="000000">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</selected>
+					<hidden bg="CBE4ED" text="000000" url="7BD0FF">
+						<alt bg="9ACBDD" text="000000" url="7BD0FF"/>
+					</hidden>
+				</gridcolors>
+				<xorder totals="before" originalorder="false"/>
+				<yorder totals="before" originalorder="false"/>
+			</gridOptions>
+		</object>
+		<object typeName="Crosstab" build="9403" ID="{76D5E085-A0AB-435C-A059-28E999F09B7D}" DrillStateCompatibilityID="{5160F914-97BC-470B-B83E-DC384FF80080}">
+			<metadata database="DataWarehouse" cube="Cube SQLAgent Logs"/>
+			<title hide="false" autohideexplanationicon="true">
+				<text>Job/Step Details</text>
+			</title>
+			<frame>
+				<caption visible="true" buttongap="3"/>
+			</frame>
+			<fieldUsage onlynonempty="default">
+				<y>
+					<metadata dimension="Dates" hierarchy="Calendar YMD" level="Day"/>
+	<drillDown value="2"/>
+				</y>
+				<data>
+					<metadata measure="Executions Count"/>
+				</data>
+				<data>
+					<metadata measure="Duration Minutes"/>
+				</data>
+				<data>
+					<metadata measure="Failed JobSteps"/>
+				</data>
+				<data>
+					<metadata measure="Succeded JobSteps"/>
+				</data>
+			</fieldUsage>
+			<gridOptions>
+				<vertData>false</vertData>
+				<rowCalculations>
+					<formula>
+						<title>Avg Duration</title>
+						<expression>sum(d-1, 0, m2) / sum(d-1, 0, m1)</expression>
+						<color>FF74CFD7</color>
+						<format astime="false" abbreviatebmk="false">#,##0.0;"-"#,##0.0</format>
+						<label visible="true" measure="false" dimension="false" percent="false" value="false" total="false"/>
+					</formula>
+				</rowCalculations>
+				<compactHierarchy>true</compactHierarchy>
+				<indentHierarchy>true</indentHierarchy>
+				<wordwrap global="true"/>
+				<autodetecturl enabled="true"/>
+				<dynamicChartType>false</dynamicChartType>
+				<totals grandtotals="false" subtotals="true"/>
+				<measureproperties idx="0">
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<measureproperties idx="1">
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<measureproperties idx="2">
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<measureproperties idx="3">
+					<label visible="true" measure="true" dimension="true" percent="false" value="true" total="false"/>
+				</measureproperties>
+				<columnWidths>
+					<item ref="#0" size="773.333"/>
+					<item ref="#1" size="880"/>
+					<item ref="[c1]" size="553.333"/>
+					<item ref="[d-1(l0),m1]" size="540"/>
+					<item ref="[d-1(l0),m2]" size="553.333"/>
+					<item ref="[d-1(l0),m3]" size="473.333"/>
+					<item ref="[d-1(l0),m4]" size="553.333"/>
+				</columnWidths>
+				<rowstyles>
+					<rowstyle>
+						<range ref="all(l(1))"/>
+						<style>
+							<background color="#B2E4FA"/>
+							<border>
+								<right color="#004D70" size="1"/>
+								<bottom color="#004D70" size="1"/>
+							</border>
+						</style>
+					</rowstyle>
+				</rowstyles>
+				<gridcolors id="{F232205B-E945-4328-9B14-CC67586832C3}" outside="FFFFFF">
+					<collabel bg="088CC9" text="FFFFFF" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<font name="Segoe UI" size="10" bold="true"/>
+						<alt bg="088CC9" text="FFFFFF" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+							<font name="Segoe UI" size="10" bold="true"/>
+						</alt>
+					</collabel>
+					<rowlabel bg="FFFFFF" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="FFFFFF" text="000000" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</rowlabel>
+					<cell bg="FFFFFF" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="FFFFFF" text="000000" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</cell>
+					<simcell bg="FCEFD3" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="FFBB74" text="000000" url="00858F">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</simcell>
+					<comment bg="F8F8F8" text="000000" url="00858F">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="E0E0E0" text="000000" url="00858F"/>
+					</comment>
+					<selected bg="83D3F8" text="000000" url="000000">
+						<border right="004D70" bottom="004D70"/>
+						<alt bg="83D3F8" text="000000" url="000000">
+							<border right="004D70" bottom="004D70"/>
+						</alt>
+					</selected>
+					<hidden bg="CBE4ED" text="000000" url="7BD0FF">
+						<alt bg="9ACBDD" text="000000" url="7BD0FF"/>
+					</hidden>
+				</gridcolors>
+				<xorder totals="before" originalorder="false"/>
+				<yorder totals="before" originalorder="false"/>
+			</gridOptions>
+		</object>
+	</data>
+	<placement>
+		<layout>
+			<cell orientation="horizontal" id="{F7F6C2DF-6032-49BB-8C74-CA349AC77432}">
+				<rect L="0" T="0" W="1595" H="845"/>
+				<cell name="obj1" id="{055EE0CF-EEE0-432D-BECF-61A7B55CB895}">
+					<rect L="0" T="0" W="349" H="845"/>
+				</cell>
+				<cell orientation="vertical" id="{615F3207-66C8-4F6E-8E59-8BBA3398D248}">
+					<rect L="349" T="0" W="1246" H="845"/>
+					<cell orientation="horizontal" id="{8F902131-D914-4037-9DA4-1AC32E559A10}">
+						<rect L="349" T="0" W="1246" H="274"/>
+						<cell name="obj2" id="{8DBDB09A-9096-4D0B-8BBA-E21F15BCA8C9}">
+							<rect L="349" T="0" W="818" H="274"/>
+						</cell>
+						<cell name="obj0" id="{6256CCDF-1739-49F6-B888-96D74593AAC4}">
+							<rect L="1167" T="0" W="428" H="274"/>
+						</cell>
+					</cell>
+					<cell name="obj3" id="{5DE1370A-5D86-45C3-BA9F-0913B89FA8E6}">
+						<rect L="349" T="274" W="1246" H="241"/>
+					</cell>
+					<cell name="obj4" id="{C88FC59E-0F4D-4404-ADC6-77D2085ECE2A}">
+						<rect L="349" T="515" W="1246" H="330"/>
+					</cell>
+				</cell>
+			</cell>
+		</layout>
+	</placement>
+</targitView>

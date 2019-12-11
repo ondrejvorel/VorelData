@@ -1,0 +1,85 @@
+body {
+	margin: 30;
+	padding: 0;
+	font-family: Calibri;
+	background: #fff;
+	} 
+#wrap {
+	margin: 0;
+	padding-left: 20px;
+  background: #fff;
+  border-style: solid;
+  border-color: #4C514E;
+	}
+.personal {
+  font-size: 14;
+  padding-top: 0px;
+  color: #4C514E;
+  text-shadow: 0.5px 0.5px black;
+  }
+.pictures {
+  font-size: 14;
+  padding-top: 0px;
+  color: #78D005;
+  text-shadow: 0.5px 0.5px black;
+  }
+.statuses {
+  font-size: 14;
+  padding-top: 0px;
+  color: #0571D0;
+  text-shadow: 0.5px 0.5px black;
+  }
+.locations {
+  font-size: 14;
+  padding-top: 0px;
+  color: #ABAD0F;
+  text-shadow: 0.5px 0.5px black; 
+  }
+.links {font-size: 14;
+  padding-top: 0px;
+  color: #D03E05;
+  text-shadow: 0.5px 0.5px black;  
+  }          
+#header {
+	padding: 10px 20px;
+	background: #4C514E;
+	}
+#header h1 {
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 180%;
+	color: #fff;
+	}
+#footer {
+	padding: 20px 20px;
+	background: #4C514E;
+	}
+#footer h1 {
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 180%;
+	color: #fff;
+	}
+td {text-align: center;}
+
+#photo_dark {background: #78D005;}
+#photo_corner {background: #68AB0F;}
+#photo_light {background: #A3EF3E;}
+
+#status_dark {background: #0571D0;}
+#status_corner {background: #0F65AB;}
+#status_light {background: #3E82EF;}
+
+#location_dark {background: #CDD005}
+#location_corner {background: #ABAD0F;}
+#location_light {background: #E9EF3E;}
+
+#link_dark {background: #D03E05;}
+#link_corner {background: #B24D1A;}
+#link_light {background: #EF763E;}
+
+
+
+

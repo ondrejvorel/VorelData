@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Targit_Model_OLAP_Database", "SSAS_Targit_Model_OLAP_Database\Targit_Model_OLAP_Database.dwproj", "{3A1FDC3A-EEA6-4949-A85F-E6305FBADDD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A1FDC3A-EEA6-4949-A85F-E6305FBADDD9}.Development|Default.ActiveCfg = Development
+		{3A1FDC3A-EEA6-4949-A85F-E6305FBADDD9}.Development|Default.Build.0 = Development
+		{3A1FDC3A-EEA6-4949-A85F-E6305FBADDD9}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

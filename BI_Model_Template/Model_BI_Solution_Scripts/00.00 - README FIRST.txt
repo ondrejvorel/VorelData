@@ -1,0 +1,7 @@
+1. Create Database "MDL"
+2. Run Scripts on "01.00 - Dates & Time"
+3. Run Scripts on "02. 00 - SQL Agent History"
+4. Alternatively to 3 steps above -  Restore Relational Database file MDL.bak located in MDL.zip
+5. Restore OLAP Database file - Model_OLAP_Database.abf located in Model_OLAP_Database.zip
+6. Create a Targit Connection Name = "DataWarehouse" which will connect to Model_OLAP_Database.
+7. Open the Reports

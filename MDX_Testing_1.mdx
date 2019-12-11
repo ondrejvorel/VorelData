@@ -1,0 +1,135 @@
+SELECT NON EMPTY
+	{[Measures].[Reseller Sales Amount]}
+ON COLUMNS,
+
+NON EMPTY 
+//CrossJoin(
+//CrossJoin 
+//(
+//	{[Date].[Calendar Year].[CY 2002] : [Date].[Calendar Year].[CY 2004]},
+//	{[Product].[Category].[Category].Members}),
+//	{[Geography].[Country].[Country].Members}
+//) ON ROWS
+
+	{[Date].[Calendar Year].[CY 2002] : [Date].[Calendar Year].[CY 2004]}
+	*
+	{[Product].[Category].[Category].Members}
+	*
+	{[Geography].[Country].[Country].Members}
+ON ROWS
+
+FROM [MDX_Sales]
+
+WHERE {([Date].[Calendar].[Calendar Year].[CY 2002])}
+
+--------------------------------------------------------------------------------
+
+SELECT 
+	NON EMPTY
+	{[Measures].[Reseller Sales Amount]}
+	ON COLUMNS,
+	{[Product].[Category].[Category].Members}
+	*
+	{[Product].[Color].[Color].Members}
+	ON ROWS
+FROM [MDX_Sales]
+
+--------------------------------------------------------------------------------
+
+SELECT {([Measures].[Reseller Sales Amount]),
+		 ([Measures].[Sales Amount Quota])}	ON COLUMNS,
+
+			{[Date].[Calendar].[Month].&[2002]&[5]} *
+	Exists(	{[Employee].[Employee].[Employee].Members},
+			{[Date].[Calendar].[Calendar Quarter].&[2002]&[2]}
+			, "Sales Targets") ON ROWS
+FROM [MDX_Sales]
+
+--------------------------------------------------------------------------------
+-- Porovnani v jedne Dimension -> Exists funkce
+SELECT {[Measures].[Reseller Sales Amount]}	ON COLUMNS,
+Exists(
+	{[Product].[Category].[Category].Members} *
+	{[Product].[Color].[Color].Members} 
+	,
+	{[Product].[Subcategory].[Mountain Bikes]}
+)
+ON ROWS
+
+FROM [MDX_Sales]
+
+--------------------------------------------------------------------------------
+-- Porovnani z ruznych Dimension -> NonEmpty funkce
+SELECT {[Measures].[Reseller Sales Amount]}	ON COLUMNS,
+NonEmpty(
+	{[Geography].[Country].[Country].Members}
+	,
+	{[Date].[Calendar].[Calendar Year].[CY 2002]}
+)
+ON ROWS
+
+FROM [MDX_Sales]
+
+--------------------------------------------------------------------------------
+--Add NEW defined Member
+
+WITH	MEMBER [Measures].[test] AS
+		1
+		MEMBER [Measures]. [Cena s DPH] AS
+		([Measures].[Reseller Sales Amount]) * 1.21
+SELECT	{([Measures].[Reseller Sales Amount]), ([Measures].[Cena s DPH])} ON COLUMNS,
+		{[Geography].[Country].[Country].Members} ON ROWS
+FROM [MDX_Sales]
+
+--------------------------------------------------------------------------------
+
+SELECT {([Measures].[Reseller Sales Amount], [Date].[Calendar].[(All)]),
+		([Measures].[Reseller Sales Amount], [Date].[Calendar].[Calendar Year].[CY 2002])} ON COLUMNS,
+	   {[Geography].[Country].[Country].Members} ON ROWS
+FROM [MDX_Sales]
+
+------Predchozi nefunguje v SSRS -> protoze viceurovnova hlavicka -> odstranime pomoci "WITH MEMBER"
+
+WITH	MEMBER	[Measures].[Vsechny Prodeje] AS
+				([Measures].[Reseller Sales Amount], [Date].[Calendar].[All Periods])
+		MEMBER	[Measures].[Prodeje 2002] AS
+				([Measures].[Reseller Sales Amount], [Calendar].[Calendar Year].[CY 2002])
+SELECT {([Measures].[Vsechny Prodeje]),
+		([Measures].[Prodeje 2002])} ON COLUMNS,
+	   {[Geography].[Country].[Country].Members} ON ROWS
+FROM [MDX_Sales]
+
+--------------------------------------------------------------------------------
+--Pokud pridavame Calculated MEMBER pro Dimension -> je nutne provest select pres "AllMembers" 
+--Je mozne formatovat MEMBER pomoci FORMAT_STRING, FORE_COLOR, atd...
+WITH	MEMBER	[Measures].[Vsechny Prodeje] AS
+				([Measures].[Reseller Sales Amount], [Date].[Calendar].[All Periods])
+		MEMBER	[Measures].[Prodeje 2002] AS
+				([Measures].[Reseller Sales Amount], [Calendar].[Calendar Year].[CY 2002])
+		MEMBER	[Geography].[Country].[All Geographies].[Procento USA k celku] AS
+				([Geography].[Country].[United States]) /
+				([Geography].[Country].[All Geographies]),
+				FORMAT_STRING = "Percent", FORE_COLOR=233,
+				SOLVE_ORDER = 2
+		MEMBER	[Measures].[Prodeje Kobinovane] AS
+				([Measures].[Reseller Sales Amount]) +
+				([Measures].[Internet Sales Amount]),
+				SOLVE_ORDER = 1
+SELECT {([Measures].[Vsechny Prodeje]),
+		([Measures].[Prodeje 2002]),
+		([Measures].[Internet Sales Amount]),
+		([Measures].[Prodeje Kobinovane])} ON COLUMNS,
+	   {[Geography].[Country].[Country].AllMembers} ON ROWS
+FROM [MDX_Sales]
+CELL PROPERTIES VALUE, FORMATTED_VALUE, FORE_COLOR
+
+--------------------------------------------------------------------------------
+--Current Member
+WITH MEMBER	[Measures].[Pomer k celku] AS
+			([Measures].[Reseller Sales Amount]) /
+			([Measures].[Reseller Sales Amount], [Geography].[Country].CurrentMember.Parent),
+			FORMAT_STRING = "Percent"
+SELECT  {	([Measures].[Reseller Sales Amount]),
+			([Measures].[Pomer k celku])} ON COLUMNS,
+			{[Geography].[Country].[Country].Members} ON ROWS
+FROM MDX_Sales

@@ -1,0 +1,249 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b0d4aa49-bef5-48f1-ac05-046249cad7b4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Companies</ID>
+  <Name>Companies</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3128" scrolltop="-5980" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12224" y="18733" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01a10000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="VIEW_DIM_Companies" left="20" top="-2964" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4736" height="5451" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000801200004b150000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VIEW_DIM_Companies" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3128</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5980</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-2964</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="619c7037-35c9-48b5-a813-732b24887a3e">
+    <DataSourceViewID>DSVMain</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="0b321d8d-06e0-44cc-adf5-6b3e82abbb39">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0265de93-5518-4bc0-9ae9-59f7e46c19db">
+      <ID>PKEY</ID>
+      <Name>PKEY</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bab4f1fb-0d6b-49f7-8580-cea1c843233b">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="345c42a8-0478-4413-9625-7f1c7e0d4749">
+            <TableID>dbo_VIEW_DIM_Companies</TableID>
+            <ColumnID>Company_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6ce162a9-51c3-45e9-b410-54566bf2bb41">
+          <AttributeID>Company Code</AttributeID>
+          <Name>Company Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b685c3cb-2071-4ce5-8478-f7764f134a67">
+          <AttributeID>Company Type</AttributeID>
+          <Name>Company Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7651bcb5-c6ed-454d-b640-3dc783fcbe81">
+          <AttributeID>Tax Office</AttributeID>
+          <Name>Tax Office</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0030c743-08dc-438a-8c16-e0d489f49f2e">
+          <AttributeID>Tax ID</AttributeID>
+          <Name>Tax ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="414b16fb-13eb-4b21-bf42-5ab06bc1dfab">
+          <AttributeID>Company Code And Name</AttributeID>
+          <Name>Company Code And Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="92411ab8-2448-47d9-a364-2b8904c81bb6">
+          <AttributeID>Parent Company Code</AttributeID>
+          <Name>Parent Company</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>Companies</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="baa45375-58b8-4e9c-b2a6-75234c106dc2">
+      <ID>Company Code</ID>
+      <Name>Company Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="878998b8-801f-43c4-b354-e24efda0765a">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c9cb25e-850e-4862-aa23-79d494df3c38">
+            <TableID>dbo_VIEW_DIM_Companies</TableID>
+            <ColumnID>Company_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="5d8d1291-1973-4897-a818-949b2bee0b0f">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="dd7645db-d9ce-43f1-95da-3c27a5b29a1e">
+          <TableID>dbo_VIEW_DIM_Companies</TableID>
+          <ColumnID>Company_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Companies</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b989ea59-c75f-49ef-85c0-70af13dc5650">
+      <ID>Company Type</ID>
+      <Name>Company Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e3bf1ab9-183f-4d3d-9d0e-d4599b88e4d9">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3d6b85e9-cc67-43a4-941f-ccb865d06d13">
+            <TableID>dbo_VIEW_DIM_Companies</TableID>
+            <ColumnID>Company_Type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Companies</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0cb12189-4d70-42ae-bed3-83bf01a47516">
+      <ID>Tax Office</ID>
+      <Name>Tax Office</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e3a59634-9fa6-4fb3-9794-8e82c12ffb3a">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f16836a3-0b11-4a47-839d-1699488b0a11">
+            <TableID>dbo_VIEW_DIM_Companies</TableID>
+            <ColumnID>Tax_Office</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Companies</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b99250d5-6e44-4a39-9b33-21ff26161211">
+      <ID>Tax ID</ID>
+      <Name>Tax ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e5d28aad-aa44-4ec0-beae-0b66d7597514">
+          <DataType>WChar</DataType>
+          <DataSize>18</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6e488a52-263a-429b-96de-bff1975090d4">
+            <TableID>dbo_VIEW_DIM_Companies</TableID>
+            <ColumnID>Tax_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Companies</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="80f0e85e-851b-4bb4-953e-302a40841398">
+      <ID>Company Code And Name</ID>
+      <Name>Company Code And Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="60e7373d-08e5-4683-a692-f371a73c765a">
+          <DataType>WChar</DataType>
+          <DataSize>121</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="61a24e8e-428b-4b54-982a-57ffcd63df62">
+            <TableID>dbo_VIEW_DIM_Companies</TableID>
+            <ColumnID>Company_Code_and_Name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Companies</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3d3a6e96-6274-4bdd-a2a0-0c3979b8c566">
+      <ID>Parent Company Code</ID>
+      <Name>Parent Company</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="56cb2f15-7adb-4e74-a144-d7c9718bc926">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="036c4bb5-639f-48fb-9007-8bb8dd806793">
+            <TableID>dbo_VIEW_DIM_Companies</TableID>
+            <ColumnID>Parent_Company_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="0455e452-56eb-44b1-9175-bef4a1f4f994">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="859019e1-e3c9-4ee2-aec2-92d900407bce">
+          <TableID>dbo_VIEW_DIM_Companies</TableID>
+          <ColumnID>Parent_Company_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyDisplayFolder>Companies</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,649 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9608bc10-a605-4f76-b733-843ccc07a990" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Geospatial Info</ID>
+  <Name>Geospatial Info</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1978" scrolltop="-5477" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10425" y="15954" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01a10000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="VIEW_DIM_GIS" left="-1356" top="-5028" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="7065" height="15213" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000991b00006d3b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VIEW_DIM_GIS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1978</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5477</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-1356</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-5028</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="114">
+            <Shape Id="PKEY" Expanded="true">
+              <Attributes>
+                <Attribute Id="PKEY" />
+                <Attribute Id="Country ID" />
+                <Attribute Id="County ID" />
+                <Attribute Id="Municipality ID" />
+                <Attribute Id="Post Code" />
+                <Attribute Id="Prefecture ID" />
+                <Attribute Id="Geographical Region ID" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Post Code 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="Post Code 1" />
+              </Attributes>
+              <Position x="167" y="20" />
+            </Shape>
+            <Shape Id="Municipality ID 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="Municipality ID 1" />
+              </Attributes>
+              <Position x="315" y="20" />
+            </Shape>
+            <Shape Id="Prefecture ID 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="Prefecture ID 1" />
+              </Attributes>
+              <Position x="462" y="20" />
+            </Shape>
+            <Shape Id="County ID 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="County ID 1" />
+              </Attributes>
+              <Position x="610" y="20" />
+            </Shape>
+            <Shape Id="Geographical Region ID 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="Geographical Region ID 1" />
+              </Attributes>
+              <Position x="757" y="20" />
+            </Shape>
+            <Shape Id="Country ID 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="Country ID 1" />
+              </Attributes>
+              <Position x="905" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ff46c07f-91bb-4751-9b6f-6e495c3aaaef">
+    <DataSourceViewID>DSVMain</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="722a6271-452f-4af6-aef8-4d36ff426348">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="5327f237-bb4f-4830-8357-841592c0ea04">
+      <ID>PKEY</ID>
+      <Name>PKEY</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aa6e5bb4-fdb8-4267-84b0-bc817d630432">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ea09b92-11ca-46b4-bb76-e66492af467d">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>PKEY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="55d14dcb-3e66-4580-88a6-50e3096b70f1">
+          <AttributeID>Country ID</AttributeID>
+          <Name>Country</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b9aeb6cb-61d2-445e-b881-3f42b2a888d4">
+          <AttributeID>Geographical Region ID</AttributeID>
+          <Name>Region</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="60ebdc06-b7cd-4ccb-bf66-8d4b3598b0aa">
+          <AttributeID>County ID</AttributeID>
+          <Name>County ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b0634ebe-eb98-476f-a38b-bcf3ee3ca1ac">
+          <AttributeID>Prefecture ID</AttributeID>
+          <Name>Prefecture</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fafed685-a55e-4973-a485-f0fd64ae2b10">
+          <AttributeID>Municipality ID</AttributeID>
+          <Name>Municipality</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b88e8e74-6682-4c1d-b184-6c3223348454">
+          <AttributeID>Post Code 1</AttributeID>
+          <Name>H_Post Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cbe1e0eb-271a-437a-9b51-baa1d7b5ed97">
+          <AttributeID>Post Code</AttributeID>
+          <Name>Post Code</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>Geospatial Info</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3d88e603-f44d-41b1-8662-8d7c37c6881f">
+      <ID>Country ID</ID>
+      <Name>Country</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="525c2da2-d46b-4e07-97f0-1d3708e65def">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f6827356-bec4-413f-9d17-5d4f3c6724f7">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>Country_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="31662a00-182a-4658-8933-868a5e96140d">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e249c97f-d647-43be-9852-1af0be3f201c">
+          <TableID>dbo_VIEW_DIM_GIS</TableID>
+          <ColumnID>Country_Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Geospatial Info</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0d7159a1-ef95-49a1-a8ed-97fdc3b0fee7">
+      <ID>Geographical Region ID</ID>
+      <Name>Region</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f2dde514-3476-4e01-84e4-c405e757e211">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8776c6b-77fa-47f9-a5e9-6ea2e855ec46">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>Geographical_Region_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="bc064a5b-4f99-4747-b58b-76ca12b3f19b">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="46202eac-f498-478a-bbbd-091f0bb692bc">
+          <TableID>dbo_VIEW_DIM_GIS</TableID>
+          <ColumnID>Geographical_Region_Description_EL</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Geospatial Info</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="13079eb6-cd8a-44e6-9c3b-0ab79ea7f841">
+      <ID>County ID</ID>
+      <Name>County ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7659bdad-6376-49f4-8f45-5a92032e7c44">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="71006b7c-ae09-4ef2-a49c-97d2e78f3e3c">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>County_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="932041ce-51a0-408e-bf75-6d39df04e0a4">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="468c28f2-1911-4e18-b75f-ce490884bcc6">
+          <TableID>dbo_VIEW_DIM_GIS</TableID>
+          <ColumnID>County_Description_EL</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Geospatial Info</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1038253b-74ab-438b-8b75-1a3b6984f399">
+      <ID>Prefecture ID</ID>
+      <Name>Prefecture</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fbad1874-e670-44c9-b854-55b3cabf4e2d">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1342206e-febc-4f90-a552-ce11fafae24e">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>Prefecture_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="703a3532-85cb-4f8f-a6a7-ace834e7cf18">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4d7fc7c0-251b-4033-8df3-6a236a0baa7d">
+          <TableID>dbo_VIEW_DIM_GIS</TableID>
+          <ColumnID>Prefecture_Description_EL</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Geospatial Info</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6c4eacda-2188-4a37-9e16-32f97c382890">
+      <ID>Municipality ID</ID>
+      <Name>Municipality</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="128e8ad2-1f47-465e-8681-04a4c3089cf0">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e7268bc7-a0d5-4de4-b437-0d0635645b19">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>Municipality_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b419cbe7-0d49-47aa-aef9-3a6639cd8f6e">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="91ac70bd-5ca6-4f84-8abb-bc5540c7a005">
+          <TableID>dbo_VIEW_DIM_GIS</TableID>
+          <ColumnID>Municipality_Description_EL</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Geospatial Info</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b523c6b3-6eda-4470-b5d6-e5797fdc2a86">
+      <ID>Post Code</ID>
+      <Name>Post Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2887adf0-e1f4-45cb-ac06-a82e0341eb96">
+          <DataType>WChar</DataType>
+          <DataSize>14</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4070fbe3-6b90-42f9-98ee-b5db81801cf4">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>Post_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Geospatial Info</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d27cce60-7067-47ad-85f0-1bc12ff998f5">
+      <ID>Country ID 1</ID>
+      <Name>H_Country</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="46eba6d1-eb7d-4449-b685-77c3dd85e9e4">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="315c38e2-c476-47e4-88a9-4a6dfa7da706">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>Country_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b14dd51f-6987-4fa5-9e80-4912a603bbd5">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="63d8e5e6-20d8-4e9f-9c7e-3aa94b011adf">
+          <TableID>dbo_VIEW_DIM_GIS</TableID>
+          <ColumnID>Country_Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>Geospatial Info</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dc0206ea-f1a0-47a4-9f5f-8ceac9808189">
+      <ID>Geographical Region ID 1</ID>
+      <Name>H_Region</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ef241085-3e87-46b3-9e4f-40247f24652e">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f5e95663-0756-4262-9c9e-5b65cf9a765c">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>Geographical_Region_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="131d22f4-801e-45e6-b281-cb0d633f4066">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e37c0af5-2b2b-4395-83c8-ed82f55c620e">
+          <TableID>dbo_VIEW_DIM_GIS</TableID>
+          <ColumnID>Geographical_Region_Description_EL</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a4db0cb0-2b6b-4468-9168-96ce2e0b576f">
+          <AttributeID>Country ID 1</AttributeID>
+          <Name>H_Country</Name>
+          <Visible>false</Visible>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>Geospatial Info</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f4faf919-5c6f-42af-9f74-e8b3e85bad7e">
+      <ID>County ID 1</ID>
+      <Name>H_County</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d1b0f239-bb89-4488-91c8-a2eb8d346633">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="10ba670c-2aa3-4cca-9b88-0e2884892c05">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>County_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="53bfe97b-ac9f-4f98-8c31-42521aaf8842">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="19dd9108-8ebf-47f7-840d-7b1ea9903fbf">
+          <TableID>dbo_VIEW_DIM_GIS</TableID>
+          <ColumnID>County_Description_EL</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="bee828ec-810d-4098-9e66-75f7dc5b75ee">
+          <AttributeID>Geographical Region ID 1</AttributeID>
+          <Name>H_Region</Name>
+          <Visible>false</Visible>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>Geospatial Info</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fc0e3131-3686-4fa8-84d9-0b3b33757398">
+      <ID>Prefecture ID 1</ID>
+      <Name>H_Prefecture</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7a530887-80a8-4079-b41a-42ea82613915">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="11f91061-f05d-4908-af5d-70648cca6740">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>Country_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f97a1f0b-1eca-4ada-b8e3-c278c1a30ccf">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e878cb73-a022-4fed-92a7-2707535d6f2c">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>Geographical_Region_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="b97034fd-2982-4761-95ec-dfd18e3e4be7">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fc93bc99-3bf9-4016-b981-91ae3f455d7a">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>County_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="b6568392-0aa4-4ac8-8beb-6b543b9335c7">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Trimming>None</Trimming>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f5889eb5-647c-4fdc-92dd-86cb1de311f7">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>Prefecture_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="2c599e55-4f1b-4c1b-975c-a3f63b53914d">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c63ea10c-00d0-4372-bfe0-50ebb4008853">
+          <TableID>dbo_VIEW_DIM_GIS</TableID>
+          <ColumnID>Prefecture_Description_EL</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="faf9557c-6573-4d08-b7e4-2fcde7d9c9bc">
+          <AttributeID>County ID 1</AttributeID>
+          <Name>H_County</Name>
+          <Visible>false</Visible>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>Geospatial Info</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="333faf6f-d2b8-461e-ae54-97bbdef54f51">
+      <ID>Municipality ID 1</ID>
+      <Name>H_Municipality</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="524c8019-be72-41d6-9e95-29a43b06a762">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa77c733-8144-434e-a0cc-7e1cbfb85a25">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>Country_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="637305bb-1a56-46d5-9165-595161331f12">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="856af19b-8655-444b-9c95-78918bb1bade">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>Geographical_Region_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="16877bb1-a52f-4578-b1f1-855f7d5171d4">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="12a61469-3668-483f-8978-32f274e7c257">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>County_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="6327aa6e-8042-456b-93a9-9015b51b1efc">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b1a504df-bdf8-4e5a-8a35-77b28dec8e78">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>Prefecture_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f722d854-3aa9-4857-85b8-89bb1d687f74">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a8391965-bf63-4510-ae9d-b55e0c4e46b3">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>Municipality_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="2435c88a-e1e5-454f-8c18-5de95c025b99">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7baec50e-5824-4d1b-bca8-5fd20706785d">
+          <TableID>dbo_VIEW_DIM_GIS</TableID>
+          <ColumnID>Municipality_Description_EL</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="da5cc2db-ed02-43f0-8d25-e2a50a19e0e9">
+          <AttributeID>Prefecture ID 1</AttributeID>
+          <Name>H_Prefecture</Name>
+          <Visible>false</Visible>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>Geospatial Info</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="53e7d72a-869a-4f63-9693-f436c754eec7">
+      <ID>Post Code 1</ID>
+      <Name>H_Post Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="75879497-abce-4bdd-9180-99aea65c106c">
+          <DataType>WChar</DataType>
+          <DataSize>14</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bbc07db9-d8f1-4dae-a0e9-4d8eafbc7850">
+            <TableID>dbo_VIEW_DIM_GIS</TableID>
+            <ColumnID>Post_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4195ca7f-0c1a-4dd5-965b-946c00aa2baf">
+          <AttributeID>Municipality ID 1</AttributeID>
+          <Name>H_Municipality</Name>
+          <Visible>false</Visible>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>Geospatial Info</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="bf0533bf-9864-493d-91b3-7624d5af9519">
+      <ID>Hierarchy</ID>
+      <Name>Geospartial Hierarchy</Name>
+      <DisplayFolder>Geospatial Info</DisplayFolder>
+      <Levels>
+        <Level dwd:design-time-name="989f3fa2-d2b8-4c0b-a2b0-9ad904b08f56">
+          <ID>H_Country</ID>
+          <Name>Country</Name>
+          <SourceAttributeID>Country ID 1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="9938e5e1-cfdd-46fe-8a87-7b6bd54c3be5">
+          <ID>H_Geographical Region</ID>
+          <Name>Region</Name>
+          <SourceAttributeID>Geographical Region ID 1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0030a120-a810-43af-a021-7482881456b5">
+          <ID>H_County</ID>
+          <Name>County</Name>
+          <SourceAttributeID>County ID 1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="783a5811-9b3d-4155-b9ad-4c26d807b79d">
+          <ID>H_Prefecture</ID>
+          <Name>Prefecture</Name>
+          <SourceAttributeID>Prefecture ID 1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="4c8d1664-58e4-45a2-a580-485fa78782f0">
+          <ID>H_Municipality</ID>
+          <Name>Municipality</Name>
+          <SourceAttributeID>Municipality ID 1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="778a8c3d-ebb2-4ff7-8d7f-0833ac64da61">
+          <ID>H_Post Code</ID>
+          <Name>Post Code</Name>
+          <SourceAttributeID>Post Code 1</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="34061d50-7a12-4104-a4e3-65cd44d3fab3">
+      <ID>Hierarchy 1</ID>
+      <Name>Map Hierarchy</Name>
+      <DisplayFolder>Geospatial Info</DisplayFolder>
+      <Levels>
+        <Level dwd:design-time-name="15b15a7c-81c2-4685-b9e3-7896a5a38104">
+          <ID>H_Region</ID>
+          <Name>Region</Name>
+          <SourceAttributeID>Geographical Region ID 1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="000e8d1e-df99-4282-b944-8baffc109a95">
+          <ID>H_Prefecture</ID>
+          <Name>Prefecture</Name>
+          <SourceAttributeID>Prefecture ID 1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="d049bcc8-4561-4261-bef4-812f072144b9">
+          <ID>H_Municipality</ID>
+          <Name>Municipality</Name>
+          <SourceAttributeID>Municipality ID 1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="4e7c9f39-94b5-4cba-ac3a-109b026acb96">
+          <ID>H_Post Code</ID>
+          <Name>Post Code</Name>
+          <SourceAttributeID>Post Code 1</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

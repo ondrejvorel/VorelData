@@ -1,0 +1,671 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f39441bb-7a6a-4faa-a2b0-959789d25b1e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>BI</ID>
+  <Name>BI</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-11238" scrolltop="-13096" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="35084" y="15954" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01a10000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="VIEW_DIM_Dates" left="-9399" top="-9922" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="4895" height="3782" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a00001f130000c60e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VIEW_DIM_Dates" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="VIEW_DIM_Time" left="-3483" top="-9922" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="3493" height="3782" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000a50d0000c60e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VIEW_DIM_Time" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="VIEW_DIM_GIS" left="1032" top="-9922" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="5953" height="3782" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a000041170000c60e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VIEW_DIM_GIS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-11238</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-13096</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-9399</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-9922</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="a27d97d6-2718-40c4-9387-1e2b2553f812">
+      <ID>Dates</ID>
+      <Name>Dates</Name>
+      <DimensionID>Dates</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f976be7a-04f5-47ec-bd42-9e1229d09bb7">
+          <AttributeID>PKEY</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a5a9b9d6-a377-4668-a536-3cd35cd4aa3d">
+          <AttributeID>CL Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5de0b779-f6b7-4c5e-b91d-70676ff981eb">
+          <AttributeID>CL Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="95d097e8-ca8b-4634-86d4-9d421f492cde">
+          <AttributeID>CL Year 2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0445e5d6-7bbb-44b2-9285-377e1d18d1bb">
+          <AttributeID>CL Month 2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="576345ea-9248-4971-9918-51a45161f074">
+          <AttributeID>CM Month Day 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7841a14b-3f18-4863-8f2b-27ea096d17f7">
+          <AttributeID>ISO Year 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8ab2df47-c81b-4e65-8c58-af5cdcfab193">
+          <AttributeID>ISO Week 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a11b4262-fe5e-44dc-bd31-6eafb22b8349">
+          <AttributeID>PKEY 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ba085ba7-ac77-4b11-9255-a26c8eeb2e86">
+          <AttributeID>CM Month Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f1b42184-3f6d-4be8-b239-86edca263878">
+          <AttributeID>ISO Week Day Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6e60be91-12ce-49f6-bef2-80a952abab88">
+          <AttributeID>ISO Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4d937dd8-278c-42e3-b34d-ca4bb917c987">
+          <AttributeID>ISO Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d1f5513c-1a08-4c2c-ac4b-408bd0eb19cd">
+          <AttributeID>CL Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="831fac3a-34e5-4dba-b8f5-88fa25ccf302">
+          <AttributeID>FL Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="66fac2f0-9fde-4054-8e0b-068d2b076812">
+          <AttributeID>FL Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ff241de6-b6a2-4382-8d77-e5334b887e5a">
+          <AttributeID>PKEY 1 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2d1ea712-c062-42c7-9db5-d925b6404440">
+          <AttributeID>FL Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d1bc76e1-d1f7-4be1-81de-ca1d09699a61">
+          <AttributeID>FL Year 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="eaee4d04-60d0-471b-8769-5604d1e1f0bf">
+          <AttributeID>PKEY 1 2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4d6173e3-4941-45cc-a1e9-3a24a9371324">
+          <AttributeID>CL Quarter 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="022a120e-2913-4c7c-8629-874daf2b37f9">
+          <AttributeID>FL Quarter 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e31ddd0f-c119-4f71-a1c3-3dae0c81b3e1">
+          <AttributeID>FL Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5f9ad832-02d5-4353-a57c-0c72ba98f7be">
+          <AttributeID>CL Week</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="db761f59-e959-4553-8f60-f5d91a82b9cc">
+          <AttributeID>CL Week Day Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7b202b8c-00ed-4472-b7c0-53ad17e3c5f4">
+          <AttributeID>FL Week Day Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b1d5175d-903f-4088-9e38-b13e68a15c04">
+          <AttributeID>CM Week Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4668caa3-c649-480a-ad16-aaf6bc4a5163">
+          <AttributeID>FL Week Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6b4201a1-8f61-41d6-8c32-96aa63d40f0c">
+          <AttributeID>Holiday Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="480ad1a9-9379-49f7-8d25-33055da3a933">
+          <AttributeID>Holiday Name 2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ddf631dd-66f0-48ff-a911-976266066fa4">
+          <AttributeID>Holiday Group</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d2101045-e091-4bd6-b461-be610e66ec4d">
+          <AttributeID>Holiday Group 2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b9905b19-e2cb-4f7e-882a-e10d731c1e9b">
+          <AttributeID>Holiday Flag Retail HQ</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e0fe62d6-e78a-4f7f-b095-b4bcea2cb21c">
+          <AttributeID>Holiday Flag Retail Stores</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1b596cb6-a81b-4f10-b24b-8f0a5ec66a3c">
+          <AttributeID>Holiday Flag Shipping HQ</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d3089cf-b672-4b5c-b1ff-fda57543622c">
+          <AttributeID>Holiday Flag Shipping Ships</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4617dbfe-87f5-4dbf-b584-cf422013da9f">
+          <AttributeID>CL Semester</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="79787714-1363-490d-b64f-fb011282d3d5">
+          <AttributeID>FL Semester</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d9be2b89-ba69-4c08-8d09-bf507dda4597">
+          <AttributeID>FL Month 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a1114ac9-0656-4320-b414-63489584e433">
+          <AttributeID>CL Month 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="75b932c7-b9c2-419d-9b62-d6deafbdfef9">
+          <AttributeID>CL Quarter 2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d0638ff-85dc-41f0-aaa2-332bee341353">
+          <AttributeID>CL Year 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d1b8a990-5822-47c7-93aa-1d676098decb">
+          <AttributeID>FL Year 2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f761cc1b-c2dc-498b-8fe3-006a5dfb7f8a">
+          <AttributeID>FL Quarter 2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="73473455-4efd-400c-a9f9-ae0094ba2722">
+          <AttributeID>FL Month 2</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="a3d328b6-ff0e-4248-b337-7c20c9cfe0c7">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="9af74fb9-f5ea-4131-9854-b189f077d323">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="1357b8c1-c23a-4017-8918-4621f8159326">
+          <HierarchyID>Hierarchy 1 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="d3acbbba-5f81-4c09-850a-21d0a11e8ddc">
+          <HierarchyID>Hierarchy 4</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="8f5bdf42-8b2f-4ee3-808f-d202d790f45d">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="90d90c83-7df6-4017-884f-5eb2fa89c7af">
+          <HierarchyID>Hierarchy 2 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="735e3e74-9243-44f9-9e8b-d7e69dccc91b">
+          <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="122f876f-15b2-452f-857f-fe93517e9f4f">
+          <HierarchyID>Hierarchy 1 1 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="e6c7922b-5e4f-4fa1-b832-9d6ca219c8a2">
+          <HierarchyID>Hierarchy 4 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="3e96f765-4e12-4946-b7a6-b6e0cb358616">
+      <ID>Time</ID>
+      <Name>Time</Name>
+      <DimensionID>Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fab482f2-14e2-40ec-83ba-9bb845404536">
+          <AttributeID>PKEY</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b1e062be-e2be-46c1-bf39-346bddf0f3a6">
+          <AttributeID>TM Hour</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="874d39df-4220-4201-ab52-23aa7d289155">
+          <AttributeID>TM Minute</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a69ef12-3dd9-430a-b383-7c6022d38d42">
+          <AttributeID>PKEY 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="52d7eb91-4f18-440d-9b58-e5b9ae7d7ec1">
+          <AttributeID>TM Hour 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6e133a79-18c2-4377-9723-8c7b114bb710">
+          <AttributeID>TM Minute 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="641c9ac6-d564-4c76-8a01-73d290e9e20d">
+          <AttributeID>Last 30 Min Flag</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="981dcf3b-403c-46ed-841b-b7e4918a177b">
+          <AttributeID>Half Hour Text</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="00a2d829-3218-4c3e-9055-53f5acf23306">
+          <AttributeID>Quarter Text</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d572b898-9227-4f2c-873d-0a10a1738cd1">
+          <AttributeID>Half Hour Text 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bd7a1690-0ba3-4c55-a76f-a297bea67200">
+          <AttributeID>Quarter Text 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fb528361-7ca6-4077-b598-d04df4552d29">
+          <AttributeID>Last 05 Min Flag</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="58117bf6-2d41-43d5-bad1-3e3a899a3eea">
+          <AttributeID>Last 15 Min Flag</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4a8747e3-c744-431c-8369-05d73ac3fe90">
+          <AttributeID>Last 60 Min Flag</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b820dbe7-5b81-4cc5-9de0-57e624bcda7e">
+          <AttributeID>Day Part ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f98ee073-8d46-40b9-a8d0-f18dc6d12654">
+          <AttributeID>Day Part ID 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a5e3b609-9ac4-4d22-8e97-a8fccc3f7e0b">
+          <AttributeID>Day Part ID 2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a6964e6c-cb36-4525-b355-85263bcf0864">
+          <AttributeID>TM Hour 2</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="9662a2ff-6392-497b-924a-73ddda6d48fb">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="48356774-2bab-4b1e-b07a-3b7b73361112">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="5670f796-cfb7-4393-9fd6-6e54d5bd7f2f">
+      <ID>Geospatial Info</ID>
+      <Name>Geospatial Info</Name>
+      <DimensionID>Geospatial Info</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="90fdaee9-4398-45b0-b910-4d70344c475a">
+          <AttributeID>PKEY</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8f9a19ca-c460-46da-9f0e-9acc98a782ff">
+          <AttributeID>Country ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e5d556d2-845c-46ce-afe7-a94f545d0dc4">
+          <AttributeID>Geographical Region ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d8b81060-6bb0-4eb5-9205-e83e64e2b348">
+          <AttributeID>County ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="54b74e50-dc7e-4c29-bac2-220b5e63a5a2">
+          <AttributeID>Prefecture ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="122b02aa-a001-4f3c-a7a5-ea4695a66743">
+          <AttributeID>Municipality ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5cee714e-3e06-4de9-8ac6-9746e3ce58e4">
+          <AttributeID>Post Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8b4d161f-8bd9-42b5-9ae5-6dadc5e0ef0c">
+          <AttributeID>Country ID 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a7efa70-5239-4b31-9c5c-271c92e3fd41">
+          <AttributeID>Geographical Region ID 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0d72c223-a96b-4727-b502-23ffd45f9d9d">
+          <AttributeID>County ID 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6e21da1e-8d2f-4284-ab8b-2d9f886c483e">
+          <AttributeID>Prefecture ID 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="02631032-9558-4806-8ea7-dee5a4ed0fd2">
+          <AttributeID>Municipality ID 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="38366d5f-790c-4a54-afeb-73a6dd3b51b7">
+          <AttributeID>Post Code 1</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="cd57a9cb-4076-4009-ad5d-b3eb58c75179">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="16530e54-7249-4a0d-b7b0-5dc0cdd09d3b">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="4094c6a6-3bbc-4380-97e5-d3437cd7dd81">
+      <ID>VIEW DIM Dates</ID>
+      <Name>Date Measures</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="75b7e898-6ed5-4a26-91e8-c3326e0475ea">
+          <ID>VIEW DIM Dates Count</ID>
+          <Name>Days</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="3fc1c328-4baa-4386-9c05-8c4b7338455e">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="375e2506-63d5-40c4-9f08-7690e5d6da31">
+              <TableID>dbo_VIEW_DIM_Dates</TableID>
+            </Source>
+          </Source>
+          <DisplayFolder>Dates</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="5610ea97-8559-448b-be83-1ee7dd39d9f4">
+          <ID>CM Month Day</ID>
+          <Name>Max Day of Month</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="b77bacfe-e726-43df-8c90-598aef930e1f">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c4e0c294-e867-43b8-9bd1-679bcda8364d">
+              <TableID>dbo_VIEW_DIM_Dates</TableID>
+              <ColumnID>CM_MonthDay</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Dates\Special</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="152dfc06-b99a-4fb6-b5f2-0875ad7fa704">
+          <ID>Holiday Flag Retail HQ</ID>
+          <Name>Holidays Retail HQ</Name>
+          <Source dwd:design-time-name="dbe9f23c-bdcd-47fc-853c-e7049f76617f">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="294a55a4-5cfb-41d5-8352-27340c194602">
+              <TableID>dbo_VIEW_DIM_Dates</TableID>
+              <ColumnID>Holiday_Flag_RetailHQ</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Dates\Holidays</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="20bc2ddf-0b5e-4b34-973d-07c2892a4e5f">
+          <ID>Holiday Flag Retail Stores</ID>
+          <Name>Holidays Retail Stores</Name>
+          <Source dwd:design-time-name="ecfe9318-3082-431a-babf-aa7e27140236">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a21a3e43-1696-4d48-bc40-286ccc75957c">
+              <TableID>dbo_VIEW_DIM_Dates</TableID>
+              <ColumnID>Holiday_Flag_RetailStores</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Dates\Holidays</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="d6062e5a-7aa9-4ec7-a8f6-50fa499a65fc">
+          <ID>Holiday Flag Shipping HQ</ID>
+          <Name>Holidays Shipping HQ</Name>
+          <Source dwd:design-time-name="6c44dbc2-7076-4b3f-8c11-7bad62927a43">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="58c5ada1-37ac-48ef-9187-59180034ec98">
+              <TableID>dbo_VIEW_DIM_Dates</TableID>
+              <ColumnID>Holiday_Flag_ShippingHQ</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Dates\Holidays</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="82bef655-57c8-4adf-932e-498499649171">
+          <ID>Holiday Flag Shipping Ships</ID>
+          <Name>Holidays Shipping Ships</Name>
+          <Source dwd:design-time-name="02396eb9-c742-427c-ae60-94deefd08048">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="46420a70-904b-4f23-9175-f3b9818147b8">
+              <TableID>dbo_VIEW_DIM_Dates</TableID>
+              <ColumnID>Holiday_Flag_ShippingShips</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Dates\Holidays</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="0c4811ec-a807-4ae2-a61b-c24939fc1d2a">
+          <CubeDimensionID>Dates</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e82420e1-7a13-43dd-8e06-8849316f4e92">
+              <AttributeID>PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1647f8c4-a0b3-43ec-97a2-d12f75f924b3">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="39234e20-dd45-4e14-9c93-c6378ac84a2f">
+                    <TableID>dbo_VIEW_DIM_Dates</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="3d56c0c4-bc89-4b0b-b2c5-d9e9b334ea6c">
+      <ID>VIEW DIM Time</ID>
+      <Name>Time Measures</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="21fb9f4d-6339-49d2-8d72-eca67803ac8d">
+          <ID>VIEW DIM Time Count</ID>
+          <Name>Minutes</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="c67f1105-c099-40cd-b1e0-5b31918ef2f9">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="40896586-d305-455b-beb8-f1e8978f7e43">
+              <TableID>dbo_VIEW_DIM_Time</TableID>
+            </Source>
+          </Source>
+          <DisplayFolder>Time</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="396270f9-ad4b-4ab8-a291-840806ac31d7">
+          <CubeDimensionID>Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="12ecca94-cca5-42f9-ab48-2db8f414940c">
+              <AttributeID>PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c2c6f147-82ef-4d9e-b4be-5c909e923cbf">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="94920b8e-7a9f-431e-9d65-61330e7c479d">
+                    <TableID>dbo_VIEW_DIM_Time</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="9820c67b-a1ff-420a-93c6-10684579a6bf">
+      <ID>GIS Municipalty DCount 1</ID>
+      <Name>GIS PostCode DCount</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="c6584111-73b5-448b-be9d-11db5c3be80a">
+          <ID>Post Code Distinct Count 1</ID>
+          <Name>Count of Postcodes</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="ef98d92f-720c-498b-8995-d102d0477a46">
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="365c6307-193d-44e5-955b-f1e16fb07c69">
+              <TableID>dbo_VIEW_DIM_GIS</TableID>
+              <ColumnID>Post_Code</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Geospatial</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="8ee11dff-c58f-4751-888b-8f17995beef9">
+          <CubeDimensionID>Geospatial Info</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dac30e16-7035-48f4-9116-f5f3d6d2fa4a">
+              <AttributeID>PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2029594b-5c99-4a0f-98a3-8b8b975886ea">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ba12571c-ebcd-4a4b-b656-de1bb6b68fd5">
+                    <TableID>dbo_VIEW_DIM_GIS</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="c4a0fbae-f057-4abd-a968-5a576bdc032d">
+      <ID>GIS Municipalty DCount</ID>
+      <Name>GIS Municipalty DCount</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1f2d7042-fd66-4539-923f-4e3a13c7b478">
+          <ID>Municipality ID Distinct Count 1</ID>
+          <Name>Count of Municipalities</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="df31a2bb-575d-4978-b9ad-1c22cc651395">
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6f8e421c-1eb3-4d6b-89c5-f39fbdc2a268">
+              <TableID>dbo_VIEW_DIM_GIS</TableID>
+              <ColumnID>Municipality_ID</ColumnID>
+            </Source>
+          </Source>
+          <DisplayFolder>Geospatial</DisplayFolder>
+          <FormatString>#,##0;"-"#,##0</FormatString>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="f381f7e3-4adf-44f0-ba63-6e264e30dd85">
+          <CubeDimensionID>Geospatial Info</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="18cb6478-2bac-4865-9b1f-cc2314ba1696">
+              <AttributeID>PKEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bd952cfc-96e8-4d4d-9399-c6f147b0a401">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a003efd6-a3fc-4f77-9d1f-d347362b53f1">
+                    <TableID>dbo_VIEW_DIM_GIS</TableID>
+                    <ColumnID>PKEY</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="8c707406-4bd1-4b77-b430-f2765104c6ec">
+    <DataSourceViewID>DSVMain</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="21cdc1fa-7bc0-4b74-9559-c241c973117b">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].TestMeasure
+ AS ([Geospatial Info].[Municipality].[All], [Measures].[Count of Postcodes]), 
+VISIBLE = 1  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>

@@ -1,0 +1,45 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4579e895-be20-469a-8b27-b5db73b9c08c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Targit Logs</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>VIEW FACT Targit Report Usage</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a5c12093-32ca-4baa-9e21-7ade471e4a53">
+          <ID>VIEW FACT Targit Report Usage</ID>
+          <Name>VIEW FACT Targit Report Usage</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="21ade527-6ba4-452c-8c7e-9bbc8e8ed2b6">
+            <DataSourceViewID>DSVMain</DataSourceViewID>
+            <TableID>dbo_VIEW_FACT_Targit_Report_Usage</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>VIEW TRGLOG FACT Dimension Measure Usage</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c894b030-025e-4841-83b4-1355a6dc29fa">
+          <ID>VIEW TRGLOG FACT Dimension Measure Usage</ID>
+          <Name>VIEW TRGLOG FACT Dimension Measure Usage</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7da016b8-1d30-4bda-b599-56e6f869571d">
+            <DataSourceViewID>DSVMain</DataSourceViewID>
+            <TableID>dbo_VIEW_TRGLOG_FACT_Dimension_Measure_Usage</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

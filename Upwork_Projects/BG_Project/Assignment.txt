@@ -1,0 +1,19 @@
+Here is the test task:
+
+Imagine customer pipeline that consists of many stages. We calculate conversion and transition time between each pair of consequent stages which is quite simple, and for some stages we calculate an additional metric which is called the average backlog. It is a weekly average of daily count of customers that are still waiting to transit to the next stage. High number means there is a bottleneck that should be improved.
+
+Logic:
+1) We consider the customer being in a backlog if he doesn't reach stage #2 between 1 and 14 days after reaching stage #1
+2) If customer reaches stage #2 on the same day or the next day he never appears in the backlog
+3) If customer doesn't reach stage #2 at all he's in the backlog until day 14, then we forget about this customer
+4) If customer reaches stage #2 later than 14 days after stage #1 he's appearing in backlog only until day 14
+
+Example: if a customer reached stage 1 on 2017-01-01 and stage 2 on 2017-01-08, he appears in daily backlog on 2017-01-02,2017-01-03,2017-01-04,2017-01-05,2017-01-06 and 2017-01-07
+
+We provide you a dataset of dummy customer records that have ID and 2 timestamps for entering into 2 stages. Your goal is to write a PostgreSQL query that calculates weekly average backlog and returns result looking like this (not these numbers, just the structure):
+
+week, backlog
+2016-02-01, 5.5	
+2016-02-08, 9.2	
+
+Thank you!

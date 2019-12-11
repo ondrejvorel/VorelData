@@ -1,0 +1,145 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a8420133-d679-4da4-ae42-330a06639bc4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>SQLAgent Logs</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>VIEW SAGENT FACT SQL Agent History Logs Over Time</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a59f7009-7487-4a2b-b0b0-99c35e8d9d1c">
+          <ID>VIEW SAGENT FACT SQL Agent History Logs Over Time</ID>
+          <Name>VIEW SAGENT FACT SQL Agent History Logs Over Time</Name>
+          <CreatedTimestamp>2017-05-17T06:43:59.47Z</CreatedTimestamp>
+          <LastSchemaUpdate>2017-06-13T07:36:10.236667Z</LastSchemaUpdate>
+          <LastProcessed>2017-06-13T07:38:06.64Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="335f4c28-86eb-491c-9ab3-9a5756d7245c">
+            <DataSourceViewID>DSVMain</DataSourceViewID>
+            <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="51d106e0-84e7-439d-a703-7ff909d14cf2">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="a0f81853-6eff-48a0-adc6-64cbd4a6c090" />
+          </ProactiveCaching>
+          <EstimatedSize>558</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>VIEW DIM Dates</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="65ceec6d-142b-4a3a-936d-f24479fabd82">
+          <ID>VIEW DIM Dates</ID>
+          <Name>VIEW DIM Dates</Name>
+          <CreatedTimestamp>2017-05-17T07:25:15.636667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2017-06-13T07:36:10.29Z</LastSchemaUpdate>
+          <LastProcessed>2017-06-13T07:38:06.94Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="667e4732-6967-4685-8095-259c785dd473">
+            <DataSourceViewID>DSVMain</DataSourceViewID>
+            <TableID>dbo_VIEW_DIM_Dates</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="cdfa2b76-86ef-40f8-b222-883e16d0d613">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="92ff7f48-ec05-450a-9f07-5aa94687f8f6" />
+          </ProactiveCaching>
+          <EstimatedSize>670400</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>VIEW DIM Time</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3ec44e3c-92a6-4e17-a7e0-d476d841c149">
+          <ID>VIEW DIM Time</ID>
+          <Name>VIEW DIM Time</Name>
+          <CreatedTimestamp>2017-05-17T07:25:15.716667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2017-06-13T07:36:10.353333Z</LastSchemaUpdate>
+          <LastProcessed>2017-06-13T07:38:06.586667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="af41bda5-9be3-4965-9cda-31645ab15a7c">
+            <DataSourceViewID>DSVMain</DataSourceViewID>
+            <TableID>dbo_VIEW_DIM_Time</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="9b176d15-ec81-4919-a650-f6372df66be9">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="15f9edfc-144e-4168-bcde-179c1dc90e2a" />
+          </ProactiveCaching>
+          <EstimatedSize>3098</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Log Measures</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ef2e8d12-d77c-49c9-9b9a-a17b5d4d299b">
+          <ID>VIEW SAGENT FACT SQL Agent History Logs Over Time</ID>
+          <Name>VIEW SAGENT FACT SQL Agent History Logs Over Time</Name>
+          <CreatedTimestamp>2017-05-17T07:25:15.8Z</CreatedTimestamp>
+          <LastSchemaUpdate>2017-06-13T07:36:10.393333Z</LastSchemaUpdate>
+          <LastProcessed>2017-06-13T07:38:06.656667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e47d0092-1ae3-4cee-ae9a-43f6f2ab2200">
+            <DataSourceViewID>DSVMain</DataSourceViewID>
+            <TableID>dbo_VIEW_SAGENT_FACT_SQLAgent_History_Logs_Over_Time</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="593af2af-5b76-4683-a1fc-b66d9d3ff8ff">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="1534e996-78f7-41cc-898b-c6789ce37742" />
+          </ProactiveCaching>
+          <EstimatedSize>3004</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>VIEW SAGENT DIM Jobs And Steps</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="53fe77e2-2bb0-451c-a3d5-5abe78144513">
+          <ID>VIEW SAGENT DIM Jobs And Steps</ID>
+          <Name>VIEW SAGENT DIM Jobs And Steps</Name>
+          <CreatedTimestamp>2017-05-17T07:25:15.88Z</CreatedTimestamp>
+          <LastSchemaUpdate>2017-06-13T07:36:10.44Z</LastSchemaUpdate>
+          <LastProcessed>2017-06-13T07:38:06.57Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="bfa3a651-c9ae-4b30-8e92-abe78be936c6">
+            <DataSourceViewID>DSVMain</DataSourceViewID>
+            <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="c14b9a73-3636-42b1-b033-c35bd7354eaa">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="71f96d7a-f21c-4249-9afc-ab64624dc5f1" />
+          </ProactiveCaching>
+          <EstimatedSize>222</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

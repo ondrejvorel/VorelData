@@ -1,0 +1,335 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="98afe57f-d3bd-411d-8af8-99e44952766a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Cost Centers</ID>
+  <Name>Cost Centers</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3366" scrolltop="-6866" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11033" y="18733" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01a10000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="VIEW_DIM_CostCenters" left="-2123" top="-5372" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="7858" height="12885" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b21e000055320000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VIEW_DIM_CostCenters" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3366</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6866</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-2123</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-5372</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8769b8e7-f255-4a58-ad2a-20119a6e5958">
+    <DataSourceViewID>DSVMain</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="74b2976d-6e73-4d1c-bb2c-54fc34e78c94">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="7b994191-76ca-4bda-bc4e-c33da167d5de">
+      <ID>PKEY</ID>
+      <Name>PKEY</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a6b4c898-f630-4295-af19-9be18a0b8152">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="432924d8-d996-4de4-9eb3-28abb989344f">
+            <TableID>dbo_VIEW_DIM_CostCenters</TableID>
+            <ColumnID>CostCenter_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d28a7236-fd38-4f21-9451-01d16cd53811">
+          <AttributeID>Cost Center Code</AttributeID>
+          <Name>Cost Center Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6e89fe57-be73-4320-8fcf-e6fa624966de">
+          <AttributeID>Cost Center Name</AttributeID>
+          <Name>Cost Center Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="afd51290-6e7f-480d-bf0b-69bff0d577fc">
+          <AttributeID>Cost Center Code And Name</AttributeID>
+          <Name>Cost Center Code And Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bc8b3818-041a-4e80-b26a-0382263efff2">
+          <AttributeID>Is Active Flag</AttributeID>
+          <Name>Is Active Flag</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bc60f814-1544-4060-89ef-48608f444090">
+          <AttributeID>Cost Center Type</AttributeID>
+          <Name>Cost Center Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5efa6016-094d-44aa-be62-aa7ca4017b43">
+          <AttributeID>Cost Center Classification</AttributeID>
+          <Name>Cost Center Classification</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="99e05298-2edd-4941-925b-b5418a06bd91">
+          <AttributeID>Cost Center Address</AttributeID>
+          <Name>Cost Center Address</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bfd465d5-5be3-4439-a0ae-b957a014ea0c">
+          <AttributeID>Cost Center City</AttributeID>
+          <Name>Cost Center City</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d2066c49-65e8-4955-9a27-dbd908ecb327">
+          <AttributeID>Cost Center District</AttributeID>
+          <Name>Cost Center District</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d77fedd5-c635-46ae-9083-6a1d6bf8b9ab">
+          <AttributeID>Cost Center Phone 1</AttributeID>
+          <Name>Cost Center Phone</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bc72da3b-e04e-41f3-976e-6ce3157c9624">
+          <AttributeID>Cost Center Email</AttributeID>
+          <Name>Cost Center Email</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>Cost Centers</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1dd28d01-c1cc-4b49-b2be-caf08e58bfdc">
+      <ID>Cost Center Code</ID>
+      <Name>Cost Center Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="066618db-665e-433c-b3bb-cba880f4fd82">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eb6eee81-f2c4-4b91-a109-c77c64630645">
+            <TableID>dbo_VIEW_DIM_CostCenters</TableID>
+            <ColumnID>CostCenter_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Cost Centers</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0a18f2f6-3d63-4c1a-ab59-9897d0b27e3d">
+      <ID>Cost Center Name</ID>
+      <Name>Cost Center Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a0318305-5715-4706-8484-f5ccf28af8a8">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d1403da2-c71f-4466-867f-f82c85502c25">
+            <TableID>dbo_VIEW_DIM_CostCenters</TableID>
+            <ColumnID>Cost_Center_Name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Cost Centers</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="588b2c33-24ec-4dbb-b583-496b78825f93">
+      <ID>Cost Center Code And Name</ID>
+      <Name>Cost Center Code And Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="380156c3-4aa8-49e2-9ed9-3619b69c6d84">
+          <DataType>WChar</DataType>
+          <DataSize>121</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="24878795-cd89-4271-bd84-3d18978eb354">
+            <TableID>dbo_VIEW_DIM_CostCenters</TableID>
+            <ColumnID>Cost_Center_Code_and_Name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Cost Centers</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3935a6ae-9523-4f9a-95ca-7c6aa2410e97">
+      <ID>Is Active Flag</ID>
+      <Name>Is Active Flag</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0f6b35e8-e685-41f5-aec2-d88f7cd6c2f5">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="79b86d79-f0ab-415d-b44e-63c2804d9957">
+            <TableID>dbo_VIEW_DIM_CostCenters</TableID>
+            <ColumnID>Is_Active_Flag</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Cost Centers</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e2f6f064-c415-464e-a706-edd7ad273b9b">
+      <ID>Cost Center Type</ID>
+      <Name>Cost Center Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3ef60114-e562-407a-aa04-4bf4ee9b77f6">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dbadab46-b9cd-42b5-8eff-e214d3f22355">
+            <TableID>dbo_VIEW_DIM_CostCenters</TableID>
+            <ColumnID>Cost_Center_Type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Cost Centers</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="746f4c1f-c652-44be-9d74-41e9d743028d">
+      <ID>Cost Center Classification</ID>
+      <Name>Cost Center Classification</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fc9e8544-4bcc-44f5-b2b9-1381dd2ca93f">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5ba77e7a-d26e-4ff3-b6c2-e603a0325f0b">
+            <TableID>dbo_VIEW_DIM_CostCenters</TableID>
+            <ColumnID>Cost_Center_Classification</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Cost Centers</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="df87a99c-19f4-4bcd-a4fb-1ab6bfcbe9ce">
+      <ID>Cost Center Address</ID>
+      <Name>Cost Center Address</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9a810784-2e58-44a1-b0c9-90891393b567">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3de54ea4-ba3a-446e-8b21-0809dad77b9f">
+            <TableID>dbo_VIEW_DIM_CostCenters</TableID>
+            <ColumnID>Cost_Center_Address</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Cost Centers</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f19133e-90e0-4b24-ab86-c75cb227af67">
+      <ID>Cost Center City</ID>
+      <Name>Cost Center City</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cd566b66-ed9e-415b-ab3e-ac7871242b72">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6760b5f8-5ad1-4915-94c3-3f2f4f4669e9">
+            <TableID>dbo_VIEW_DIM_CostCenters</TableID>
+            <ColumnID>Cost_Center_City</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Cost Centers</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b5b8e8f6-47dd-4f70-8f63-3b52779e067f">
+      <ID>Cost Center District</ID>
+      <Name>Cost Center District</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5b0b6257-4205-455a-9673-865d9d635327">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dea5d142-43be-453f-b007-0c0b1f12a604">
+            <TableID>dbo_VIEW_DIM_CostCenters</TableID>
+            <ColumnID>Cost_Center_District</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Cost Centers</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3ea33482-3442-41b4-8bb2-83a9c56bc4af">
+      <ID>Cost Center Phone 1</ID>
+      <Name>Cost Center Phone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="215e283d-8052-4ec9-8634-498e8aea87b1">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d6764b40-ea9e-4e4c-a731-4f6f6520fbba">
+            <TableID>dbo_VIEW_DIM_CostCenters</TableID>
+            <ColumnID>Cost_Center_Phone_1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Cost Centers</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="02d199fb-647c-4561-b5b3-e43b4e3cb440">
+      <ID>Cost Center Email</ID>
+      <Name>Cost Center Email</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dbcb3803-6eac-497d-9b41-04a236e37107">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fdcf6b1f-85b8-448e-b352-d251d3fbeebd">
+            <TableID>dbo_VIEW_DIM_CostCenters</TableID>
+            <ColumnID>Cost_Center_email</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Cost Centers</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

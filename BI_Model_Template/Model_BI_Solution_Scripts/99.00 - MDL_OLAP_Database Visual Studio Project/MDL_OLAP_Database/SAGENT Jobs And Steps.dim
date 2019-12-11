@@ -1,0 +1,303 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9028d534-3c2b-40e3-a008-06b6cc287e8a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>SAGENT Jobs And Steps</ID>
+  <Name>SAGENT Jobs And Steps</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2706" scrolltop="-5066" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10054" y="11721" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01a10000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="VIEW_SAGENT_DIM_Jobs_And_Steps" left="-854" top="-2170" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5451" height="5742" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a00004b1500006e160000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VIEW_SAGENT_DIM_Jobs_And_Steps" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2706</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5066</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-854</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-2170</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="104">
+            <Shape Id="Job Step PKEY" Expanded="false">
+              <Attributes>
+                <Attribute Id="Job Step PKEY" />
+                <Attribute Id="Job ID" />
+                <Attribute Id="Step ID" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Job Step PKEY 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="Job Step PKEY 1" />
+              </Attributes>
+              <Position x="155" y="20" />
+            </Shape>
+            <Shape Id="Job ID 2" Expanded="false">
+              <Attributes>
+                <Attribute Id="Job ID 2" />
+              </Attributes>
+              <Position x="290" y="20" />
+            </Shape>
+            <Shape Id="Step ID 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="Step ID 1" />
+                <Attribute Id="Job ID 1" />
+              </Attributes>
+              <Position x="155" y="68" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e12f0546-f86d-4cb6-b923-437749c5a7f2">
+    <DataSourceViewID>DSVMain</DataSourceViewID>
+  </Source>
+  <UnknownMember>Hidden</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="99d0dfc9-7d0b-4f89-8f01-b99ced0a081b">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="e9cda22b-03fd-4ed5-ad90-b4b65f635d94">
+      <ID>Job Step PKEY</ID>
+      <Name>PKEY</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fb4db37a-cdfa-4dec-89fc-14cec0c43e60">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="51744e59-29ef-4bb4-a53b-ec4547c4e8c9">
+            <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+            <ColumnID>Job_Step_PKEY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="edc95fc0-dfed-4111-8bd8-1909dc9ff3e0">
+          <AttributeID>Job Step PKEY 1</AttributeID>
+          <Name>H_Step</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b79ecc83-d7b4-4eee-9c48-5fc26f546f42">
+          <AttributeID>Job ID 1</AttributeID>
+          <Name>Job</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f986b399-e1e3-4945-9af9-eb980de7896a">
+          <AttributeID>Step Sorter</AttributeID>
+          <Name>Step Sorter</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="61adb93f-427f-48be-8e40-3c4883e1d390">
+          <AttributeID>Step ID 1</AttributeID>
+          <Name>Step</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>Jobs and Steps</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4e207ad3-5bbc-4de7-b40f-003f19ebff13">
+      <ID>Job ID 2</ID>
+      <Name>H_Job</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="472d455b-9d56-49b4-89e5-46022ee3e236">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6f493249-f2ce-4047-aa0c-7d81d4c2cbf9">
+            <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+            <ColumnID>Job_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="8466ed06-cdd6-4bbb-a215-fba2b205fe44">
+        <DataType>WChar</DataType>
+        <DataSize>128</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fb10296f-6c8d-4414-9bd1-c119e5989b1d">
+          <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+          <ColumnID>Job_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>Jobs and Steps</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b7ebc7ec-56ba-4736-9bb5-801e88f3d8f1">
+      <ID>Job Step PKEY 1</ID>
+      <Name>H_Step</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cb288e7f-18c4-45d5-9610-958df8b647d6">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d2a774dd-df1d-46fd-a2e2-6aac25c1c409">
+            <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+            <ColumnID>Job_Step_PKEY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="92f28a58-8684-40ea-9654-dee16765375b">
+        <DataType>WChar</DataType>
+        <DataSize>128</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="58941c8a-0f7d-4ce2-a53d-673166afe5be">
+          <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+          <ColumnID>Step_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="eb8173b9-2ea7-4c78-b3dd-cdf026943fdb">
+          <AttributeID>Job ID 2</AttributeID>
+          <Name>H_Job</Name>
+          <Visible>false</Visible>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <AttributeHierarchyDisplayFolder>Jobs and Steps</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ad38a2cf-6469-4ee3-b4ad-f1c48b00d18f">
+      <ID>Job ID 1</ID>
+      <Name>Job</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="416cee85-7d4d-408e-acff-8e79f791ca7a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="77e6255f-0fc6-4aa5-a7fc-bdda8ede0fb7">
+            <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+            <ColumnID>Job_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="7a3e5f9f-79d2-458f-8ea6-b2eab2b91dd6">
+        <DataType>WChar</DataType>
+        <DataSize>128</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="945caed2-f59d-4616-9ae0-469390e2bdf9">
+          <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+          <ColumnID>Job_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Jobs and Steps</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6cb203c7-052b-4641-a6e9-67f01b70ddd6">
+      <ID>Step Sorter</ID>
+      <Name>Step Sorter</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1c39ecca-26e6-4c04-9a77-57cabe26bdd1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bdc1aa8f-a9aa-487d-9c4f-583de912fda8">
+            <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+            <ColumnID>Step_Sorter</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyDisplayFolder>Jobs and Steps</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9b745a70-8388-44c6-bd77-77426dc2416a">
+      <ID>Step ID 1</ID>
+      <Name>Step</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="34ea24a8-c801-46e9-8264-4947d13450da">
+          <DataType>WChar</DataType>
+          <DataSize>110</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aeb9b91f-e8ea-4b30-bd7c-1dcf614b131b">
+            <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+            <ColumnID>Step_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3b2f2512-4948-4ed1-9912-d0015ce47a21">
+        <DataType>WChar</DataType>
+        <DataSize>128</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7d473a77-a433-415c-948e-3952ad384fc1">
+          <TableID>dbo_VIEW_SAGENT_DIM_Jobs_And_Steps</TableID>
+          <ColumnID>Step_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyDisplayFolder>Jobs and Steps</AttributeHierarchyDisplayFolder>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="96f31f0d-12a8-45ca-877b-92e540e18f90">
+      <ID>Hierarchy</ID>
+      <Name>Job and Steps Hierarchy</Name>
+      <DisplayFolder>Jobs and Steps</DisplayFolder>
+      <Levels>
+        <Level dwd:design-time-name="66214be2-c552-43a4-9f6c-c026dde44f19">
+          <ID>H_Job 1</ID>
+          <Name>Job</Name>
+          <SourceAttributeID>Job ID 2</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="653ed748-2f69-457d-9330-2ffabe9d2560">
+          <ID>H_Step 1</ID>
+          <Name>Step</Name>
+          <SourceAttributeID>Job Step PKEY 1</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
